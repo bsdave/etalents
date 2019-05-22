@@ -25,7 +25,8 @@
   }
 
   &.first {
-    top: 650px;
+    top: -80px;
+    right: 0;
 
     .shadow-layer-films {
       :nth-child(1) {
@@ -43,38 +44,35 @@
   }
 
   &.second {
-    top: 5300px;
+    top: -150px;
+    right: 0;
 
     .shadow-layer-films {
       :nth-child(1) {
-        align-self: flex-end;
-      }
-
-      :nth-child(2) {
         align-self: center;
       }
 
-      :nth-child(3) {
+      :nth-child(2) {
         align-self: flex-end;
       }
     }
   }
 
   &.third {
-    top: -1100px;
-    width: 320px;
+    top: -90px;
+    width: 250px;
 
     .shadow-layer-films {
       :nth-child(1) {
-        align-self: flex-end;
-      }
-
-      :nth-child(2) {
         align-self: flex-start;
       }
 
-      :nth-child(3) {
+      :nth-child(2) {
         align-self: flex-end;
+      }
+
+      :nth-child(3) {
+        align-self: center;
       }
     }
   }

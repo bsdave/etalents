@@ -38,6 +38,14 @@ $(function () {
     nextArrow: $('.next3')
   });
 
+  $('.locations').slick({
+    infinite: true,
+    speed: 500,
+    autoplaySpeed: 3000,
+    prevArrow: $('.prev-loc'),
+    nextArrow: $('.next-loc')
+  });
+
   $(window).scroll(function () {
     var hT = $('.countings-box').offset().top,
       hH = $('.countings-box').outerHeight(),

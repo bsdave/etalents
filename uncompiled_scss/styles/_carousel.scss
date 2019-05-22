@@ -1,0 +1,51 @@
+.carousel-box {
+  margin-bottom: 40px;
+}
+
+.carousel-body {
+  position: relative;
+
+  .back {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('../images/slick-arrow.svg') center no-repeat;
+    left: -30px;
+    top: 45%;
+    transform: rotate(180deg);
+  }
+
+  .next {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('../images/slick-arrow.svg') center no-repeat;
+    right: -30px;
+    top: 45%;
+  }
+
+  .slick-slide {
+    margin: 0 15px;
+  }
+  
+  // Fix external margins
+  .slick-list {
+    margin: 0 -5px;
+  }
+  .slick-slider {
+    overflow: hidden;
+  }
+  
+  // Move arrows on top of images
+  .slick-prev {
+    left: 50px;
+    z-index: 1;
+  }
+  .slick-next {
+    right: 50px;
+  }
+}

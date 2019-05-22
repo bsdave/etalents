@@ -1,0 +1,49 @@
+.advantages-box {
+  .advantages-head {
+    margin-bottom: 30px;
+
+    .advantages-toggle-button {
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      background: url("../images/x.png") center no-repeat;
+      border-radius: 50%;
+      border: 1px solid $color-red;
+      margin-left: 60px;
+
+      transition: transform 0.3s ease-in-out;
+
+      &.rotate {
+        transform: rotate(135deg);
+      }
+    }
+  }
+
+  .advantages-body {
+    padding-right: 50%;
+  }
+
+  .min-height {
+    min-height: 100px;
+  }
+}
+
+.advantages-list {
+  list-style: none;
+
+  li {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background: black;
+      left: -32px;
+      top: 3px;
+    }
+  }
+}

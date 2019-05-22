@@ -1,0 +1,91 @@
+.actors-box {
+  max-width: 100%;
+  
+  margin-top: 100px;
+  padding-bottom: 50px;
+
+  .actors {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+
+    .actor {
+      flex-basis: 20%;
+      padding-right: 30px;
+      margin-bottom: 40px;
+      position: relative;
+
+      .actor-image {
+        height: 160px;
+        width: 100%;
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        margin-bottom: 20px;
+      }
+
+      &.busy::after,
+      &.free::after {
+        content: "";
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        display: block;
+        background-size: 100%;
+        top: -20px;
+        right: 15px;    
+        z-index: 100;
+      }
+
+      &.busy::after {
+        background-image: url("../images/red-label.png");
+      }
+
+      &.free::after {
+        background-image: url("../images/green-label.png");
+      }
+    }
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+
+    .busy,
+    .free {
+      display: flex;
+      align-items: center;
+      justify-content: baseline;
+      padding-left: 30px;
+
+      &::before {
+        content: "";
+        margin-right: 10px;
+        margin-bottom: 5px;
+        height: 35px;
+        width: 35px;
+        display: inline-block;
+        background-size: 100%;
+      }
+    }
+
+    .busy {
+      &::before {
+        background-image: url("../images/red-label.png");
+      }
+    }
+
+    .free {
+      &::before {
+        background-image: url("../images/green-label.png");
+      }
+    }
+  }
+}
+
+.justify {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

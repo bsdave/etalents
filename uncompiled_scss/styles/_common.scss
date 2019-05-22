@@ -1,0 +1,128 @@
+.button {
+  background: $color-red;
+  color: $color-white;
+  font-size: 17px;
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 25px 20px 10px;
+  display: inline-block;
+
+  min-width: 250px;
+
+  transition: 250ms ease;
+
+  &:hover {
+    background: $color-black;
+  }
+
+  &.white {
+    background: $color-white;
+    color: $color-black;
+    border: 1px solid $color-black;
+
+    &:hover {
+      background: $color-red;
+      color: $color-white;
+      border: 1px solid $color-red;
+    }
+  }
+}
+
+.black {
+  color: $color-black !important;
+}
+
+.fz15 {
+  font-size: 15px !important;
+  font-weight: 900 !important;
+}
+
+.costs-left,
+.costs-right {
+  height: 100%;
+
+  .advantages-list {
+    margin-bottom: 80px;
+  }
+}
+
+.costs-left {
+  border-right: 1px solid #7e7e7e;
+  padding-right: 25px;
+}
+
+.price {
+  > * {
+    font-weight: 900;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  > *:nth-child(odd) {
+    color: red;
+  }
+
+  > *:nth-child(even) {
+    color: gray;
+  }
+}
+
+.carousel {
+  padding-top: 50px;
+}
+
+.d-footer {
+  padding-left: 20px;
+  margin-left: 50px;
+  border-left: 1px solid red;
+  padding-top: 20px;
+}
+
+.man-profile {
+  img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.title {
+  font-family: "Futura PT Book";
+  font-size: 25px;
+  color: $color-red;
+  display: inline-block;
+  position: relative;
+  font-weight: normal;
+
+  &.underlined::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 112px;
+    height: 2px;
+    bottom: -30px;
+    left: 0;
+    background: $color-red;
+  }
+
+  &.small {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.red {
+  color: red !important;
+}
+
+.relative {
+  position: relative;
+}
+
+@include desktop {
+}

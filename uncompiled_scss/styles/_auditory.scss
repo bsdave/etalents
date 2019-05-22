@@ -1,0 +1,48 @@
+.auditory-box {
+  max-width: 100%;
+  margin-top: 40px;
+
+  .auditory-head {
+    margin-bottom: 40px;
+  }
+}
+
+.auditory-carts {
+  .auditory-cart {
+    padding-right: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .cart-image {
+      text-align: center;
+      height: 180px;
+      margin-bottom: 0px;
+
+      .image {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    .title {
+      display: block;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .cart-description {
+      padding-right: 25%;
+      margin-bottom: 40px;
+    }
+
+    .cart-login-button {
+      margin-top: auto;
+
+      .button {
+        min-width: 60%
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.header-box {
+  position: relative;
+  
+  .link-to-home {
+    position: absolute;
+    top: 60px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+
+    .header-nav {
+      flex-basis: 45%;
+      background: red;
+
+      .navigation {
+        display: flex;
+        list-style: none;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+
+        .menu-item {
+          flex-basis: 50px;
+          flex-shrink: 0;
+          flex-grow: 0;
+          font-size: 14px;
+          font-weight: bold;
+
+          .profile-ico {
+            background: url("../images/star.svg") center no-repeat, red;
+            display: block;
+            height: 50px;
+          }
+
+          .search-ico {
+            background: url("../images/leans.svg") left bottom no-repeat, black;
+            display: block;
+            height: 50px;
+          }
+          .menu-ico {
+            background: url("../images/menu.svg") center no-repeat, white;
+            display: block;
+            height: 50px;
+          }
+
+          .current-language {
+            background: url("../images/menu.svg") center no-repeat, black;
+            height: 50px;
+            color: white;
+            padding: 10px 11px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+          }
+
+          &.languages-menu {
+            position: relative;
+
+            .languages {
+              position: absolute;
+              top: -200px;
+              z-index: 5;
+              list-style: none;
+              padding: 0;
+              margin: 0;
+
+              .language {
+                width: 50px;
+                height: 50px;
+                padding: 11px;
+
+                background: black;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                &:hover {
+                  background: red;
+                  cursor: pointer;
+                }
+              }
+            }
+
+            &:hover {
+              .languages {
+                top: 50px;
+              }
+            }
+          }
+
+          &.multilinks {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 11px;
+
+            .menu-link {
+              text-decoration: none;
+              font-weight: bold;
+              margin-top: 1px;
+
+              &:first-child {
+                color: black;
+              }
+
+              &:last-child {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

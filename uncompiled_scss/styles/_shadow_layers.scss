@@ -1,0 +1,87 @@
+.shadow-layer {
+  position: absolute;
+  z-index: 0;
+  right: -50px;
+
+  width: 365px;
+
+  .shadow-layer-films {
+    display: flex;
+    flex-direction: column;
+
+    .shadow-film {
+      transition: filter 500ms ease-in-out;
+      filter: grayscale(100%);
+
+      &:hover {
+        cursor: pointer;
+        filter: grayscale(0%);
+      }
+    }
+  }
+
+  .shadow-film-image {
+    display: block;
+  }
+
+  &.first {
+    top: 650px;
+
+    .shadow-layer-films {
+      :nth-child(1) {
+        align-self: center;
+      }
+
+      :nth-child(2) {
+        align-self: flex-end;
+      }
+
+      :nth-child(3) {
+        align-self: center;
+      }
+    }
+  }
+
+  &.second {
+    top: 5300px;
+
+    .shadow-layer-films {
+      :nth-child(1) {
+        align-self: flex-end;
+      }
+
+      :nth-child(2) {
+        align-self: center;
+      }
+
+      :nth-child(3) {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  &.third {
+    top: -1100px;
+    width: 320px;
+
+    .shadow-layer-films {
+      :nth-child(1) {
+        align-self: flex-end;
+      }
+
+      :nth-child(2) {
+        align-self: flex-start;
+      }
+
+      :nth-child(3) {
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .shadow-layer {
+    right: -5px;
+  }
+}

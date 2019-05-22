@@ -1,0 +1,77 @@
+.slider-box {
+  
+
+  .slide {
+    .slide-body {
+      display: flex;
+
+      .left-side {
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        padding-right: 15%;
+        padding-top: 200px;
+      }
+
+      .right-side {
+        flex-basis: 45%;
+        flex-shrink: 0;
+        flex-grow: 0;
+
+        .film-box {
+          height: 562px;
+          width: 100%;
+          position: relative;
+          filter: grayscale(100%);
+          background-size: cover;
+          background-repeat: no-repeat;
+
+          .film-body {
+            position: absolute;
+            bottom: 0;
+            padding-left: 50px;
+
+            .awards {
+              position: relative;
+              right: -100%;
+
+              .palma {
+                content: "";
+                background: url("../images/palma-ico.png") center no-repeat;
+                display: block;
+                width: 97px;
+                height: 53px;
+              }
+
+              .oskar {
+                content: "";
+                background: url("../images/oscar-img.png") center no-repeat;
+                display: block;
+                width: 40px;
+                height: 102px;
+              }
+            }
+          }
+
+          .film-name {
+            color: white;
+            font-size: 45px;
+            line-height: 1;
+            margin-bottom: 50px;
+            font-weight: bold;
+            font-family: "Futura PT Book", sans-serif;
+            margin-top: 15px;
+          }
+
+          transition: filter 500ms ease-in-out;
+
+          &:hover {
+            filter: grayscale(0%);
+          }
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
+}

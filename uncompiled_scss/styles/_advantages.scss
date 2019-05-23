@@ -1,6 +1,6 @@
 .advantages-box {
   position: relative;
-  
+
   .advantages-head {
     margin-bottom: 30px;
 
@@ -8,15 +8,14 @@
       display: inline-block;
       height: 30px;
       width: 30px;
-      background: url("../images/x.png") center no-repeat;
-      border-radius: 50%;
-      border: 1px solid $color-red;
+      background: url("../images/toggler.svg") center no-repeat;
+      background-size: contain;
       margin-left: 60px;
 
       transition: transform 0.3s ease-in-out;
 
       &.rotate {
-        transform: rotate(135deg);
+        transform: rotate(45deg);
       }
     }
   }
@@ -30,6 +29,10 @@
   }
 }
 
+.mt {
+  margin-top: 50px;
+}
+
 .advantages-list {
   list-style: none;
 
@@ -38,7 +41,7 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       display: block;
       height: 10px;
       width: 10px;
@@ -48,4 +51,8 @@
       top: 3px;
     }
   }
+}
+
+.uppercase {
+  text-transform: uppercase;
 }

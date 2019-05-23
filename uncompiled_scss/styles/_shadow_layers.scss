@@ -12,6 +12,18 @@
     .shadow-film {
       transition: filter 500ms ease-in-out;
       filter: grayscale(100%);
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 10px;
+        left: 10px;
+        right: 0;
+        background: url('../images/eye.svg') left bottom no-repeat;
+      }
 
       &:hover {
         cursor: pointer;

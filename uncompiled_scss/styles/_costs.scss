@@ -1,5 +1,6 @@
 .costs-box {
   position: relative;
+  margin-bottom: 40px;
 
   .costs-subheader {
     padding-right: 40%;
@@ -8,7 +9,23 @@
     padding-bottom: 40px;
 
     .text {
-      font-size: 16px;
+      font-size: 20px;
     }
   }
+
+  .costs-subheaders {
+    padding-right: 30%;
+    padding-left: 60px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+
+    .text {
+      font-size: 20px;
+    }
+  }
+}
+
+.w100 {
+  width: 100%;
+  padding: 0 !important;
 }

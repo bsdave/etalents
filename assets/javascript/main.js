@@ -12,6 +12,7 @@ $(function () {
   });
 
   $('.carousel1').slick({
+    autoplay: true,
     infinite: true,
     speed: 500,
     autoplaySpeed: 3000,
@@ -21,6 +22,7 @@ $(function () {
   });
 
   $('.carousel2').slick({
+    autoplay: true,
     infinite: true,
     speed: 500,
     autoplaySpeed: 3000,
@@ -30,6 +32,7 @@ $(function () {
   });
 
   $('.carousel3').slick({
+    autoplay: true,
     infinite: true,
     speed: 500,
     autoplaySpeed: 3000,
@@ -39,6 +42,7 @@ $(function () {
   });
 
   $('.locations').slick({
+    autoplay: true,
     infinite: true,
     speed: 500,
     autoplaySpeed: 3000,
@@ -66,7 +70,7 @@ $(function () {
 
   $('.advantages-toggle-button').click(function () {
     $(this).toggleClass('rotate');
-    $('.advantages-body').slideToggle();
+    $(this).parents('.advantages-box').find('.advantages-body').slideToggle();
   });
 });
 

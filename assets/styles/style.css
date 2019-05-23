@@ -789,6 +789,8 @@ input[type="number"] { -moz-appearance: textfield; }
 
 @font-face { font-family: 'Futura PT Medium'; src: url("../fonts/futura_pt_medium.eot"); src: url("../fonts/futura_pt_medium.eot?#iefix") format("embedded-opentype"), url("../fonts/futura_pt_medium.woff") format("woff"), url("../fonts/futura_pt_medium.woff2") format("woff2"), url("../fonts/futura_pt_medium.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
+.mb { margin-bottom: 80px; }
+
 @media (max-width: 540px) { div[class^="col"] { padding-left: 25px; padding-right: 25px; }
   .container { padding-left: 25px; padding-right: 25px; }
   .row { margin-left: -25px; margin-right: -25px; }
@@ -1213,6 +1215,40 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .loc-controls .next-loc { right: 40px; }
 
+.form-box { padding-right: 20%; }
+
+.form-box input { background: white; color: #777777; display: block; width: 100%; padding: 30px 10px 8px 15px; margin-bottom: 20px; border: 1px solid black; }
+
+.form-box input::-webkit-input-placeholder { text-transform: uppercase; }
+
+.form-box input:-ms-input-placeholder { text-transform: uppercase; }
+
+.form-box input::-ms-input-placeholder { text-transform: uppercase; }
+
+.form-box input::placeholder { text-transform: uppercase; }
+
+.form-box .link-recovery { text-decoration: none; }
+
+.form-box button { width: 100%; margin-bottom: 20px; }
+
+.form-box .button { width: 100%; }
+
+.form-box .button.facebook-color { background: #3c5a96; }
+
+.form-box .button.facebook-color:hover { background: black; }
+
+.left-right { text-align: right; padding: 10px 0 20px; }
+
+body.blacked .form-box input { background: #C4C4C4; }
+
+body.blacked .form-box .button, body.blacked .form-box button { border: none; }
+
+body.blacked .form-box .button:hover, body.blacked .form-box button:hover { background: white; color: black; }
+
 body { background: url("../images/background.svg") left top no-repeat, url("../images/film.svg") 50% -100px no-repeat, url("../images/film.svg") 50% 500px no-repeat; font-family: "Futura PT Medium", sans-serif; font-style: normal; font-weight: 100; font-size: 18px; margin-left: 50px; -webkit-transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9); -o-transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9); transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9); }
+
+body.blacked { background-color: black !important; }
+
+body.blacked .link-to-home { -webkit-filter: invert(1); filter: invert(1); }
 
 @media (min-width: 992px) { body.darkened::before { content: ""; display: block; width: 100%; height: 100%; background: #08080888; position: fixed; z-index: 18; top: 0; bottom: 0; } }

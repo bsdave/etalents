@@ -1,0 +1,62 @@
+.form-box {
+  padding-right: 20%;
+
+  input {
+    background: white;
+    color: #777777;
+    display: block;
+    width: 100%;
+
+    padding: 30px 10px 8px 15px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+
+    &::placeholder {
+      text-transform: uppercase;
+    }
+  }
+
+  .link-recovery {
+    text-decoration: none;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    width: 100%;
+
+    &.facebook-color {
+      background: #3c5a96;
+
+      &:hover {
+        background: black;
+      }
+    }
+  }
+}
+
+.left-right {
+  text-align: right;
+  padding: 10px 0 20px;
+}
+
+body.blacked {
+  .form-box {
+    input {
+      background: #C4C4C4;
+    }
+
+    .button,
+    button {
+      border: none;
+
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
+  }
+}

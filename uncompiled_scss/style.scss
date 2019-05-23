@@ -27,6 +27,7 @@
 @import "styles/carousel";
 @import "styles/partners";
 @import "styles/locations";
+@import "styles/login_form";
 
 body {
   background: url("../images/background.svg") left top no-repeat, url("../images/film.svg") 50% -100px no-repeat,
@@ -39,6 +40,14 @@ body {
   margin-left: 50px;
 
   transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9);
+
+  &.blacked {
+    background-color: black !important;
+
+    .link-to-home {
+      filter: invert(1);
+    }
+  }
 }
 
 @include desktop {

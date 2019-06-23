@@ -6,15 +6,18 @@ input[type="checkbox"]:checked,
 
 input[type="checkbox"]:checked + label,
 input[type="checkbox"]:not(:checked) + label {
-  text-transform: uppercase;
   position: relative;
-  padding-left: 28px;
+  padding-left: 50px;
+  margin: 30px 0px;
   cursor: pointer;
   line-height: 40px;
   display: inline-block;
   color: $color-black;
-  &.bg-white {
+  &.bg-red {
     color: white;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.25px;
   }
 }
 
@@ -28,6 +31,7 @@ input[type="checkbox"]:not(:checked) + label:before {
   height: 25px;
   border: 1px solid $color-black;
   background: #fff;
+
 }
 
 input[type="checkbox"]:checked + label:after,
@@ -41,6 +45,9 @@ input[type="checkbox"]:not(:checked) + label:after {
   left: 5px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  .bg-red {
+    background: red;
+  }
 }
 
 input[type="checkbox"]:not(:checked) + label:after {

@@ -55,6 +55,10 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            &.bg-white {
+              background: $color-white;
+              color: $color-black;
+            }
           }
 
           &.languages-menu {
@@ -67,7 +71,10 @@
               list-style: none;
               padding: 0;
               margin: 0;
-
+              &.bg-white {
+                background: $color-white;
+                color: $color-black;
+              }
               .language {
                 width: 50px;
                 height: 50px;
@@ -78,7 +85,10 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
-
+                &.bg-white {
+                  background: $color-white;
+                  color: $color-black;
+                }
                 &:hover {
                   background: red;
                   cursor: pointer;

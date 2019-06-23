@@ -873,11 +873,17 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .header-box .header .header-nav .navigation .menu-item .current-language { background: url("../images/menu.svg") center no-repeat, black; height: 50px; color: white; padding: 10px 11px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 
+.header-box .header .header-nav .navigation .menu-item .current-language.bg-white { background: #fff; color: #000; }
+
 .header-box .header .header-nav .navigation .menu-item.languages-menu { position: relative; }
 
 .header-box .header .header-nav .navigation .menu-item.languages-menu .languages { position: absolute; top: -200px; z-index: 5; list-style: none; padding: 0; margin: 0; }
 
+.header-box .header .header-nav .navigation .menu-item.languages-menu .languages.bg-white { background: #fff; color: #000; }
+
 .header-box .header .header-nav .navigation .menu-item.languages-menu .languages .language { width: 50px; height: 50px; padding: 11px; background: black; color: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+.header-box .header .header-nav .navigation .menu-item.languages-menu .languages .language.bg-white { background: #fff; color: #000; }
 
 .header-box .header .header-nav .navigation .menu-item.languages-menu .languages .language:hover { background: red; cursor: pointer; }
 
@@ -1137,6 +1143,8 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .youtube::after, .instagram::after, .facebook::after, .vk::after { content: ''; display: inline-block; height: 29px; width: 41px; background-size: contain; background-repeat: no-repeat; background-position: center; }
 
+.youtube-bl::after, .instagram-bl::after, .facebook-bl::after, .vk-bl::after { content: ''; display: inline-block; height: 29px; width: 41px; background-size: contain; background-repeat: no-repeat; background-position: center; }
+
 .youtube::after { background-image: url("../images/ytb.svg"); }
 
 .instagram::after { background-image: url("../images/inst.svg"); }
@@ -1144,6 +1152,14 @@ input[type="number"] { -moz-appearance: textfield; }
 .facebook::after { background-image: url("../images/fb.svg"); }
 
 .vk::after { background-image: url("../images/vk.svg"); }
+
+.youtube-bl::after { background-image: url("../images/ytb-black.svg"); }
+
+.instagram-bl::after { background-image: url("../images/inst-black.svg"); }
+
+.facebook-bl::after { background-image: url("../images/fb-black.svg"); }
+
+.vk-bl::after { background-image: url("../images/vk-black.svg"); }
 
 .shadow-layer { position: absolute; z-index: 0; right: -50px; width: 365px; }
 
@@ -1247,6 +1263,12 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .form-btn { margin: 30px 0; }
 
+.form-btn a { text-decoration: none; margin-right: 30px; }
+
+.form-btn .white { color: #fff; text-transform: uppercase; }
+
+.form-btn .red { color: red; text-transform: uppercase; }
+
 body.blacked .form-box input { background: #C4C4C4; }
 
 body.blacked .form-box .button, body.blacked .form-box button { border: none; }
@@ -1255,13 +1277,15 @@ body.blacked .form-box .button:hover, body.blacked .form-box button:hover { back
 
 input[type="checkbox"]:checked, [type="checkbox"]:not(:checked) { position: absolute; left: -9999px; }
 
-input[type="checkbox"]:checked + label, input[type="checkbox"]:not(:checked) + label { text-transform: uppercase; position: relative; padding-left: 28px; cursor: pointer; line-height: 40px; display: inline-block; color: #000; }
+input[type="checkbox"]:checked + label, input[type="checkbox"]:not(:checked) + label { position: relative; padding-left: 50px; margin: 30px 0px; cursor: pointer; line-height: 40px; display: inline-block; color: #000; }
 
-input[type="checkbox"]:checked + label.bg-white, input[type="checkbox"]:not(:checked) + label.bg-white { color: white; }
+input[type="checkbox"]:checked + label.bg-red, input[type="checkbox"]:not(:checked) + label.bg-red { color: white; font-size: 14px; line-height: 23px; letter-spacing: 0.25px; }
 
 input[type="checkbox"]:checked + label:before, input[type="checkbox"]:not(:checked) + label:before { content: ''; position: absolute; left: 0; top: 0; width: 25px; height: 25px; border: 1px solid #000; background: #fff; }
 
 input[type="checkbox"]:checked + label:after, input[type="checkbox"]:not(:checked) + label:after { content: ''; width: 15px; height: 15px; background: #000; position: absolute; top: 5px; left: 5px; -webkit-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+
+input[type="checkbox"]:checked + label:after .bg-red, input[type="checkbox"]:not(:checked) + label:after .bg-red { background: red; }
 
 input[type="checkbox"]:not(:checked) + label:after { opacity: 0; -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0); }
 

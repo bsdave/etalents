@@ -1,20 +1,40 @@
 .header-box {
   position: relative;
-
+  .title-steps{
+    position: absolute;
+    padding: 40px 60px 5px 8px;
+    top: -25px;
+    left: 220px;
+    background: #777777;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #fff;
+  }
   .link-to-home {
     position: absolute;
     top: 60px;
     left: -75px;
+    &.sm-logo {
+      top: 35px;
+      left: 50px;
+    }
   }
 
   .header {
     display: flex;
     justify-content: flex-end;
-
+    &.sm-header {
+      border-bottom: 1px solid red;
+      padding: 50px 0;
+    }
     .header-nav {
       flex-basis: 45%;
       background: red;
-
+      &.sm-nav {
+        flex-basis: 300px;
+      }
       .navigation {
         display: flex;
         list-style: none;
@@ -36,17 +56,6 @@
             height: 50px;
           }
 
-          .search-ico {
-            background: url("../images/leans.svg") left bottom no-repeat, black;
-            display: block;
-            height: 50px;
-          }
-          .menu-ico {
-            background: url("../images/menu.svg") center no-repeat, white;
-            display: block;
-            height: 50px;
-          }
-
           .current-language {
             background: url("../images/menu.svg") center no-repeat, black;
             height: 50px;
@@ -55,6 +64,10 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+          }
+          .bg-white {
+            background: white;
+            color: black
           }
 
           &.languages-menu {
@@ -78,7 +91,10 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
-
+                &.bg-white {
+                  background: white;
+                  color: black
+                }
                 &:hover {
                   background: red;
                   cursor: pointer;
@@ -113,45 +129,11 @@
             }
           }
 
-          &.drop-menu {
+          &:hover {
+            cursor: pointer;
+
             .drop-menu-body {
-              display: none;
-              position: absolute;
-              z-index: 100;
-              top: 50px;
-              left: 0;
-              right: 0;
-              list-style: none;
-              padding: 40px 0;
-              margin: 0;
-              background: url('../images/red-film.svg') 90% 93% no-repeat, black;
-
-              li {
-                display: block;
-                cursor: pointer;
-
-                a {
-                  display: block;
-                  padding: 20px 50px;
-                  color: white;
-                  text-decoration: none;
-                  text-transform: uppercase;
-                  font-size: 20px;
-                  letter-spacing: 1px;
-
-                  &:hover {
-                    color: red;
-                  }
-                }
-              }
-            }
-
-            &:hover {
-              cursor: pointer;
-
-              .drop-menu-body {
-                display: block;
-              }
+              display: block;
             }
           }
         }
@@ -159,3 +141,4 @@
     }
   }
 }
+

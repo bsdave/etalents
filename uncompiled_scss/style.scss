@@ -1,13 +1,11 @@
 @import "grid/main";
 @import "hamburgers/main";
 @import "slick/main";
-
 @import "styles/normalize";
 @import "styles/variables";
 @import "styles/fonts";
 @import "styles/mixins";
 @import "styles/grid";
-
 @import "styles/common";
 @import "styles/text";
 @import "styles/header";
@@ -32,7 +30,7 @@
 
 body {
   background: url("../images/background.svg") left top no-repeat, url("../images/film.svg") 50% -110px no-repeat,
-    url("../images/film.svg") 50% 500px no-repeat;
+  url("../images/film.svg") 50% 500px no-repeat;
   font-family: "Futura PT Medium", sans-serif;
   font-style: normal;
   font-weight: 100;

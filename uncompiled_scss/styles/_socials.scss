@@ -54,6 +54,22 @@
   }
 }
 
+.youtube-bl,
+.instagram-bl,
+.facebook-bl,
+.vk-bl {
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 29px;
+    width: 41px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 .youtube::after {
   background-image: url('../images/ytb.svg');
 }
@@ -68,4 +84,20 @@
 
 .vk::after {
   background-image: url('../images/vk.svg');
+}
+
+.youtube-bl::after {
+  background-image: url('../images/ytb-black.svg');
+}
+
+.instagram-bl::after {
+  background-image: url('../images/inst-black.svg');
+}
+
+.facebook-bl::after {
+  background-image: url('../images/fb-black.svg');
+}
+
+.vk-bl::after {
+  background-image: url('../images/vk-black.svg');
 }

@@ -855,7 +855,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .header-box { position: relative; }
 
-.header-box .link-to-home { position: absolute; top: 60px; }
+.header-box .link-to-home { position: absolute; top: 60px; left: -75px; }
 
 .header-box .header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 
@@ -909,7 +909,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .slider-box .slide .slide-body .right-side { -ms-flex-preferred-size: 45%; flex-basis: 45%; -ms-flex-negative: 0; flex-shrink: 0; -webkit-box-flex: 0; -ms-flex-positive: 0; flex-grow: 0; }
 
-.slider-box .slide .slide-body .right-side .film-box { height: 562px; width: 100%; position: relative; -webkit-filter: grayscale(100%); filter: grayscale(100%); background-size: cover; background-repeat: no-repeat; -webkit-transition: -webkit-filter 500ms ease-in-out; transition: -webkit-filter 500ms ease-in-out; -o-transition: filter 500ms ease-in-out; transition: filter 500ms ease-in-out; transition: filter 500ms ease-in-out, -webkit-filter 500ms ease-in-out; cursor: pointer; }
+.slider-box .slide .slide-body .right-side .film-box { height: 700px; width: 100%; position: relative; -webkit-filter: grayscale(100%); filter: grayscale(100%); background-size: cover; background-repeat: no-repeat; -webkit-transition: -webkit-filter 500ms ease-in-out; transition: -webkit-filter 500ms ease-in-out; -o-transition: filter 500ms ease-in-out; transition: filter 500ms ease-in-out; transition: filter 500ms ease-in-out, -webkit-filter 500ms ease-in-out; cursor: pointer; }
 
 .slider-box .slide .slide-body .right-side .film-box .film-body { position: absolute; bottom: 0; padding-left: 50px; }
 
@@ -1099,7 +1099,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .costs-table-box .costs-table ul li { margin-bottom: 10px; }
 
-.footer-box { margin-top: 100px; padding-bottom: 45px; background: url("../images/eta-logo-red.png") left 90% no-repeat; }
+.footer-box { margin-top: 100px; padding-bottom: 45px; background: url("../images/eta-logo-red.svg") left 90% no-repeat; }
 
 .footer-box .footer { margin-bottom: 50px; }
 
@@ -1109,33 +1109,41 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .footer-box .footer .footer-section-body p { margin-top: 0; }
 
+.footer-box .footer .bg-white { color: #fff; }
+
 .footer-box .links { margin: 0; padding: 0; list-style: none; }
 
 .footer-box .links .link { display: block; padding-top: 3px; padding-bottom: 3px; margin-bottom: 5px; color: #000; }
+
+.footer-box .links .bg-white { color: #fff; }
 
 .contacts { padding: 0; margin: 0; list-style: none; margin-top: 10px; margin-bottom: 10px; }
 
 .contacts .contact { color: #000; text-decoration: none; display: block; padding-top: 3px; padding-bottom: 3px; margin-bottom: 5px; }
 
+.contacts .bg-white { color: #fff; }
+
 .socials { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .socials .title { padding-top: 2px; margin-bottom: 0; font-size: 20px; }
+
+.socials .bg-white { color: #fff; }
 
 .socials .social-links { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; padding-left: 20px; }
 
 .socials .social-links .social-link { display: block; margin-right: 10px; }
 
-.socials .social-links:after { content: ''; display: block; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); position: absolute; width: 31px; height: 238px; margin-top: -2px; right: -150px; background: url("../images/film-red.png") center no-repeat; }
+.socials .social-links:after { content: ''; display: block; position: absolute; height: 31px; width: 185px; margin-top: -2px; right: -185px; background: url("../images/film-red-foot.svg") center no-repeat; }
 
 .youtube::after, .instagram::after, .facebook::after, .vk::after { content: ''; display: inline-block; height: 29px; width: 41px; background-size: contain; background-repeat: no-repeat; background-position: center; }
 
-.youtube::after { background-image: url("../images/youtube.png"); }
+.youtube::after { background-image: url("../images/ytb.svg"); }
 
-.instagram::after { background-image: url("../images/insta.png"); }
+.instagram::after { background-image: url("../images/inst.svg"); }
 
-.facebook::after { background-image: url("../images/facebook.png"); }
+.facebook::after { background-image: url("../images/fb.svg"); }
 
-.vk::after { background-image: url("../images/vk.png"); }
+.vk::after { background-image: url("../images/vk.svg"); }
 
 .shadow-layer { position: absolute; z-index: 0; right: -50px; width: 365px; }
 
@@ -1227,9 +1235,9 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .form-box input::placeholder { text-transform: uppercase; }
 
-.form-box .link-recovery { text-decoration: none; }
+.form-box .link-recovery { text-decoration: none; margin-left: 25px; }
 
-.form-box button { width: 100%; margin-bottom: 20px; }
+.form-box button { width: 100%; margin-bottom: 20px; border: none; }
 
 .form-box .button { width: 100%; }
 
@@ -1237,7 +1245,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .form-box .button.facebook-color:hover { background: black; }
 
-.left-right { text-align: right; padding: 10px 0 20px; }
+.form-btn { margin: 30px 0; }
 
 body.blacked .form-box input { background: #C4C4C4; }
 
@@ -1245,7 +1253,35 @@ body.blacked .form-box .button, body.blacked .form-box button { border: none; }
 
 body.blacked .form-box .button:hover, body.blacked .form-box button:hover { background: white; color: black; }
 
-body { background: url("../images/background.svg") left top no-repeat, url("../images/film.svg") 50% -100px no-repeat, url("../images/film.svg") 50% 500px no-repeat; font-family: "Futura PT Medium", sans-serif; font-style: normal; font-weight: 100; font-size: 18px; margin-left: 50px; -webkit-transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9); -o-transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9); transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9); }
+input[type="checkbox"]:checked, [type="checkbox"]:not(:checked) { position: absolute; left: -9999px; }
+
+input[type="checkbox"]:checked + label, input[type="checkbox"]:not(:checked) + label { text-transform: uppercase; position: relative; padding-left: 28px; cursor: pointer; line-height: 40px; display: inline-block; color: #000; }
+
+input[type="checkbox"]:checked + label.bg-white, input[type="checkbox"]:not(:checked) + label.bg-white { color: white; }
+
+input[type="checkbox"]:checked + label:before, input[type="checkbox"]:not(:checked) + label:before { content: ''; position: absolute; left: 0; top: 0; width: 25px; height: 25px; border: 1px solid #000; background: #fff; }
+
+input[type="checkbox"]:checked + label:after, input[type="checkbox"]:not(:checked) + label:after { content: ''; width: 15px; height: 15px; background: #000; position: absolute; top: 5px; left: 5px; -webkit-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+
+input[type="checkbox"]:not(:checked) + label:after { opacity: 0; -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0); }
+
+input[type="checkbox"]:checked + label:after { opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+
+input[type="radio"]:checked, [type="radio"]:not(:checked) { position: absolute; left: -9999px; }
+
+input[type="radio"]:checked + label, input[type="radio"]:not(:checked) + label { text-transform: capitalize; font-size: 18px; line-height: 40px; position: relative; padding-left: 28px; cursor: pointer; display: inline-block; color: #000; }
+
+input[type="radio"]:checked + label.bg-white, input[type="radio"]:not(:checked) + label.bg-white { color: white; }
+
+input[type="radio"]:checked + label:before, input[type="radio"]:not(:checked) + label:before { content: ''; position: absolute; left: 0; top: 0; width: 25px; height: 25px; border: 1px solid #000; background: #fff; }
+
+input[type="radio"]:checked + label:after, input[type="radio"]:not(:checked) + label:after { content: ''; width: 15px; height: 15px; background: #000; position: absolute; top: 5px; left: 5px; -webkit-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+
+input[type="radio"]:not(:checked) + label:after { opacity: 0; -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0); }
+
+input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+
+body { background: url("../images/background.svg") left top no-repeat, url("../images/film.svg") 50% -110px no-repeat, url("../images/film.svg") 50% 500px no-repeat; font-family: "Futura PT Medium", sans-serif; font-style: normal; font-weight: 100; font-size: 18px; margin-left: 50px; -webkit-transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9); -o-transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9); transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9); }
 
 body.blacked { background-color: black !important; }
 

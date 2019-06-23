@@ -28,9 +28,10 @@
 @import "styles/partners";
 @import "styles/locations";
 @import "styles/login_form";
+@import "styles/inputs";
 
 body {
-  background: url("../images/background.svg") left top no-repeat, url("../images/film.svg") 50% -100px no-repeat,
+  background: url("../images/background.svg") left top no-repeat, url("../images/film.svg") 50% -110px no-repeat,
     url("../images/film.svg") 50% 500px no-repeat;
   font-family: "Futura PT Medium", sans-serif;
   font-style: normal;

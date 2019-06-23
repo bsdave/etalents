@@ -7,6 +7,9 @@
     margin-bottom: 0;
     font-size: 20px;
   }
+  .bg-white {
+    color: #fff;
+  }
 
   .social-links {
     display: flex;
@@ -22,16 +25,15 @@
     &:after {
       content: '';
       display: block;
-      transform: rotate(90deg);
       position: absolute;
 
-      width: 31px;
-      height: 238px;
+      height: 31px;
+      width: 185px;
 
       margin-top: -2px;
 
-      right: -150px;
-      background: url('../images/film-red.png') center no-repeat;
+      right: -185px;
+      background: url('../images/film-red-foot.svg') center no-repeat;
     }
   }
 }
@@ -53,17 +55,17 @@
 }
 
 .youtube::after {
-  background-image: url('../images/youtube.png');
+  background-image: url('../images/ytb.svg');
 }
 
 .instagram::after {
-  background-image: url('../images/insta.png');
+  background-image: url('../images/inst.svg');
 }
 
 .facebook::after {
-  background-image: url('../images/facebook.png');
+  background-image: url('../images/fb.svg');
 }
 
 .vk::after {
-  background-image: url('../images/vk.png');
+  background-image: url('../images/vk.svg');
 }

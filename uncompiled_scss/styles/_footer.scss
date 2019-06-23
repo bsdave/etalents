@@ -3,7 +3,7 @@
 
   padding-bottom: 45px;
 
-  background: url("../images/eta-logo-red.png") left 90% no-repeat;
+  background: url("../images/eta-logo-red.svg") left 90% no-repeat;
 
   .footer {
     margin-bottom: 50px;
@@ -19,6 +19,9 @@
         margin-top: 0;
       }
     }
+    .bg-white {
+      color: #fff;
+    }
   }
 
   .links {
@@ -32,6 +35,9 @@
       padding-bottom: 3px;
       margin-bottom: 5px;
       color: $color-black;
+    }
+    .bg-white {
+      color: #fff;
     }
   }
 }
@@ -50,5 +56,8 @@
     padding-top: 3px;
     padding-bottom: 3px;
     margin-bottom: 5px;
+  }
+  .bg-white {
+    color: #fff;
   }
 }

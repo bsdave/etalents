@@ -18,11 +18,12 @@
 
   .link-recovery {
     text-decoration: none;
+    margin-left: 25px;
   }
-
   button {
     width: 100%;
     margin-bottom: 20px;
+    border: none;
   }
 
   .button {
@@ -38,9 +39,8 @@
   }
 }
 
-.left-right {
-  text-align: right;
-  padding: 10px 0 20px;
+.form-btn {
+  margin: 30px 0;
 }
 
 body.blacked {

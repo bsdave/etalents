@@ -131,4 +131,3 @@ $(function () {
     $(this).parent().prev().find('div').text(text);
   })
 });
-

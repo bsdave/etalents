@@ -1237,6 +1237,8 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .form-box .form-checkbox { margin-bottom: 25px; }
 
+.form-box .form-checkbox label { padding-left: 50px; }
+
 .form-box input { background: white; color: #777777; display: block; width: 100%; padding: 30px 10px 8px 15px; margin-bottom: 20px; border: 1px solid black; }
 
 .form-box input::-webkit-input-placeholder { text-transform: uppercase; }
@@ -1273,7 +1275,7 @@ body.blacked .form-box .button:hover, body.blacked .form-box button:hover { back
 
 input[type="checkbox"]:checked, [type="checkbox"]:not(:checked) { position: absolute; left: -9999px; }
 
-input[type="checkbox"]:checked + label, input[type="checkbox"]:not(:checked) + label { position: relative; padding-left: 50px; margin: 10px 0 5px 0; cursor: pointer; line-height: 40px; display: inline-block; color: #000; }
+input[type="checkbox"]:checked + label, input[type="checkbox"]:not(:checked) + label { position: relative; padding-left: 40px; margin: 10px 0 5px 0; cursor: pointer; line-height: 40px; display: inline-block; color: #000; }
 
 input[type="checkbox"]:checked + label.bg-white, input[type="checkbox"]:not(:checked) + label.bg-white { color: white; font-size: 14px; line-height: 23px; letter-spacing: 0.25px; }
 
@@ -1289,7 +1291,7 @@ input[type="checkbox"]:checked + label:after { opacity: 1; -webkit-transform: sc
 
 input[type="radio"]:checked, [type="radio"]:not(:checked) { position: absolute; left: -9999px; }
 
-input[type="radio"]:checked + label, input[type="radio"]:not(:checked) + label { text-transform: capitalize; font-size: 18px; line-height: 40px; position: relative; padding-left: 35px; margin-right: 70px; cursor: pointer; display: inline-block; color: #000; }
+input[type="radio"]:checked + label, input[type="radio"]:not(:checked) + label { text-transform: capitalize; font-size: 18px; line-height: 40px; position: relative; padding-left: 35px; cursor: pointer; display: inline-block; color: #000; }
 
 input[type="radio"]:checked + label.bg-white, input[type="radio"]:not(:checked) + label.bg-white { color: white; }
 
@@ -1302,6 +1304,8 @@ input[type="radio"]:not(:checked) + label:after { opacity: 0; -webkit-transform:
 input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 
 .steps { float: right; }
+
+.steps ul li:first-child { display: none; }
 
 .steps li { margin-bottom: 16px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 31px; position: relative; }
 
@@ -1318,6 +1322,8 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 #wizard .title { margin-bottom: 40px; }
 
 #wizard .input-checkbox { margin: 50px 0 50px 25%; }
+
+#wizard .input-checkbox label { padding-left: 40px; margin-right: 30px; }
 
 #wizard .input-blocks label { width: 25%; float: left; line-height: 50px; text-align: left; text-transform: capitalize; }
 
@@ -1351,13 +1357,83 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .number { display: none; }
 
-#wizard .activity-info { padding: 0 25% 0 43px; }
+#wizard .activity-info { padding: 0 34% 0 43px; letter-spacing: 1px; margin-bottom: 50px; }
+
+#wizard .activity-form { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; margin-bottom: 50px; }
+
+#wizard .activity-form p { margin-left: 30px; color: #777777; }
+
+#wizard .activity-form .activity-blocks { padding: 0 7px; }
+
+#wizard .activity-form .activity-blocks label { text-transform: uppercase; }
+
+#wizard .work-blocks { display: inline-block; margin-left: 40px; }
+
+#wizard .work-input { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; margin: 40px 20% 1px 40px; vertical-align: top; }
+
+#wizard .work-input input { width: 50px; height: 50px; text-align: center; margin-right: 10px; margin-left: 10px; }
+
+#wizard .work-input .work-text { position: relative; }
+
+#wizard .work-input .work-text:before { position: absolute; content: ""; display: inline-block; height: 125px; width: 2px; background: #777777; }
+
+#wizard .work-input p { color: #777777; margin-left: 10px; }
+
+#wizard .asd { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; margin: 8px 0; }
+
+#wizard .asd .work-checkbox { margin: 0 5px; width: 31%; }
+
+#wizard .asd .work-checkbox label { text-transform: capitalize; }
+
+#wizard .flex { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+#wizard .flex .input-block { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; width: 68%; }
+
+#wizard .flex .input-block input { width: 30%; margin-right: 70px; }
+
+#wizard .flex .input-block select { width: 33%; margin-right: 16px; }
+
+#wizard .input-blocks select { width: 50%; color: #777777; background: #fff; display: block; padding: 30px 10px 8px 15px; margin-bottom: 20px; border: 1px solid black; }
+
+#wizard .input-blocks span { display: block; overflow: hidden; }
+
+#wizard .input-blocks .input { width: 100%; }
+
+#wizard .contract-download { margin: 40px 0; }
+
+#wizard .contract-download img { margin-top: 40px; }
+
+#wizard .education-text { padding: 0 37% 30px 0; color: #777777; }
+
+#wizard .contacts .input-checkbox { margin: 20px 0 20px 25%; }
+
+#wizard .year { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+#wizard .year .input-blocks input { width: 50%; margin-left: 104%; }
+
+#wizard .year .contract-download { margin-left: 170px; }
+
+#wizard .skill-info { font-size: 16px; line-height: 15px; padding: 0 40% 0 0; margin: 40px 0; color: #777777; }
+
+#wizard .skills-special { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; margin: 15px 0; }
+
+#wizard .skills-special .work-checkbox { margin: 0 10px; width: 31%; }
+
+#wizard .label-sm label { width: 30%; }
 
 #wizard .calculator { float: right; }
 
 #wizard .calculator .count-button { border-radius: 0px; padding: 0px; margin-left: 10px; width: 50px; height: 50px; }
 
-#wizard .photo-card { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+#wizard .photo-card { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+
+#wizard .photo-card .photo-preview { width: 30%; float: left; }
+
+#wizard .photo-card .photo { width: 65%; float: left; }
+
+#wizard .photo-card .photo img { margin: 22px 12px; }
+
+#wizard .photo-card .photo-cards a { margin: 0; }
 
 #wizard .photo-card .photo-cards img { margin: 5px; }
 
@@ -1365,15 +1441,13 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .gallery-info p:first-child { margin-right: 40px; border-right: 1px solid #777777; }
 
-#wizard .photo-info { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; border: 1px solid black; }
+#wizard .photo-info { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; border: 1px solid black; margin: 40px 0; }
 
-#wizard .photo-info p { padding: 50px 40px; border-right: 1px solid #777777; }
+#wizard .photo-info p { padding: 40px 40px 60px 40px; border-right: 1px solid #777777; }
 
 #wizard .photo-info p:last-child { color: #777777; border-right: none; }
 
 #wizard .circle { background: black; border-radius: 50%; padding: 3px 13px; margin: 0 10px 0 23px; }
-
-#wizard .contract-download { margin: 30px 0; }
 
 #wizard button { background: #fff; color: #ff0000; display: inline-block; border: 1px solid red; border-radius: 17.5px; padding: 3px 30px; font-size: 15px; line-height: 19px; }
 
@@ -1385,27 +1459,7 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .contract .contract-btn { background: #fff; color: #000; border: 1px solid black; padding: 3px 10px; }
 
-#wizard .contract .contract-gray { font-size: 12px; padding: 0 48% 0 0; line-height: 15px; color: #777777; }
-
-#wizard .work-blocks { display: inline-block; margin-left: 40px; }
-
-#wizard form .work-input { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; margin: 40px 20% 1px 40px; vertical-align: top; }
-
-#wizard form .work-input input { width: 50px; height: 50px; text-align: center; margin-right: 10px; margin-left: 10px; }
-
-#wizard form .work-input .work-text { position: relative; }
-
-#wizard form .work-input .work-text:before { position: absolute; content: ""; display: inline-block; height: 125px; width: 2px; background: #777777; }
-
-#wizard form .work-input p { color: #777777; margin-left: 10px; }
-
-#wizard .activity-form { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; margin-bottom: 50px; }
-
-#wizard .activity-form .activity-blocks { padding: 0 7px; }
-
-#wizard .activity-form .activity-blocks label { text-transform: uppercase; }
-
-#wizard .activity-form p { margin-left: 30px; color: #777777; }
+#wizard .contract .contract-gray { font-size: 12px; padding: 0 48% 0 0; margin-bottom: 30px; line-height: 15px; color: #777777; }
 
 body { font-family: "Futura PT Medium", sans-serif; font-style: normal; font-weight: 100; font-size: 18px; -webkit-transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9); -o-transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9); transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9); }
 

@@ -1,6 +1,11 @@
 
 .steps {
   float: right;
+  ul{
+    li:first-child{
+      display: none;
+    }
+  }
   li {
     margin-bottom: 16px;
     display: flex;

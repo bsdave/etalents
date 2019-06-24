@@ -1,9 +1,166 @@
 #wizard {
-  .number{
+  .number {
     display: none;
   }
   .activity-info {
-    padding: 0 25% 0 43px;
+    padding: 0 34% 0 43px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+  }
+  .activity-form {
+    display: inline-flex;
+    margin-bottom: 50px;
+    p {
+      margin-left: 30px;
+      color: #777777;
+    }
+    .activity-blocks {
+      padding: 0 7px;
+      label {
+        text-transform: uppercase;
+      }
+    }
+  }
+  .work-blocks {
+    display: inline-block;
+    margin-left: 40px;
+  }
+
+  .work-input {
+    display: inline-flex;
+    margin: 40px 20% 1px 40px;
+    vertical-align: top;
+    input {
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .work-text {
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        height: 125px;
+        width: 2px;
+        background: #777777;
+      }
+    }
+    p {
+
+      color: #777777;
+      margin-left: 10px;
+    }
+  }
+  .asd {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 8px 0;
+    .work-checkbox {
+      margin: 0 5px;
+      width: 31%;
+      label {
+        text-transform: capitalize;
+      }
+    }
+  }
+  .flex {
+    display: inline-flex;
+    justify-content: flex-end;
+    .input-block {
+      display: inline-flex;
+      justify-content: flex-end;
+      width: 68%;
+      input {
+        width: 30%;
+        margin-right: 70px;
+      }
+      select {
+        width: 33%;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .input-blocks {
+    select {
+      width: 50%;
+      color: #777777;
+      background: #fff;
+      display: block;
+
+      padding: 30px 10px 8px 15px;
+      margin-bottom: 20px;
+      border: 1px solid black;
+    }
+    span {
+      display: block;
+      overflow: hidden;
+    }
+    .input {
+      width: 100%;
+    }
+  }
+  .contract-download {
+    margin: 40px 0;
+    .input-blocks {
+
+    }
+    img {
+      margin-top: 40px;
+    }
+  }
+  .education-text {
+    padding: 0 37% 30px 0;
+    color: #777777;
+  }
+  .contacts {
+    .input-checkbox {
+      margin: 20px 0 20px 25%;
+    }
+  }
+  .year {
+    justify-content: space-between;
+    .input-blocks {
+
+      input {
+        width: 50%;
+        margin-left: 104%;
+      }
+    }
+    .contract-download {
+      margin-left: 170px;
+    }
+  }
+
+  .skill-info {
+    font-size: 16px;
+    line-height: 15px;
+    padding: 0 40% 0 0;
+    margin: 40px 0;
+
+    color: #777777;
+  }
+  .skills-special {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 15px 0;
+    .work-checkbox {
+      margin: 0 10px;
+      width: 31%;
+    }
+
+  }
+  .label-sm {
+    label {
+      width: 30%;
+    }
   }
   .calculator {
     float: right;
@@ -15,16 +172,32 @@
       height: 50px;
     }
   }
+
   .photo-card {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    .photo-preview {
+      width: 30%;
+      float: left;
+    }
+    .photo {
+      width: 65%;
+      float: left;
+      img {
+        margin: 22px 12px;
+      }
+    }
     .photo-cards {
-
+      a {
+        margin: 0;
+      }
       img {
         margin: 5px;
       }
     }
   }
+
   .gallery-info {
     display: inline-flex;
 
@@ -33,11 +206,13 @@
       border-right: 1px solid #777777;
     }
   }
+
   .photo-info {
     display: inline-flex;
     border: 1px solid black;
+    margin: 40px 0;
     p {
-      padding: 50px 40px;
+      padding: 40px 40px 60px 40px;
       border-right: 1px solid #777777;
     }
     p:last-child {
@@ -45,15 +220,14 @@
       border-right: none;
     }
   }
+
   .circle {
     background: black;
     border-radius: 50%;
     padding: 3px 13px;
     margin: 0 10px 0 23px;
   }
-  .contract-download {
-    margin: 30px 0;
-  }
+
   button {
     background: $color-white;
     color: $color-red;
@@ -64,14 +238,17 @@
     font-size: 15px;
     line-height: 19px;
   }
+
   .gray {
     color: #777777;
     font-size: 15px;
     width: 53%;
   }
+
   .counter {
     display: none;
   }
+
   .contract {
 
     .contract-info {
@@ -87,58 +264,10 @@
     .contract-gray {
       font-size: 12px;
       padding: 0 48% 0 0;
+      margin-bottom: 30px;
       line-height: 15px;
       color: #777777;
     }
   }
 
-  .work-blocks {
-    display: inline-block;
-    margin-left: 40px;
-  }
-  form {
-    .work-input {
-      display: inline-flex;
-      margin: 40px 20% 1px 40px;
-      vertical-align: top;
-      input {
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        margin-right: 10px;
-        margin-left: 10px;
-      }
-      .work-text {
-        position: relative;
-        &:before {
-          position: absolute;
-          content: "";
-          display: inline-block;
-          height: 125px;
-          width: 2px;
-          background: #777777;
-        }
-      }
-      p {
-
-        color: #777777;
-        margin-left: 10px;
-      }
-    }
-  }
-  .activity-form {
-    display: inline-flex;
-    margin-bottom: 50px;
-    .activity-blocks {
-      padding: 0 7px;
-      label {
-        text-transform: uppercase;
-
-      }
-    }
-    p {
-      margin-left: 30px;
-      color: #777777;
-    }
-  }
 }

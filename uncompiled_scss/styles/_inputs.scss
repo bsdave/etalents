@@ -8,7 +8,7 @@ input[type="checkbox"]:checked,
 input[type="checkbox"]:checked + label,
 input[type="checkbox"]:not(:checked) + label {
   position: relative;
-  padding-left: 50px;
+  padding-left: 40px;
   margin: 10px 0 5px 0;
   cursor: pointer;
   line-height: 40px;
@@ -76,7 +76,6 @@ input[type="radio"]:not(:checked) + label {
   line-height: 40px;
   position: relative;
   padding-left: 35px;
-  margin-right: 70px;
   cursor: pointer;
   display: inline-block;
   color: $color-black;

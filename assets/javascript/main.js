@@ -131,4 +131,87 @@ $(function () {
     $(this).parent().prev().find('div').text(text);
   })
 });
+$(function () {
+  $('.toggle').on('click', function () {
+    $(this).toggleClass('is-active');
+  });
 
+  $('#increment').on('click', function () {
+    addVisitor();
+    changeButtonState();
+  });
+
+  $('#decrement').on('click', function () {
+    removeVisitor();
+    changeButtonState();
+  });
+
+  const addVisitor = () => {
+    const visitorsCounter = $('#visitorsCounter');
+    let visitorsCount = parseInt(visitorsCounter.val());
+    const newVisitorsCount = ++visitorsCount;
+    visitorsCounter.val(newVisitorsCount);
+    recalculate(newVisitorsCount);
+
+    addVisitorHtml(newVisitorsCount);
+  };
+
+  const removeVisitor = () => {
+    const visitorsCounter = $('#visitorsCounter');
+    let visitorsCount = parseInt(visitorsCounter.val());
+    const newVisitorsCount = --visitorsCount;
+    visitorsCounter.val(newVisitorsCount);
+    recalculate(newVisitorsCount);
+
+    removeVisitorHtml();
+  };
+
+  const canAdd = (currentState) => {
+    const min = parseInt('#visitorsCounter').prop('min');
+    const max = parseInt('.#visitorsCounter').prop('max');
+
+    if (currentState < max) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  const canRemove = (currentState) => {
+    const min = parseInt('#visitorsCounter').prop('min');
+    const max = parseInt('.#visitorsCounter').prop('max');
+
+    if (currentState > min) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  const changeButtonState = () => {
+    const visitorsCounter = $('#visitorsCounter');
+    let visitorsCount = parseInt(visitorsCounter.val());
+
+    $('#increment').prop('disabled', !canAdd(visitorsCount));
+    $('#decrement').prop('disabled', !canRemove(visitorsCount));
+  };
+
+  const recalculate = (visitorsCount) => {
+    $('#summary').val(`${visitorsCount}`);
+  };
+
+  const addVisitorHtml = (number) => {
+    const visitorHtml = $('#visitor-1').clone();
+
+    visitorHtml.attr('id', `visitor-${number}`);
+    visitorHtml.find('.visitor-number').html(number);
+
+    $('.visitors').append(visitorHtml);
+  };
+
+  const removeVisitorHtml = () => {
+    $('.visitor').last().remove();
+  };
+
+  recalculate(parseInt($('#visitorsCounter').val()));
+});

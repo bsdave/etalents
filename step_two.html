@@ -5,7 +5,10 @@
   <title>Step page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="colorlib.com">
-
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+          integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="assets/javascript/js-steps/jquery.steps.js"></script>
+  <script src="assets/javascript/main.js"></script>
   <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
@@ -33,21 +36,28 @@
 </div>
 
 
+<!-- SECTION 1 -->
+
 <div class="container">
   <div id="wizard">
-    <h4 class="wizard-title uppercase">анкета актера</h4>
+    <h4>анкета актера</h4>
+
     <section>
       <div class="row">
         <h3 class="title underlined uppercase">Анкета актера</h3>
-        <p class="uppercase">Чем подробнее вы заполните свой профиль, тем выше вы подниметесь во внутреннем рейтинге
-          платформы.<br/><br/>
-          Ваша позиция
-          в рейтинге зависит от количества данных о себе, которые вы указали.</p>
-        <form class="activity-form">
+        <div class="activity-info">
+          <p class="uppercase">Чем подробнее вы заполните свой профиль, тем выше вы подниметесь во внутреннем рейтинге
+            платформы.<br/><br/>
+            Ваша позиция в рейтинге зависит от количества данных о себе, которые вы указали.</p>
+        </div>
+
+
+        <div class="activity-form ">
           <div class="activity-blocks">
             <input type="radio" id="proffesional" name="actor" value="proffesional">
             <label for="proffesional">актер профессионал</label>
-            <p>Вы получили высшее актерское образование, уверенно входите в образ по системе Станиславского и за вашими
+            <p>Вы получили высшее актерское образование, уверенно входите в образ по системе Станиславского и за
+              вашими
               плечами огромный опыт съемок в кинофильмах?</p>
             <p> А возможно вы талантливый артист из народа и уже не впервые
               участвуете в крупных проектах?</p>
@@ -61,10 +71,13 @@
               небольших проектах или только мечтаете оказаться на съемочной площадке?</p>
             <p class="uppercase">В таком случае, вы актер-любитель и это прекрасно!</p>
           </div>
-        </form>
+        </div>
+
+        <a href="#" class="forward button">сохранить</a>
       </div>
     </section>
 
+    <!-- SECTION 2 -->
 
     <h4>Область Работы</h4>
     <section class="section">
@@ -72,36 +85,79 @@
         <h3 class="title underlined uppercase">Область Работы</h3>
       </div>
       <div class="row">
-        <h4>Укажите области, в которых вы готовы работать</h4>
-        <form class="form col-6">
-          <div class="work-checkbox">
-            <input type="checkbox" id="cinema">
-            <label class="uppercase" for="cinema">Кино</label>
+        <h3 class="uppercase">Укажите области, в которых вы готовы работать</h3>
+        <form class="form col-12">
+
+          <div class="work-blocks">
+            <div class="work-checkbox">
+              <input type="checkbox" id="cinema">
+              <label class="uppercase" for="cinema">Кино</label>
+            </div>
+
+            <div class="work-checkbox">
+              <input type="checkbox" id="series">
+              <label class="uppercase" for="series">Сериалы</label>
+            </div>
+
+            <div class="work-checkbox">
+              <input type="checkbox" id="tv">
+              <label class="uppercase" for="tv">Телепрограммы</label>
+            </div>
+            <div class="work-checkbox">
+              <input type="checkbox" id="advertising">
+              <label class="uppercase" for="advertising">Реклама</label>
+            </div>
+
+            <div class="work-checkbox">
+              <input type="checkbox" id="theater">
+              <label class="uppercase" for="theater">Театр</label>
+            </div>
           </div>
 
-          <div class="work-checkbox">
-            <input type="checkbox" id="series">
-            <label class="uppercase" for="series">Сериалы</label>
+          <div class="work-blocks">
+            <div class="work-checkbox">
+              <input type="checkbox" id="massive">
+              <label class="uppercase" for="massive">Согласен сниматься в массовых сценах</label>
+            </div>
+
+            <div class="work-checkbox">
+              <input type="checkbox" id="low">
+              <label class="uppercase" for="low">Согласен сниматься в малобюджетных проектах</label>
+            </div>
+
+            <div class="work-checkbox">
+              <input type="checkbox" id="trip">
+              <label class="uppercase" for="trip">Согласен на долгосрочную командировку</label>
+            </div>
+            <div class="work-checkbox">
+              <input type="checkbox" id="long_trip">
+              <label class="uppercase" for="long_trip">Готов к длительным командировкам</label>
+            </div>
+
+            <div class="work-checkbox">
+              <input type="checkbox" id="model">
+              <label class="uppercase" for="model">Готов к работе модели</label>
+            </div>
           </div>
 
-          <div class="work-checkbox">
-            <input type="checkbox" id="tv">
-            <label class="uppercase" for="tv">Телепрограммы</label>
+          <div class="work-input">
+            <p>Игровой возраст от</p>
+            <input type="number" placeholder="0">
+            <p>до</p>
+            <input type="number" placeholder="100">
+            <div class="work-text">
+              <p>Диапазон игрового возраста зависит от вашей внешности.</p>
+              <p>Пример: если вам 30 лет, но вы выглядите на возраст 25-27, укажите этот промежуток. Советуем узнать
+                мнение своих знакомых.</p>
+            </div>
           </div>
-          <div class="work-checkbox">
-            <input type="checkbox" id="advertising">
-            <label class="uppercase" for="advertising">Реклама</label>
-          </div>
-
-          <div class="work-checkbox">
-            <input type="checkbox" id="theater">
-            <label class="uppercase" for="theater">Театр</label>
-          </div>
-
         </form>
       </div>
       <a href="#" class="forward button">сохранить</a>
     </section>
+
+
+    <!-- SECTION 3 -->
 
 
     <h4 class="wizard-title uppercase">Внешность</h4>
@@ -127,8 +183,16 @@
             <option>мулат</option>
             <option>другой</option>
           </select>
-
         </div>
+
+        <div class="input-blocks-2">
+          <label>Рост*</label>
+          <input type="text" placeholder="200">
+          <label>Вес</label>
+          <input type="text" placeholder="90">
+        </div>
+
+
         <div class="input-blocks">
           <label>Цвет Глаз*</label>
           <select>
@@ -151,6 +215,13 @@
             <option>бодибилдер</option>
           </select>
         </div>
+
+        <div class="input-blocks-2">
+          <label>Обхват*</label>
+          <input type="text" placeholder="90">
+          <input type="text" placeholder="60">
+          <input type="text" placeholder="90">
+        </div>
         <div class="input-blocks">
           <label>цвет волос*</label>
           <select>
@@ -163,28 +234,438 @@
             <option>другой</option>
           </select>
         </div>
+        <div class="input-blocks-2">
+          <label>Размеры одежды*</label>
+          <select>
+            <option>xxs</option>
+            <option>xs</option>
+            <option>s</option>
+            <option>m</option>
+            <option>l</option>
+            <option>xl</option>
+            <option>xxl</option>
+            <option>xxxl</option>
+          </select>
+          <select>
+            <option>xxs</option>
+            <option>xs</option>
+            <option>s</option>
+            <option>m</option>
+            <option>l</option>
+            <option>xl</option>
+            <option>xxl</option>
+            <option>xxxl</option>
+          </select>
+          <input type="number" placeholder="35">
+        </div>
+        <div class="input-blocks">
+          <label>Обхват головы</label>
+          <input type="number" placeholder="90">
+        </div>
         <div class="input-blocks">
           <label>Прочие особенности внешности</label>
-          <textarea name="" id="" cols="55" rows="7"></textarea>
+          <textarea cols="55" rows="7"></textarea>
         </div>
       </form>
       <a href="#" class="forward button">сохранить</a>
     </section>
 
 
+    <!-- SECTION 4 -->
+
+
     <h4>Образование</h4>
     <section class="section">
       <div class="col-6">
-        <h3 class="title underlined uppercase">Внешность</h3>
+        <h3 class="title underlined uppercase">образование</h3>
       </div>
       <form class="form col-9">
-        <h3 class="red"> обязательные поля для заполнения (*)</h3>
         <div class="input-blocks">
           <label>название университета</label>
           <input type="text">
         </div>
+        <div class="input-blocks">
+          <label>Специальность</label>
+          <input class="input" type="text" placeholder="Специальность">
+        </div>
+        <div class="input-blocks">
+          <select>
+            <option> Высшее</option>
+            <option>Магистр</option>
+            <option>Доктор</option>
+            <option>Неоконченное высшее</option>
+          </select>
+        </div>
+        <div>
+          <div class="input-blocks">
+            <label>Специальность</label>
+            <input class="input" type="text" placeholder="Специальность">
+          </div>
+          <div class="contract-download">
+            <div class="input-blocks">
+              <label>Год окончания</label>
+              <input class="input" type="number" placeholder="1995">
+            </div>
+            <button>Загрузить диплом</button>
+            <span class="circle"></span>
+            <span>файл загружен</span>
+          </div>
+        </div>
       </form>
+
+      <div class="col-6">
+        <h3 class="title underlined uppercase">дополнительное образование</h3>
+      </div>
+      <form class="form col-9">
+        <p>Напишите обо всех пройденных вами курсах, мастер-классах, повышение квалификации, которые могут быть важны
+          кастинг-директору.</p>
+        <div class="input-blocks">
+          <label>название</label>
+          <input type="text" placeholder="Название курса, имя мастера, город проведения">
+        </div>
+        <div class="input-blocks">
+          <label>Год</label>
+          <input class="input" type="number" placeholder="1995">
+        </div>
+        <div class="contract-download">
+          <button>Загрузить диплом</button>
+          <span class="circle"></span>
+          <span>файл загружен</span>
+        </div>
+      </form>
+      <a href="#" class="forward button">сохранить</a>
     </section>
+
+
+    <!-- SECTION 5 -->
+
+
+    <h4>навыки</h4>
+    <section class="section">
+      <div class="col-6">
+        <h3 class="title underlined uppercase">навыки</h3>
+      </div>
+      <form class="form col-3">
+        <p>Оценивайте свои возможности адекватно, чтобы в будущем не разочаровать людей, с которыми будете работать.</p>
+        <p>Профессиональные навыки должны подтверждаться какими-либо дипломами, сертификатами либо опытом!</p>
+        <div class="skills-check">
+          <div class="work-checkbox">
+            <input type="checkbox" id="skills">
+            <label class="uppercase" for="skills">Модель</label>
+          </div>
+          <div class="input-blocks">
+            <label>название агенства</label>
+            <input type="text" placeholder="название агенства">
+          </div>
+        </div>
+      </form>
+
+      <div class="col-6">
+        <h3 class="title underlined uppercase">специальные навыки</h3>
+      </div>
+      <form class="form col-3">
+        <div class="skills-special">
+          <div class="work-checkbox">
+            <input type="checkbox" id="amateur-1">
+            <label class="uppercase" for="amateur-1">Любитель</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="profi-1">
+            <label class="uppercase" for="profi-1">профессионал</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-1">
+            <label class="uppercase" for="check-1">дубляж</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-2">
+            <label class="uppercase" for="check-2">озвучивание</label>
+          </div>
+        </div>
+      </form>
+
+
+      <div class="col-6">
+        <h3 class="title underlined uppercase">вокал</h3>
+      </div>
+      <form class="form col-9">
+        <div class="skills-special">
+          <div class="work-checkbox">
+            <input type="checkbox" id="amateur-2">
+            <label class="uppercase" for="amateur-2">Любитель</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="profi-2">
+            <label class="uppercase" for="profi-2">профессионал</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-3">
+            <label class="uppercase" for="check-3">Классическое пение</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-4">
+            <label class="uppercase" for="check-4">Академическое пение</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-5">
+            <label class="uppercase" for="check-5">Народное пение</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-6">
+            <label class="uppercase" for="check-6">Джазовый вокал</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-7">
+            <label class="uppercase" for="check-7">Эстрадное пение</label>
+          </div>
+        </div>
+      </form>
+
+      <div class="col-6">
+        <h3 class="title underlined uppercase">тип голоса</h3>
+      </div>
+      <form class="form col-9">
+        <div class="skills-special">
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-8">
+            <label class="uppercase" for="check-8">сопрано</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-9">
+            <label class="uppercase" for="check-9">Меццо-сопрано </label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-10">
+            <label class="uppercase" for="check-10">Контральто</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-11">
+            <label class="uppercase" for="check-11">Баритон</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-12">
+            <label class="uppercase" for="check-12">Бас</label>
+          </div>
+        </div>
+      </form>
+
+      <div class="col-6">
+        <h3 class="title underlined uppercase">музыкальные инструменты</h3>
+      </div>
+      <form class="form col-9">
+        <div class="skills-special">
+          <div class="work-checkbox">
+            <input type="checkbox" id="amateur-3">
+            <label class="uppercase" for="amateur-3">Любитель</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="profi-3">
+            <label class="uppercase" for="profi-3">профессионал</label>
+          </div>
+          <div class="input-blocks">
+            <label>музыкальные инструменты</label>
+            <input type="text">
+          </div>
+
+        </div>
+      </form>
+
+      <div class="col-6">
+        <h3 class="title underlined uppercase">танцы</h3>
+      </div>
+      <form class="form col-9">
+        <div class="skills-special">
+          <div class="work-checkbox">
+            <input type="checkbox" id="amateur-4">
+            <label class="uppercase" for="amateur-4">Любитель</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="profi-4">
+            <label class="uppercase" for="profi-4">профессионал</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-13">
+            <label class="uppercase" for="check-13">бальные</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-14">
+            <label class="uppercase" for="check-14">Народные</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-15">
+            <label class="uppercase" for="check-15">Модерн</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-16">
+            <label class="uppercase" for="check-16">Хип-хоп</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-17">
+            <label class="uppercase" for="check-17">Балет</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-18">
+            <label class="uppercase" for="check-18">Степ</label>
+          </div>
+          <div class="input-blocks">
+            <label>другое</label>
+            <input type="text" placeholder="Впишите, если нет в списке вашего вида танца">
+          </div>
+        </div>
+      </form>
+
+      <div class="col-6">
+        <h3 class="title underlined uppercase">спортивные навыки</h3>
+      </div>
+      <form class="form col-9">
+        <div class="skills-special">
+          <div class="work-checkbox">
+            <input type="checkbox" id="amateur-5">
+            <label class="uppercase" for="amateur-5">Любитель</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="profi-5">
+            <label class="uppercase" for="profi-5">профессионал</label>
+          </div>
+          <div class="input-blocks">
+            <label>вид спорта</label>
+            <select>
+              <option>сноуборд</option>
+              <option>езда на лошади</option>
+              <option>фехтование</option>
+              <option>серфинг</option>
+              <option>лыжи</option>
+              <option>скейтборд</option>
+              <option>ролики</option>
+              <option>боевые единоборства</option>
+              <option>футбол</option>
+              <option>фигурное катание</option>
+              <option>хоккей</option>
+              <option>гимнастика</option>
+              <option>баскетбол</option>
+              <option>легкая атлетика</option>
+              <option>йога</option>
+              <option>бодибилдинг</option>
+            </select>
+          </div>
+          <div class="input-blocks">
+            <label>другое</label>
+            <input type="text" placeholder="Впишите, если нет в списке вашего вида спорта">
+          </div>
+        </div>
+      </form>
+
+      <div class="col-6">
+        <h3 class="title underlined uppercase">каскадерские навыки</h3>
+      </div>
+      <form class="form col-9">
+        <div class="skills-special">
+          <div class="work-checkbox">
+            <input type="checkbox" id="amateur-6">
+            <label class="uppercase" for="amateur-6">Любитель</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="profi-6">
+            <label class="uppercase" for="profi-6">профессионал</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-19">
+            <label class="uppercase" for="check-19">клоунада</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-20">
+            <label class="uppercase" for="check-20">акробатика</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-21">
+            <label class="uppercase" for="check-21">эквилибристика</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-22">
+            <label class="uppercase" for="check-22">жонглирование</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-23">
+            <label class="uppercase" for="check-23">фокусник</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-24">
+            <label class="uppercase" for="check-24">дресировщик</label>
+          </div>
+        </div>
+      </form>
+
+
+      <div class="col-6">
+        <h3 class="title underlined uppercase">языковые навыки</h3>
+      </div>
+      <form class="form col-9">
+        <div class="skills-special">
+          <div class="input-blocks">
+            <label>язык</label>
+            <select>
+              <option>Русский</option>
+              <option>Казахский</option>
+              <option>Французский</option>
+              <option>Немецкий</option>
+              <option>Испанский</option>
+              <option>Итальянский</option>
+              <option>Украинский</option>
+              <option>Белорусский</option>
+              <option>Японский</option>
+              <option>Китайский</option>
+            </select>
+          </div>
+          <div class="input-blocks">
+            <label>уровень</label>
+
+            <select>
+              <option>Базовый</option>
+              <option>Разговорный</option>
+              <option>Свободный</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <div class="col-6">
+        <h3 class="title underlined uppercase">Вождение</h3>
+      </div>
+      <form class="form col-9">
+        <div class="skills-special">
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-27">
+            <label class="uppercase" for="check-27">автомобиль</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-25">
+            <label class="uppercase" for="check-25">мотоцикл</label>
+          </div>
+          <div class="work-checkbox">
+            <input type="checkbox" id="check-26">
+            <label class="uppercase" for="check-26">автобус</label>
+          </div>
+        </div>
+      </form>
+
+
+      <div class="col-6">
+        <h3 class="title underlined uppercase">хобби</h3>
+      </div>
+      <form class="form col-9">
+        <div class="skills-special">
+          <div class="input-blocks">
+            <label>ваше хобби</label>
+            <input type="text" placeholder="Напишите ваше хобби (оригами, кулинарное искусство и т.д.)">
+          </div>
+        </div>
+      </form>
+
+      <a href="#" class="forward button">сохранить</a>
+    </section>
+
+
+    <!-- SECTION 6 -->
 
 
     <h4>творческий опыт</h4>
@@ -192,43 +673,71 @@
       <div class="col-6">
         <h3 class="title underlined uppercase">творческий опыт</h3>
       </div>
-      <form class="form col-9">
-        <div class="input-blocks">
-          <label>тип проекта*</label>
-          <select>
-            <option>Художественный фильм</option>
-            <option>Сериал</option>
-            <option>Короткометражный фильм</option>
-            <option>Документальный фильм</option>
-            <option>Социальный ролик</option>
-          </select>
+      <div class="order-form-overlay opened">
+        <div class="form-box">
+
+          <div class="form">
+
+            <form action="/leads" method="post">
+              <div class="visitors col-9">
+
+                <div class="visitor" id="visitor-1" data-visitor="1">
+                  <h3 class="title underlined uppercase">Роли в кино<span class="visitor-number"> </span></h3>
+                  <div class="input-blocks">
+                    <label>тип проекта*</label>
+                    <select>
+                      <option>Художественный фильм</option>
+                      <option>Сериал</option>
+                      <option>Короткометражный фильм</option>
+                      <option>Документальный фильм</option>
+                      <option>Социальный ролик</option>
+                    </select>
+                  </div>
+                  <div class="input-blocks">
+                    <label>Название*</label>
+                    <input type="text">
+                  </div>
+                  <div class="input-blocks">
+                    <label>статус роли*</label>
+                    <select>
+                      <option>Главная роль</option>
+                      <option>Роль второго плана</option>
+                      <option>Эпизодическая роль</option>
+                      <option>Массовка</option>
+                    </select>
+                  </div>
+                  <div class="input-blocks">
+                    <label>Год*</label>
+                    <input type="text">
+                  </div>
+                  <div class="input-blocks">
+                    <label>Роль*</label>
+                    <input type="text" placeholder="Не обязательно">
+                  </div>
+                  <div class="input-blocks">
+                    <label>Режиссёр*</label>
+                    <input type="text" placeholder="Не обязательно">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <div class="calculator">
+                      <h3 class="title uppercase">Добавить</h3>
+                      <button id="increment" class="count-button" type="button">+</button>
+                      <input id="visitorsCounter" class="button input counter" type="number" readonly min="1" max="5"
+                             value="1">
+                      <button id="decrement" class="count-button" type="button" disabled>-</button>
+                      <span id="price" class="price"></span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="input-blocks">
-          <label>Название*</label>
-          <input type="text">
-        </div>
-        <div class="input-blocks">
-          <label>статус роли*</label>
-          <select>
-            <option>Главная роль</option>
-            <option>Роль второго плана</option>
-            <option>Эпизодическая роль</option>
-            <option>Массовка</option>
-          </select>
-        </div>
-        <div class="input-blocks">
-          <label>Год*</label>
-          <input type="text">
-        </div>
-        <div class="input-blocks">
-          <label>Роль*</label>
-          <input type="text" placeholder="Не обязательно">
-        </div>
-        <div class="input-blocks">
-          <label>Режиссёр*</label>
-          <input type="text" placeholder="Не обязательно">
-        </div>
-      </form>
+      </div>
 
 
       <h3 class="title underlined uppercase">роли в театре</h3>
@@ -257,7 +766,10 @@
 
 
       <h3 class="title underlined uppercase">роли в рекламе</h3>
+
+
       <form class="form col-9">
+
         <div class="input-blocks">
           <label>название*</label>
           <input type="text">
@@ -279,9 +791,13 @@
           <label>Год</label>
           <input type="text" placeholder="Не обязательно">
         </div>
+
       </form>
 
-      <h3 class="title underlined uppercase">роли в рекламе</h3>
+
+      <h3 class="title underlined uppercase">награды иноминации</h3>
+
+
       <form class="form col-9">
         <div class="input-blocks">
           <label>название*</label>
@@ -292,23 +808,100 @@
           <input type="text" placeholder="Лучшая мужская роль, лучшая женская роль, лучшая режиссура">
         </div>
         <div class="input-blocks">
-          <label>Год</label>
+          <label>Год*</label>
           <input type="text">
         </div>
       </form>
 
-
+      <a href="#" class="forward button">сохранить</a>
     </section>
 
+    <!-- SECTION 7 -->
 
-    <h4>Видео</h4>
+    <h4>медиа файлы</h4>
+
     <section class="section">
+
+      <div class="col-6">
+        <h3 class="title underlined uppercase">медиа файлы</h3>
+      </div>
+
+      <div class="gallery-info col-9">
+        <p>Анкеты с главной фотографией не отвечающей требованию гида не пройдут модерацию и не будут отображаться в
+          поиске.</p>
+        <p>Фотографии должны быть свежими (желательно недельной давности на момент регистрации), а внешность
+          естественной.
+          Не используйте фоторедакторы: в них нет смысла, ведь вас все равно увидят вживую. </p>
+      </div>
+
+      <div class="form">
+
+
+        <div class="col-6">
+          <h3 class="title underlined uppercase">фотогалерея</h3>
+          <div class="photo-info">
+            <img src="assets/images/row.svg" alt="">
+
+            <p>загрузить</p>
+            <p>Перетащите фотографии сюда</p>
+            <p>Вы можете одновременно загрузить от 4 до 20 фотографий</p>
+          </div>
+          <div class="contract-download">
+            <span class="circle"></span>
+            <span>файлы загружены</span>
+            <button>фотогид</button>
+          </div>
+        </div>
+        <div class="photo-card col-9">
+          <div class="photo-cards">
+            <img src="assets/images/bg-11.jpg" alt="">
+            <img src="assets/images/bg-10.jpg" alt="">
+            <img src="assets/images/bg-9.jpg" alt="">
+            <img src="assets/images/bg-9.jpg" alt="">
+            <img src="assets/images/bg-10.jpg" alt="">
+          </div>
+          <div class="photo-cards">
+            <img src="assets/images/bg-11.jpg" alt="">
+            <img src="assets/images/bg-10.jpg" alt="">
+            <img src="assets/images/bg-9.jpg" alt="">
+            <img src="assets/images/bg-9.jpg" alt="">
+            <img src="assets/images/bg-10.jpg" alt="">
+          </div>
+          <div class="photo-cards">
+            <img src="assets/images/bg-7.jpg" alt="">
+            <img src="assets/images/bg-8.jpg" alt="">
+          </div>
+          <div class="photo-cards">
+            <img src="assets/images/bg-4.jpg" alt="">
+            <img src="assets/images/bg-5.jpg" alt="">
+            <img src="assets/images/bg-6.jpg" alt="">
+          </div>
+          <div class="photo-cards">
+            <img src="assets/images/bg-1.jpg" alt="">
+          </div>
+          <div class="photo-cards">
+            <img src="assets/images/bg-2.jpg" alt="">
+            <img src="assets/images/bg-3.jpg" alt="">
+          </div>
+        </div>
+
+
+      </div>
+
+      <h4>Видео</h4>
+
+
       <div class="col-6">
         <h3 class="title underlined uppercase">Видео</h3>
       </div>
+
+
       <form class="form col-9">
-        <p>Ознакомьтесь с видео-гидом, прежде чем публиковать свои видео. Мы составили его специально для того, чтобы
-          ваше портфолио было максимально презентабельным и полностью раскрывало ваши достоинства.</p>
+        <div class="gray">
+          <p>Ознакомьтесь с видео-гидом, прежде чем публиковать свои видео.</p>
+          <p>Мы составили его специально для того, чтобы
+            ваше портфолио было максимально презентабельным и полностью раскрывало ваши достоинства.</p>
+        </div>
         <div class="input-blocks">
           <label>Видеовизитка</label>
           <input type="text" placeholder="ссылка на ролик">
@@ -329,16 +922,66 @@
           <label>видео 5</label>
           <input type="text" placeholder="ссылка на ролик / видеопроба">
         </div>
+
       </form>
+
+
+      <h4>Аудио</h4>
+
+      <div class="col-6">
+        <h3 class="title underlined uppercase">Аудио</h3>
+      </div>
+
+      <form class="form col-9">
+        <div class="contract-download">
+          <span>Загрузите аудиозапись в формате MP3</span>
+          <button>Загрузить</button>
+          <span class="circle"></span>
+          <span>файлы загружены</span>
+        </div>
+      </form>
+
+      <a href="#" class="forward button">сохранить</a>
     </section>
+
+    <!-- SECTION 8 -->
 
 
     <h4>Контакты</h4>
+
     <section class="section">
       <div class="col-6">
         <h3 class="title underlined uppercase">Контакты</h3>
       </div>
+
+
       <form class="form col-9">
+        <h3>Добавить персональные контакты</h3>
+        <div class="input-blocks">
+          <label>номер телефона*</label>
+          <input type="number" placeholder="+7 (---) --- -- -- ">
+        </div>
+        <div class="input-checkbox">
+          <input type="radio" id="whats" name="contact" value="whats_app">
+          <label for="whats">WhatsApp</label>
+          <input type="radio" id="telegram" name="contact" value="telegram">
+          <label for="telegram">Telegram</label>
+        </div>
+        <div class="input-blocks">
+          <label>email</label>
+          <input type="email" placeholder="@">
+        </div>
+        <div class="input-blocks">
+          <label>доступно</label>
+        </div>
+        <div class="input-checkbox">
+          <input type="radio" id="kino" name="access" value="kino">
+          <label for="kino">Проверенным кинодеятелям</label>
+          <input type="radio" id="all" name="access" value="all">
+          <label for="all">Всем посетителям профиля</label>
+          <input type="radio" id="req" name="access" value="req">
+          <label for="req">Только по запросу (кинодеятель отправляет вам запрос, а вы решаете открыть ли доступ)</label>
+        </div>
         <div class="input-blocks">
           <label>Facebook</label>
           <input type="text" placeholder="ссылка на профиль">
@@ -359,30 +1002,70 @@
           </textarea>
         </div>
       </form>
+
+
+      <a href="#" class="forward button">сохранить</a>
+    </section>
+
+    <!-- SECTION 9-->
+
+
+    <h4>документы</h4>
+    <section class="section">
+
+
+      <div class="col-6">
+        <h3 class="title underlined uppercase">документы</h3>
+      </div>
+      <div class="contract col-6">
+        <div class="contract-info">
+          <p>Приложите копию удостоверения личности.</p>
+          <p> Eurasia Talents гарантирует конфиденциальность.</p>
+          <p>Информация из удостоверения никуда не передается и хранится закрыто от посторонних лиц.</p>
+        </div>
+        <div class="contract-download">
+          <button>Загрузить</button>
+          <span class="circle"></span>
+          <span>файлы загружены</span>
+        </div>
+        <p class="contract-gray">*Прикрепить удостоверение личности (две стороны) или первую страницу паспорта.</p>
+        <button class="contract-btn">договор-аферта</button>
+      </div>
+
+
+      <a href="#" class="forward button">сохранить</a>
     </section>
 
 
+    <!-- SECTION 10 -->
+
     <h4>Здоровье</h4>
+
     <section class="section">
+
       <div class="col-6">
         <h3 class="title underlined uppercase">здоровье</h3>
       </div>
-      <form class="form col-9">
 
+      <form class="form col-9">
         <div class="input-blocks">
           <label>Состояние вашего здоровья*</label>
           <textarea
-                  name="" id="" cols="30" rows="10"
+                  name="" id="" cols="45" rows="7"
                   placeholder="Здесь вы можете написать о состоянии вашего здоровья (болезни, хронические, хромота, остуствие конечности)">
 
           </textarea>
         </div>
       </form>
+
+
+      <a href="#" class="forward button">сохранить</a>
     </section>
-
-
   </div>
 </div>
+
+
+<!-- Footer -->
 
 
 <div class="container">
@@ -404,8 +1087,7 @@
             </ul>
 
             <p>Мы расположены по адресу: <br><br> Казахстан, город Алматы, Бульвар Мендикулова, 22, жилой комплекс
-              «ТУРКУАЗ»
-            </p>
+              «ТУРКУАЗ»</p>
           </div>
         </div>
 
@@ -459,9 +1141,92 @@
   </div>
 </div>
 
+<script>
+  $(function () {
+    $('.toggle').on('click', function () {
+      $(this).toggleClass('is-active');
+    });
 
-<script src="assets/javascript/js-steps/jquery-3.3.1.min.js"></script>
-<script src="assets/javascript/js-steps/jquery.steps.js"></script>
-<script src="assets/javascript/main.js"></script>
+    $('#increment').on('click', function () {
+      addVisitor();
+      changeButtonState();
+    });
+
+    $('#decrement').on('click', function () {
+      removeVisitor();
+      changeButtonState();
+    });
+
+    const addVisitor = () => {
+      const visitorsCounter = $('#visitorsCounter');
+      let visitorsCount = parseInt(visitorsCounter.val());
+      const newVisitorsCount = ++visitorsCount;
+      visitorsCounter.val(newVisitorsCount);
+      recalculate(newVisitorsCount);
+
+      addVisitorHtml(newVisitorsCount);
+    };
+
+    const removeVisitor = () => {
+      const visitorsCounter = $('#visitorsCounter');
+      let visitorsCount = parseInt(visitorsCounter.val());
+      const newVisitorsCount = --visitorsCount;
+      visitorsCounter.val(newVisitorsCount);
+      recalculate(newVisitorsCount);
+
+      removeVisitorHtml();
+    };
+
+    const canAdd = (currentState) => {
+      const min = parseInt($('#visitorsCounter').prop('min'));
+      const max = parseInt($('#visitorsCounter').prop('max'));
+
+      if (currentState < max) {
+        return true;
+      } else {
+        return false;
+      }
+    };
+
+    const canRemove = (currentState) => {
+      const min = parseInt($('#visitorsCounter').prop('min'));
+      const max = parseInt($('#visitorsCounter').prop('max'));
+
+      if (currentState > min) {
+        return true;
+      } else {
+        return false;
+      }
+    };
+
+    const changeButtonState = () => {
+      const visitorsCounter = $('#visitorsCounter');
+      let visitorsCount = parseInt(visitorsCounter.val());
+
+      $('#increment').prop('disabled', !canAdd(visitorsCount));
+      $('#decrement').prop('disabled', !canRemove(visitorsCount));
+    };
+
+    const recalculate = (visitorsCount) => {
+      $('#summary').val(`${visitorsCount}`);
+    };
+
+    const addVisitorHtml = (number) => {
+      const visitorHtml = $('#visitor-1').clone();
+
+      visitorHtml.attr('id', `visitor-${number}`);
+      visitorHtml.find('.visitor-number').html(number);
+
+      $('.visitors').append(visitorHtml);
+    };
+
+    const removeVisitorHtml = () => {
+      $('.visitor').last().remove();
+    };
+
+    recalculate(parseInt($('#visitorsCounter').val()));
+  });
+</script>
+
 </body>
 </html>

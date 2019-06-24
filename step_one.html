@@ -5,9 +5,10 @@
   <title>Step page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="colorlib.com">
-  <link rel="stylesheet" href="assets/javascript/fonts/linearicons/style.css">
-  <link rel="stylesheet" href="assets/javascript/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
-  <link rel="stylesheet" href="assets/javascript/vendor/date-picker/css/datepicker.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+          integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="assets/javascript/js-steps/jquery.steps.js"></script>
+  <script src="assets/javascript/main.js"></script>
   <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
@@ -27,7 +28,7 @@
           </ul>
         </li>
         <li class="menu-item multilinks">
-          <a href="#" class="menu-link">ВЫЙТИ</a>
+          <a href="#" class="menu-link-bottom">ВЫЙТИ</a>
         </li>
       </ul>
     </nav>
@@ -40,7 +41,7 @@
     <h4 class="wizard-title uppercase">Общие данные</h4>
     <section>
       <div class="col-6">
-        <h3 class="title underlined">Общие данные</h3>
+        <h3 class="title underlined uppercase">Общие данные</h3>
       </div>
       <form class="form col-9">
         <h3 class="red"> обязательные поля для заполнения (*)</h3>
@@ -57,7 +58,7 @@
           <input type="text" placeholder="заполняется на ваше усмотрение">
         </div>
         <div class="input-blocks">
-          <label>номер телефона 1</label>
+          <label>номер телефона 1*</label>
           <input type="number">
         </div>
         <div class="input-checkbox">
@@ -78,7 +79,6 @@
           <input type="radio" id="telegram-second" name="contact-second" value="telegram-second">
           <label for="telegram-second">Telegram</label>
         </div>
-        <label>ПОЛ*</label>
 
         <div class="input-checkbox">
           <input type="radio" id="women" name="gender" value="women">
@@ -114,19 +114,19 @@
     <h4>Род деятельности</h4>
     <section class="section">
       <div class="row">
-        <h3 class="title underlined">выберите род вашей деятельности</h3>
+        <h3 class="title underlined uppercase">выберите род вашей деятельности</h3>
         <form class="activity-form">
           <div class="activity-blocks">
             <input type="radio" id="talent" name="activity" value="talent">
             <label for="talent">Талант</label>
             <p>актер, певец, танцор, акробат, модель, каскадер и прочии</p>
           </div>
-          <div class="avtivity-blocks">
+          <div class="activity-blocks">
             <input type="radio" id="filmmaker" name="activity" value="filmmaker">
             <label for="filmmaker">Кинодеятель</label>
             <p>режиссер, оператор, композитор, сценарист, художник, гример, костюмер, кастинг-директор и прочии</p>
           </div>
-          <div class="avtivity-blocks">
+          <div class="activity-blocks">
             <input type="radio" id="company" name="activity" value="company">
             <label for="company">Компания</label>
             <p>кинокомпания, продакшн, ивент агентство, маркетинговое агентство, рекламное агентство и прочии</p>
@@ -139,8 +139,8 @@
 
     <h4>Загрузить фото профайла</h4>
     <section>
-      <h3 class="title underlined">загрузите вашу фотографию</h3>
-      <h3>Требование к основной фотографии</h3>
+      <h3 class="title underlined uppercase">загрузите вашу фотографию</h3>
+      <h5 class="photo-title uppercase">Требование к основной фотографии</h5>
       <div class="photo-section">
         <div class="photo-blocks">
           <h3>размер</h3>
@@ -154,7 +154,7 @@
         </div>
         <div class="photo-blocks">
           <h3>фон</h3>
-          <img src="assets/images/pho to-bckg.jpg" alt="">
+          <img src="assets/images/photo-bckg.jpg" alt="">
           <p>Фон в кадре должен быть простым, монотонным без посторонних предметов быта</p>
         </div>
         <div class="photo-blocks">
@@ -162,8 +162,25 @@
           <img src="assets/images/face-16.jpg" alt="">
         </div>
       </div>
+
       <div>
-        <h2>Загрузить фотографию</h2>
+        <h5 class="photo-title uppercase">Загрузить фотографию</h5>
+        <div class="photo-section">
+          <div class="photo-blocks-bottom ">
+            <div class="big-vector-p">
+              <p>Перетащите фотографию сюда <img class="arrow" src="assets/images/row.svg" alt=""></p>
+
+            </div>
+          </div>
+          <div class="photo-blocks-bottom">
+            <img class="big-vector" src="assets/images/big-vector.svg" alt="">
+          </div>
+          <div class="photo-blocks-bottom">
+            <p class="photo-text">Минимальный размер фотографии – 500 х 500 пикселей, максимальный размер – 1 500 х 1
+              500 пикселей.<br/><br/> Размер файла не должен привышать 3 мегабайта.</p>
+          </div>
+
+        </div>
       </div>
       <a href="#" class="forward button">сохранить</a>
     </section>
@@ -246,8 +263,5 @@
 </div>
 
 
-<script src="assets/javascript/js/jquery-3.3.1.min.js"></script>
-<script src="assets/javascript/js/jquery.steps.js"></script>
-<script src="assets/javascript/main.js"></script>
 </body>
 </html>

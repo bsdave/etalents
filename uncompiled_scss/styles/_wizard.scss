@@ -1,0 +1,22 @@
+
+.steps {
+  float: right;
+  li {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    height: 31px;
+    position: relative;
+    a {
+      color: black;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 23px;
+      text-decoration: none;
+    }
+  }
+}
+
+.content h4 {
+  display: none;
+}

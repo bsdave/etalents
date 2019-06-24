@@ -1,5 +1,8 @@
 .form-box {
   padding-right: 20%;
+  .form-checkbox{
+    margin-bottom: 25px;
+  }
 
   input {
     background: white;
@@ -18,7 +21,7 @@
 
   .link-recovery {
     text-decoration: none;
-    margin-left: 25px;
+    margin-left: 10px;
   }
   button {
     width: 100%;

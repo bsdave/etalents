@@ -8,14 +8,22 @@
   <link rel="stylesheet" href="assets/styles/style.css">
   <script src="https://code.jquery.com/jquery-3.4.0.min.js"
           integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="assets/javascript/slick/slick.js"></script>
   <script src="assets/javascript/main.js"></script>
+  <script type="text/javascript">
+    var onloadCallback = function () {
+      grecaptcha.render('html_element', {
+        'sitekey': 'your_site_key'
+      });
+    };
+  </script>
   <title>Registration page</title>
 </head>
 
 <body class="bg-image blacked">
 
-<div class="container">`
+<div class="container">
   <div class="header-box">
     <a href="#" class="link-to-home"><img src="assets/images/logo.svg" alt=""></a>
 
@@ -56,25 +64,24 @@
                 <input type="email" placeholder="email">
                 <input type="password" placeholder="пароль">
                 <input type="password" placeholder="подтвердите пароль">
-                <input type="checkbox" id="checkbox">
-                <label class="bg-red" for="checkbox">Регистрируясь, Вы принимаете все условия использования
-                  сервиса, политику конфиденциальности и соглашаетесь с обработкой персональных данных</label>
+                <div class="form-checkbox">
+                  <input type="checkbox" id="checkbox">
+                  <label class="bg-white" for="checkbox">Регистрируясь, Вы принимаете все условия использования
+                    сервиса, политику конфиденциальности и соглашаетесь с обработкой персональных данных</label>
+                </div>
                 <button class="button">зарегистрироваться</button>
               </form>
 
-
-              <input class="bg-white" type="checkbox" id="checkbox-robot">
-              <label for="checkbox-robot" class="bg-red uppercase">Я не робот</label>
+              <form action="?" method="POST">
+                <div class="g-recaptcha" data-sitekey="6LdZTqoUAAAAAH66gY_9EpipzTyWsxt7fIoUp1kI"></div>
+                <br/>
+              </form>
               <a href="#" class="button facebook-color">зарегистрироваться С ПОМОЩЬЮ FACEBOOK</a>
             </div>
 
             <div class="form-btn">
-                  <span>
-                   <a href="#" class="link-recovery white">Уже есть аккаунт?</a>
-                  </span>
-              <span>
-                    <a href="#" class="link-recovery red">Войти</a>
-                  </span>
+              <a href="#" class="link-recovery white">Уже есть аккаунт?</a>
+              <a href="#" class="link-recovery red">Войти</a>
             </div>
           </div>
 

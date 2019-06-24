@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Step page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="colorlib.com">
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+          integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="assets/javascript/js-steps/jquery.steps.js"></script>
+  <script src="assets/javascript/main.js"></script>
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+
+<div class="header-box">
+  <a href="#" class="link-to-home sm-logo"><img src="assets/images/logo.svg" alt=""></a>
+  <h4 class="title-steps">1 шаг</h4>
+  <header class="header sm-header">
+    <nav class="header-nav sm-nav">
+      <ul class="navigation">
+        <li class="menu-item"><span class="profile-ico"></span></li>
+        <li class="menu-item languages-menu">
+          <span class="current-language">EN</span>
+          <ul class="languages">
+            <li class="language">RU</li>
+            <li class="language">KZ</li>
+          </ul>
+        </li>
+        <li class="menu-item multilinks">
+          <a href="#" class="menu-link-bottom">ВЫЙТИ</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+
+<div class="container">
+  <div id="wizard">
+    <h4 class="wizard-title uppercase">Общие данные</h4>
+    <section>
+      <div class="col-6">
+        <h3 class="title underlined uppercase">Общие данные</h3>
+      </div>
+      <form class="form col-9">
+        <h3 class="red"> обязательные поля для заполнения (*)</h3>
+        <div class="input-blocks">
+          <label>Имя*</label>
+          <input type="text">
+        </div>
+        <div class="input-blocks">
+          <label>фамилия*</label>
+          <input type="text">
+        </div>
+        <div class="input-blocks">
+          <label>Отчество*</label>
+          <input type="text" placeholder="заполняется на ваше усмотрение">
+        </div>
+        <div class="input-blocks">
+          <label>номер телефона 1*</label>
+          <input type="number">
+        </div>
+        <div class="input-checkbox">
+          <input type="radio" id="whats" name="contact" value="whats_app">
+          <label for="whats">WhatsApp</label>
+          <input type="radio" id="telegram" name="contact" value="telegram">
+          <label for="telegram">Telegram</label>
+        </div>
+
+        <div class="input-blocks">
+          <label>номер телефона 2</label>
+          <input type="number" placeholder="заполняется на ваше усмотрение">
+        </div>
+
+        <div class="input-checkbox">
+          <input type="radio" id="whats-second" name="contact-second" value="whats-app-second">
+          <label for="whats-second">WhatsApp</label>
+          <input type="radio" id="telegram-second" name="contact-second" value="telegram-second">
+          <label for="telegram-second">Telegram</label>
+        </div>
+
+        <div class="input-checkbox">
+          <input type="radio" id="women" name="gender" value="women">
+          <label for="women">Женский</label>
+          <input type="radio" id="men" name="gender" value="men">
+          <label for="men">Мужской</label>
+        </div>
+        <div class="input-blocks">
+          <label for="email">Email*</label>
+          <input type="email" id="email">
+        </div>
+        <div class="input-blocks">
+          <label>дата рождения*</label>
+          <input type="text">
+        </div>
+        <div class="input-blocks">
+          <label>Город*</label>
+          <input type="text">
+        </div>
+        <div class="input-blocks">
+          <label>Страна*</label>
+          <input type="text">
+        </div>
+        <div class="input-blocks">
+          <label>Гражданство*</label>
+          <input type="text">
+        </div>
+      </form>
+      <a href="#" class="forward button">сохранить</a>
+    </section>
+
+
+    <h4>Род деятельности</h4>
+    <section class="section">
+      <div class="row">
+        <h3 class="title underlined uppercase">выберите род вашей деятельности</h3>
+        <form class="activity-form">
+          <div class="activity-blocks">
+            <input type="radio" id="talent" name="activity" value="talent">
+            <label for="talent">Талант</label>
+            <p>актер, певец, танцор, акробат, модель, каскадер и прочии</p>
+          </div>
+          <div class="activity-blocks">
+            <input type="radio" id="filmmaker" name="activity" value="filmmaker">
+            <label for="filmmaker">Кинодеятель</label>
+            <p>режиссер, оператор, композитор, сценарист, художник, гример, костюмер, кастинг-директор и прочии</p>
+          </div>
+          <div class="activity-blocks">
+            <input type="radio" id="company" name="activity" value="company">
+            <label for="company">Компания</label>
+            <p>кинокомпания, продакшн, ивент агентство, маркетинговое агентство, рекламное агентство и прочии</p>
+          </div>
+        </form>
+      </div>
+      <a href="#" class="forward button">сохранить</a>
+    </section>
+
+
+    <h4>Загрузить фото профайла</h4>
+    <section>
+      <h3 class="title underlined uppercase">загрузите вашу фотографию</h3>
+      <h5 class="photo-title uppercase">Требование к основной фотографии</h5>
+      <div class="photo-section">
+        <div class="photo-blocks">
+          <h3>размер</h3>
+          <img class="vector" src="assets/images/photo-vector.svg" alt="">
+          <p>соотношение сторон фото – 2 х 2 </p>
+        </div>
+        <div class="photo-blocks">
+          <h3>крупность</h3>
+          <img class="vector" src="assets/images/photo-vector.svg" alt="">
+          <p>Лицо в кадре должно быть крупно без солнцезащитных очков и теней</p>
+        </div>
+        <div class="photo-blocks">
+          <h3>фон</h3>
+          <img src="assets/images/photo-bckg.jpg" alt="">
+          <p>Фон в кадре должен быть простым, монотонным без посторонних предметов быта</p>
+        </div>
+        <div class="photo-blocks">
+          <h3>пример</h3>
+          <img src="assets/images/face-16.jpg" alt="">
+        </div>
+      </div>
+
+      <div>
+        <h5 class="photo-title uppercase">Загрузить фотографию</h5>
+        <div class="photo-section">
+          <div class="photo-blocks-bottom ">
+            <div class="big-vector-p">
+              <p>Перетащите фотографию сюда <img class="arrow" src="assets/images/row.svg" alt=""></p>
+
+            </div>
+          </div>
+          <div class="photo-blocks-bottom">
+            <img class="big-vector" src="assets/images/big-vector.svg" alt="">
+          </div>
+          <div class="photo-blocks-bottom">
+            <p class="photo-text">Минимальный размер фотографии – 500 х 500 пикселей, максимальный размер – 1 500 х 1
+              500 пикселей.<br/><br/> Размер файла не должен привышать 3 мегабайта.</p>
+          </div>
+
+        </div>
+      </div>
+      <a href="#" class="forward button">сохранить</a>
+    </section>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="footer-box">
+    <footer class="footer">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-section-head" id="contacts">
+            <h3 class="title underlined">КОНТАКТЫ</h3>
+          </div>
+
+          <div class="footer-section-body">
+            <p>Вы можете связаться с нами по номерам:</p>
+
+            <ul class="contacts">
+              <li><a href="#" class="contact">+7 (771) 766 05 00</a></li>
+              <li><a href="#" class="contact">+7 (771) 766 08 00</a></li>
+              <li><a href="#" class="contact">+7 (771) 766 09 00</a></li>
+            </ul>
+
+            <p>Мы расположены по адресу: <br><br> Казахстан, город Алматы, Бульвар Мендикулова, 22, жилой комплекс
+              «ТУРКУАЗ»
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="footer-section-head" id="faq">
+            <h3 class="title underlined">FAQ</h3>
+          </div>
+
+          <div class="footer-section-body">
+            <ul class="links">
+              <li><a href="#" class="link">За что я плачу деньги?</a></li>
+              <li><a href="#" class="link">Какие гарантии, что меня позовут на съемку?</a></li>
+              <li><a href="#" class="link">Могу ли я сразу получить свои фотографии и видео?</a></li>
+              <li><a href="#" class="link">У меня нет опыта и актерского образования, будут ли меня звать в проекты?</a>
+              </li>
+              <li><a href="#" class="link">ВСЕ ВОПРОСЫ И ОТВЕТЫ</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="footer-section-head">
+            <h3 class="title underlined">ДОКУМЕНТЫ</h3>
+          </div>
+
+          <div class="footer-section-body">
+            <ul class="links">
+              <li><a href="#" class="link">Lorem ipsum dolor sit amet </a></li>
+              <li><a href="#" class="link">Consectetuer adipiscing elit </a></li>
+              <li><a href="#" class="link">Sed diam nonummy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="row">
+      <div class="col-md-8 offset-md-4">
+
+        <div class="socials">
+          <h3 class="title small black">ПРИСОЕДИНЯЙТЕСЬ К НАМ</h3>
+          <div class="social-links">
+            <a href="#" class="social-link"><span class="facebook"></span></a>
+            <a href="#" class="social-link"><span class="instagram"></span></a>
+            <a href="#" class="social-link"><span class="youtube"></span></a>
+            <a href="#" class="social-link"><span class="vk"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

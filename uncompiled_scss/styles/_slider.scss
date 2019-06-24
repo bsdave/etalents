@@ -1,10 +1,15 @@
 .slider-box {
-  
-
+  .controls {
+    width: 500px;
+    height: 100px;
+    position: relative;
+    bottom: 170px;
+    left: 0;
+  }
   .slide {
+
     .slide-body {
       display: flex;
-
       .left-side {
         flex-grow: 1;
         flex-shrink: 1;
@@ -31,26 +36,6 @@
             bottom: 0;
             padding-left: 50px;
 
-            .awards {
-              position: relative;
-              right: -100%;
-
-              .palma {
-                content: "";
-                background: url("../images/palma-ico.png") center no-repeat;
-                display: block;
-                width: 97px;
-                height: 53px;
-              }
-
-              .oskar {
-                content: "";
-                background: url("../images/oscar-img.png") center no-repeat;
-                display: block;
-                width: 40px;
-                height: 102px;
-              }
-            }
           }
 
           .film-name {

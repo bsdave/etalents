@@ -114,15 +114,6 @@ $(function () {
     $("#wizard").steps('next');
   })
 
-  // Date Picker
-  var dp1 = $('#dp1').datepicker().data('datepicker');
-  dp1.selectDate(new Date());
-  var dp2 = $('#dp2').datepicker().data('datepicker');
-  dp2.selectDate(new Date());
-  var dp3 = $('#dp3').datepicker().data('datepicker');
-  dp3.selectDate(new Date());
-  var dp4 = $('#dp4').datepicker().data('datepicker');
-  dp4.selectDate(new Date());
 
   // Select Dropdown
   $('html').click(function () {
@@ -140,4 +131,3 @@ $(function () {
     $(this).parent().prev().find('div').text(text);
   })
 });
-

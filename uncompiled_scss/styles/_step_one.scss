@@ -1,61 +1,35 @@
-.header-box{
-  .menu-link-bottom{
+.header-box {
+  .menu-link-bottom {
     margin-top: 20px;
     text-decoration: none;
     font-weight: bold;
     color: white;
   }
 }
+
 #wizard {
-
-  form {
-    margin-top: 60px;
+  textarea {
+    resize: none;
   }
-  .activity-form {
-    display: inline-flex;
-    margin-bottom: 50px;
-    .activity-blocks {
-      padding: 0 62px;
-      label {
-        text-transform: uppercase;
-
-      }
-    }
-    p {
-      margin-left: 30px;
-      color: #777777;
-    }
+  form {
+    margin-top: 40px;
   }
   .title {
     margin-bottom: 40px;
-
   }
   .input-checkbox {
-    margin: 50px 0 50px 24%;
+    margin: 50px 0 50px 25%;
   }
-
   .input-blocks {
     label {
-      width: 20%;
+      width: 25%;
       float: left;
-      margin-right: 30px;
-      line-height: 30px;
+      line-height: 50px;
       text-align: left;
       text-transform: capitalize;
     }
-    select {
-      width: 60%;
-      background: white;
-      color: #777777;
-      display: block;
-
-      padding: 30px 10px 8px 15px;
-      margin-bottom: 20px;
-      border: 1px solid black;
-    }
     input {
-      width: 60%;
-      background: white;
+      width: 50%;
       color: #777777;
       display: block;
 
@@ -63,52 +37,51 @@
       margin-bottom: 20px;
       border: 1px solid black;
       &::placeholder {
-        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 23px;
+        color: #777777;
       }
     }
-
-  }
-  .forward {
-    margin-top: 50px;
-    min-width: 350px;
   }
   .photo-section {
-    display: inline-flex;
-  }
-  .photo-title {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .photo-blocks-bottom {
-    flex-basis: 16%;
-    margin-right: 50px;
-    .photo-text {
-      color: #777777;
-      min-width: 315px;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    .photo-blocks {
+      width: 25%;
+      padding: 0 25px;
 
-    .big-vector {
-      border: 1px solid black;
-      padding: 40px 50px 0 50px;
+      .vector {
+        border: 1px solid black;
+        padding: 6px 15px 0px 15px;
+        height: 100px;
+      }
+
     }
-    .big-vector-p {
-      border: 1px solid black;
-      padding: 30px 0 0 20px;
-      .arrow{
-        margin-left: 35px;
+    .photo-title {
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+    }
+    .photo-blocks-bottom {
+      flex-basis: 16%;
+      margin-right: 50px;
+      .photo-text {
+        color: #777777;
+        min-width: 315px;
+      }
+
+      .big-vector {
+        border: 1px solid black;
+        padding: 40px 50px 0 50px;
+      }
+      .big-vector-p {
+        border: 1px solid black;
+        padding: 11px 40px 0 40px;
+        .arrow {
+          margin-left: 35px;
+        }
       }
     }
   }
-  .photo-blocks {
-    flex-basis: 15%;
-    padding: 0 25px;
-    margin-left: 10px;
 
-    .vector {
-      border: 1px solid black;
-      padding: 6px 15px 0px 15px;
-      height: 100px;
-    }
-
-  }
 }

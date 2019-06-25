@@ -2,6 +2,14 @@
   .number {
     display: none;
   }
+  &.second{
+    ul{
+      li:first-child{
+        display: none;
+      }
+    }
+  }
+
   .activity-info {
     padding: 0 34% 0 43px;
     letter-spacing: 1px;
@@ -172,6 +180,11 @@
       height: 50px;
     }
   }
+  .some{
+    input{
+      margin-left: 138px;
+    }
+  }
 
   .photo-card {
     display: flex;
@@ -185,7 +198,7 @@
       width: 65%;
       float: left;
       img {
-        margin: 22px 12px;
+        margin: 22px 10px;
       }
     }
     .photo-cards {

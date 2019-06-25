@@ -2,9 +2,9 @@
   .number {
     display: none;
   }
-  &.second{
-    ul{
-      li:first-child{
+  &.second {
+    ul {
+      li:first-child {
         display: none;
       }
     }
@@ -62,7 +62,7 @@
       margin-left: 10px;
     }
   }
-  .asd {
+  .features {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -76,9 +76,20 @@
       }
     }
   }
+  .indicator {
+    input {
+      margin-right: 45px;
+    }
+    label:first-child {
+      margin-right: 133px;
+      margin-left: 0;
+      padding-left: 0;
+    }
+  }
   .flex {
     display: inline-flex;
     justify-content: flex-end;
+
     .input-block {
       display: inline-flex;
       justify-content: flex-end;
@@ -88,7 +99,7 @@
         margin-right: 70px;
       }
       select {
-        width: 33%;
+        width: 32%;
         margin-right: 16px;
       }
     }
@@ -113,11 +124,19 @@
       width: 100%;
     }
   }
+  .input-block {
+    justify-content: flex-start;
+    label {
+      width: 20%;
+    }
+    input {
+      margin-right: 21px;
+      width: 20%;
+    }
+
+  }
   .contract-download {
     margin: 40px 0;
-    .input-blocks {
-
-    }
     img {
       margin-top: 40px;
     }
@@ -180,8 +199,8 @@
       height: 50px;
     }
   }
-  .some{
-    input{
+  .some {
+    input {
       margin-left: 138px;
     }
   }

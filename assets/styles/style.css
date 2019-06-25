@@ -1379,11 +1379,15 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .work-input p { color: #777777; margin-left: 10px; }
 
-#wizard .asd { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; margin: 8px 0; }
+#wizard .features { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; margin: 8px 0; }
 
-#wizard .asd .work-checkbox { margin: 0 5px; width: 31%; }
+#wizard .features .work-checkbox { margin: 0 5px; width: 31%; }
 
-#wizard .asd .work-checkbox label { text-transform: capitalize; }
+#wizard .features .work-checkbox label { text-transform: capitalize; }
+
+#wizard .indicator input { margin-right: 45px; }
+
+#wizard .indicator label:first-child { margin-right: 133px; margin-left: 0; padding-left: 0; }
 
 #wizard .flex { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 
@@ -1391,13 +1395,19 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .flex .input-block input { width: 30%; margin-right: 70px; }
 
-#wizard .flex .input-block select { width: 33%; margin-right: 16px; }
+#wizard .flex .input-block select { width: 32%; margin-right: 16px; }
 
 #wizard .input-blocks select { width: 50%; color: #777777; background: #fff; display: block; padding: 30px 10px 8px 15px; margin-bottom: 20px; border: 1px solid black; }
 
 #wizard .input-blocks span { display: block; overflow: hidden; }
 
 #wizard .input-blocks .input { width: 100%; }
+
+#wizard .input-block { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+
+#wizard .input-block label { width: 20%; }
+
+#wizard .input-block input { margin-right: 21px; width: 20%; }
 
 #wizard .contract-download { margin: 40px 0; }
 

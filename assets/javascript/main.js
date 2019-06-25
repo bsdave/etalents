@@ -96,6 +96,7 @@ const startCounting = () => {
 };
 
 //Wizard
+
 $(function () {
   $("#wizard").steps({
     headerTag: "h4",
@@ -131,9 +132,18 @@ $(function () {
     $(this).parent().prev().find('div').text(text);
   })
 });
+
 $(function () {
   $('.toggle').on('click', function () {
     $(this).toggleClass('is-active');
+  });
+
+  $('.buy-ticket').on('click', function () {
+    $('.order-form-overlay').toggleClass('opened');
+  });
+
+  $('#close-order-form-overlay').on('click', function () {
+    $('.order-form-overlay').removeClass('opened');
   });
 
   $('#increment').on('click', function () {
@@ -167,8 +177,8 @@ $(function () {
   };
 
   const canAdd = (currentState) => {
-    const min = parseInt('#visitorsCounter').prop('min');
-    const max = parseInt('.#visitorsCounter').prop('max');
+    const min = parseInt($('#visitorsCounter').prop('min'));
+    const max = parseInt($('#visitorsCounter').prop('max'));
 
     if (currentState < max) {
       return true;
@@ -178,8 +188,8 @@ $(function () {
   };
 
   const canRemove = (currentState) => {
-    const min = parseInt('#visitorsCounter').prop('min');
-    const max = parseInt('.#visitorsCounter').prop('max');
+    const min = parseInt($('#visitorsCounter').prop('min'));
+    const max = parseInt($('#visitorsCounter').prop('max'));
 
     if (currentState > min) {
       return true;
@@ -197,7 +207,7 @@ $(function () {
   };
 
   const recalculate = (visitorsCount) => {
-    $('#summary').val(`${visitorsCount}`);
+
   };
 
   const addVisitorHtml = (number) => {

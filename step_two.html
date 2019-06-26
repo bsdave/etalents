@@ -187,11 +187,13 @@
         </div>
 
 
-        <div class="input-blocks indicator flex col-9">
+        <div class="input-blocks indicator">
           <label>Рост*</label>
           <input type="text" placeholder="200">
-          <label>Вес</label>
-          <input type="text" placeholder="90">
+          <div class="input-blocks">
+            <label>Вес</label>
+            <input type="text" placeholder="90">
+          </div>
         </div>
 
         <div class="input-blocks">
@@ -218,9 +220,9 @@
           </select>
         </div>
 
-        <div class="input-blocks">
+        <div class="input-blocks some">
           <label>Обхват*</label>
-          <div class="input-block flex col-9">
+          <div class="input-block col-9">
             <input type="text" placeholder="90">
             <input type="text" placeholder="60">
             <input type="text" placeholder="90">
@@ -239,10 +241,9 @@
             <option>другой</option>
           </select>
         </div>
-        <div class="input-blocks flex">
-
+        <div class="input-blocks clothes">
           <label>Размеры одежды*</label>
-          <div class="input-block flex col-9">
+          <div class="input-blocks">
             <select>
               <option>xxs</option>
               <option>xs</option>
@@ -266,7 +267,7 @@
           </div>
           <input type="number" placeholder="35">
         </div>
-        <div class="input-blocks">
+        <div class="input-blocks head">
           <label>Обхват головы</label>
           <input type="number" placeholder="90">
           <label>особенности</label>
@@ -765,10 +766,12 @@
                   <div class="col-9">
                     <div class="calculator">
                       <h3 class="title uppercase">Добавить</h3>
-                      <button id="increment" class="count-button" type="button">+</button>
+                      <button style="background-image: url('assets/images/plus.png')" id="increment"
+                              class="count-button" type="button"></button>
                       <input id="visitorsCounter" class="button input counter" type="number" readonly min="1" max="5"
                              value="1">
-                      <button id="decrement" class="count-button" type="button" disabled>-</button>
+                      <button style="background-image: url('assets/images/plus.png')" id="decrement"
+                              class="count-button" type="button" disabled></button>
                     </div>
                   </div>
                 </div>

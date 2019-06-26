@@ -1357,6 +1357,28 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard.second ul li:first-child { display: none; }
 
+#wizard .indicator { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+#wizard .indicator.input-blocks input { width: 30%; margin-right: 10px; }
+
+#wizard .head input { width: 13%; }
+
+#wizard .clothes { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+
+#wizard .clothes label { width: 27%; margin-right: 17px; }
+
+#wizard .clothes .input-blocks { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
+
+#wizard .clothes .input-blocks select { margin-right: 64px; }
+
+#wizard .clothes input { width: 18%; }
+
+#wizard .some label { width: 23%; }
+
+#wizard .input-block { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+
+#wizard .input-block input { margin-right: 30px; width: 20%; }
+
 #wizard .activity-info { padding: 0 34% 0 43px; letter-spacing: 1px; margin-bottom: 50px; }
 
 #wizard .activity-form { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; margin-bottom: 50px; }
@@ -1385,29 +1407,13 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .features .work-checkbox label { text-transform: capitalize; }
 
-#wizard .indicator input { margin-right: 45px; }
-
-#wizard .indicator label:first-child { margin-right: 133px; margin-left: 0; padding-left: 0; }
-
 #wizard .flex { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
-
-#wizard .flex .input-block { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; width: 68%; }
-
-#wizard .flex .input-block input { width: 30%; margin-right: 70px; }
-
-#wizard .flex .input-block select { width: 32%; margin-right: 16px; }
 
 #wizard .input-blocks select { width: 50%; color: #777777; background: #fff; display: block; padding: 30px 10px 8px 15px; margin-bottom: 20px; border: 1px solid black; }
 
 #wizard .input-blocks span { display: block; overflow: hidden; }
 
 #wizard .input-blocks .input { width: 100%; }
-
-#wizard .input-block { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
-
-#wizard .input-block label { width: 20%; }
-
-#wizard .input-block input { margin-right: 21px; width: 20%; }
 
 #wizard .contract-download { margin: 40px 0; }
 
@@ -1433,9 +1439,7 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .calculator { float: right; }
 
-#wizard .calculator .count-button { border-radius: 0px; padding: 0px; margin-left: 10px; width: 50px; height: 50px; }
-
-#wizard .some input { margin-left: 138px; }
+#wizard .calculator .count-button { border-radius: 0; margin-left: 10px; width: 70px; height: 70px; position: relative; }
 
 #wizard .photo-card { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
 

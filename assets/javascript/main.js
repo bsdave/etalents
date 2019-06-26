@@ -131,13 +131,6 @@ $(function () {
     $(this).toggleClass('is-active');
   });
 
-  $('.buy-ticket').on('click', function () {
-    $('.order-form-overlay').toggleClass('opened');
-  });
-
-  $('#close-order-form-overlay').on('click', function () {
-    $('.order-form-overlay').removeClass('opened');
-  });
 
   $('#increment').on('click', function () {
     addVisitor();

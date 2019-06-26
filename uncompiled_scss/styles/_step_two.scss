@@ -9,54 +9,12 @@
       }
     }
   }
-  .indicator {
-    justify-content: flex-start;
-    flex-direction: row;
-    display: flex;
-    &.input-blocks {
-      input {
-        width: 30%;
-        margin-right: 10px;
-      }
-    }
-  }
-  .head {
-    input {
-      width: 13%;
-    }
-  }
-
-  .clothes {
-    display: inline-flex;
-    flex-direction: row;
-
-    label {
-      width: 27%;
-      margin-right: 17px;
-    }
-    .input-blocks {
-      display: inline-flex;
-      select {
-        margin-right: 64px;
-      }
-    }
-    input {
-      width: 18%;
-    }
-  }
-  .some {
-    label {
-      width: 23%;
-    }
-  }
-  .input-block {
-    display: inline-flex;
-    justify-content: flex-start;
-    input {
-      margin-right: 30px;
-      width: 20%;
-    }
-
+  select {
+    background: #fff;
+    padding: 30px 10px 8px 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid black;
   }
 
   .activity-info {
@@ -85,7 +43,7 @@
 
   .work-input {
     display: inline-flex;
-    margin: 40px 20% 1px 40px;
+    margin: 40px 20px 1px 40px;
     vertical-align: top;
     input {
       width: 50px;
@@ -111,44 +69,6 @@
       margin-left: 10px;
     }
   }
-  .features {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 8px 0;
-    .work-checkbox {
-      margin: 0 5px;
-      width: 31%;
-      label {
-        text-transform: capitalize;
-      }
-    }
-  }
-  .flex {
-    display: inline-flex;
-    justify-content: flex-end;
-  }
-
-  .input-blocks {
-    select {
-      width: 50%;
-      color: #777777;
-      background: #fff;
-      display: block;
-
-      padding: 30px 10px 8px 15px;
-      margin-bottom: 20px;
-      border: 1px solid black;
-    }
-    span {
-      display: block;
-      overflow: hidden;
-    }
-    .input {
-      width: 100%;
-    }
-  }
 
   .contract-download {
     margin: 40px 0;
@@ -159,24 +79,6 @@
   .education-text {
     padding: 0 37% 30px 0;
     color: #777777;
-  }
-  .contacts {
-    .input-checkbox {
-      margin: 20px 0 20px 25%;
-    }
-  }
-  .year {
-    justify-content: space-between;
-    .input-blocks {
-
-      input {
-        width: 50%;
-        margin-left: 104%;
-      }
-    }
-    .contract-download {
-      margin-left: 170px;
-    }
   }
 
   .skill-info {
@@ -199,16 +101,10 @@
     }
 
   }
-  .label-sm {
-    label {
-      width: 30%;
-    }
-  }
-
 
   .calculator {
     float: right;
-    .count-button{
+    .count-button {
       border-radius: 0;
       margin-left: 10px;
       width: 70px;

@@ -1319,13 +1319,19 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .title { margin-bottom: 40px; }
 
-#wizard .input-checkbox { margin: 50px 0 50px 25%; }
+#wizard .gender { margin-bottom: 30px; }
 
-#wizard .input-checkbox label { padding-left: 40px; margin-right: 30px; }
+#wizard .gender label { padding-right: 111px; }
 
-#wizard .input-blocks label { width: 25%; float: left; line-height: 50px; text-align: left; text-transform: capitalize; }
+#wizard .input-checkbox { margin: 30px 0 50px 26%; }
 
-#wizard .input-blocks input { width: 50%; color: #777777; display: block; padding: 30px 10px 8px 15px; margin-bottom: 20px; border: 1px solid black; }
+#wizard .input-checkbox label { padding-right: 100px; }
+
+#wizard .input-blocks { margin-bottom: 10px; }
+
+#wizard .input-blocks label { line-height: 50px; vertical-align: top; text-transform: capitalize; }
+
+#wizard .input-blocks input { width: 100%; color: #777777; padding: 30px 10px 8px 15px; margin-bottom: 20px; border: 1px solid black; }
 
 #wizard .input-blocks input::-webkit-input-placeholder { font-size: 18px; line-height: 23px; color: #777777; }
 
@@ -1337,13 +1343,13 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .photo-section { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-#wizard .photo-section .photo-blocks { width: 25%; padding: 0 25px; }
+#wizard .photo-section .photo-blocks { -ms-flex-preferred-size: 25%; flex-basis: 25%; padding: 0 25px; }
 
 #wizard .photo-section .photo-blocks .vector { border: 1px solid black; padding: 6px 15px 0px 15px; height: 100px; }
 
 #wizard .photo-section .photo-title { font-size: 14px; line-height: 18px; text-transform: uppercase; }
 
-#wizard .photo-section .photo-blocks-bottom { -ms-flex-preferred-size: 16%; flex-basis: 16%; margin-right: 50px; }
+#wizard .photo-section .photo-blocks-bottom { -ms-flex-preferred-size: 16%; flex-basis: 16%; margin-right: 30px; }
 
 #wizard .photo-section .photo-blocks-bottom .photo-text { color: #777777; min-width: 315px; }
 
@@ -1357,27 +1363,7 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard.second ul li:first-child { display: none; }
 
-#wizard .indicator { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; display: -webkit-box; display: -ms-flexbox; display: flex; }
-
-#wizard .indicator.input-blocks input { width: 30%; margin-right: 10px; }
-
-#wizard .head input { width: 13%; }
-
-#wizard .clothes { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
-
-#wizard .clothes label { width: 27%; margin-right: 17px; }
-
-#wizard .clothes .input-blocks { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
-
-#wizard .clothes .input-blocks select { margin-right: 64px; }
-
-#wizard .clothes input { width: 18%; }
-
-#wizard .some label { width: 23%; }
-
-#wizard .input-block { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
-
-#wizard .input-block input { margin-right: 30px; width: 20%; }
+#wizard select { background: #fff; padding: 30px 10px 8px 15px; margin-bottom: 20px; width: 100%; border: 1px solid black; }
 
 #wizard .activity-info { padding: 0 34% 0 43px; letter-spacing: 1px; margin-bottom: 50px; }
 
@@ -1391,7 +1377,7 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .work-blocks { display: inline-block; margin-left: 40px; }
 
-#wizard .work-input { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; margin: 40px 20% 1px 40px; vertical-align: top; }
+#wizard .work-input { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; margin: 40px 20px 1px 40px; vertical-align: top; }
 
 #wizard .work-input input { width: 50px; height: 50px; text-align: center; margin-right: 10px; margin-left: 10px; }
 
@@ -1401,41 +1387,17 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .work-input p { color: #777777; margin-left: 10px; }
 
-#wizard .features { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; margin: 8px 0; }
-
-#wizard .features .work-checkbox { margin: 0 5px; width: 31%; }
-
-#wizard .features .work-checkbox label { text-transform: capitalize; }
-
-#wizard .flex { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
-
-#wizard .input-blocks select { width: 50%; color: #777777; background: #fff; display: block; padding: 30px 10px 8px 15px; margin-bottom: 20px; border: 1px solid black; }
-
-#wizard .input-blocks span { display: block; overflow: hidden; }
-
-#wizard .input-blocks .input { width: 100%; }
-
 #wizard .contract-download { margin: 40px 0; }
 
 #wizard .contract-download img { margin-top: 40px; }
 
 #wizard .education-text { padding: 0 37% 30px 0; color: #777777; }
 
-#wizard .contacts .input-checkbox { margin: 20px 0 20px 25%; }
-
-#wizard .year { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-
-#wizard .year .input-blocks input { width: 50%; margin-left: 104%; }
-
-#wizard .year .contract-download { margin-left: 170px; }
-
 #wizard .skill-info { font-size: 16px; line-height: 15px; padding: 0 40% 0 0; margin: 40px 0; color: #777777; }
 
 #wizard .skills-special { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; margin: 15px 0; }
 
 #wizard .skills-special .work-checkbox { margin: 0 10px; width: 31%; }
-
-#wizard .label-sm label { width: 30%; }
 
 #wizard .calculator { float: right; }
 

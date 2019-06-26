@@ -47,74 +47,147 @@
       <div class="">
         <h3 class="title underlined uppercase">Общие данные</h3>
       </div>
-      <form class="form col-9">
-        <h3 class="red"> обязательные поля для заполнения (*)</h3>
-        <div class="input-blocks">
-          <label>Имя*</label>
-          <input type="text">
-        </div>
-        <div class="input-blocks">
-          <label>фамилия*</label>
-          <input type="text">
-        </div>
-        <div class="input-blocks">
-          <label>Отчество*</label>
-          <input type="text" placeholder="заполняется на ваше усмотрение">
-        </div>
-        <div class="input-blocks">
-          <label>номер телефона 1*</label>
-          <input type="number">
-        </div>
-        <div class="input-checkbox">
-          <input type="radio" id="whats" name="contact" value="whats_app">
-          <label for="whats">WhatsApp</label>
-          <input type="radio" id="telegram" name="contact" value="telegram">
-          <label for="telegram">Telegram</label>
-        </div>
-        <div class="input-blocks">
-          <label>номер телефона 2</label>
-          <input type="number" placeholder="заполняется на ваше усмотрение">
-        </div>
+      <div class="row">
+        <form class="form col-12">
+          <h3 class="red"> обязательные поля для заполнения (*)</h3>
+          <div class="input-blocks">
+            <div class="row">
+              <div class="col-3">
+                <label>Имя*</label>
+              </div>
+              <div class="col-9">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <div class="input-blocks">
+            <div class="row">
+              <div class="col-3">
+                <label>Фамилия*</label>
+              </div>
+              <div class="col-9">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <div class="input-blocks">
+            <div class="row">
+              <div class="col-3">
+                <label>Отчество*</label>
+              </div>
+              <div class="col-9">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <div class="input-blocks">
+            <div class="row">
+              <div class="col-3">
+                <label>Номер телефона 1*</label>
+              </div>
+              <div class="col-9">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <div class="input-checkbox">
+            <div class="row">
+              <div class="col-9">
+                <input type="radio" id="whats" name="contact" value="whats_app">
+                <label for="whats">WhatsApp</label>
+                <input type="radio" id="telegram" name="contact" value="telegram">
+                <label for="telegram">Telegram</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-blocks">
+            <div class="row">
+              <div class="col-3">
+                <label>Номер телефона 2*</label>
+              </div>
+              <div class="col-9">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="input-checkbox">
+            <div class="row">
+              <div class="col-9">
+                <input type="radio" id="whats-second" name="contact-second" value="whats-app-second">
+                <label v>WhatsApp</label>
+                <input type="radio" id="telegram-second" name="contact-second" value="telegram-second">
+                <label for="telegram-second">Telegram</label>
+              </div>
+            </div>
+          </div>
+          <div class="input-blocks gender">
+            <div class="row">
+              <div class="col-3">
+                <label>Пол*</label>
+              </div>
+              <div class="col-9">
+                <input type="radio" id="women" name="gender" value="women">
+                <label for="women">Женский</label>
+                <input type="radio" id="men" name="gender" value="men">
+                <label for="men">Мужской</label></div>
+            </div>
+          </div>
 
 
-        <div class="input-checkbox">
-          <input type="radio" id="whats-second" name="contact-second" value="whats-app-second">
-          <label for="whats-second">WhatsApp</label>
-          <input type="radio" id="telegram-second" name="contact-second" value="telegram-second">
-          <label for="telegram-second">Telegram</label>
-        </div>
-        <div class="input-blocks">
-          <label>пол*</label>
-        </div>
-        <div class="input-checkbox">
-          <input type="radio" id="women" name="gender" value="women">
-          <label for="women">Женский</label>
-          <input type="radio" id="men" name="gender" value="men">
-          <label for="men">Мужской</label>
-        </div>
-
-
-        <div class="input-blocks">
-          <label for="email">Email*</label>
-          <input type="email" id="email">
-        </div>
-        <div class="input-blocks">
-          <label>дата рождения*</label>
-          <input type="text">
-        </div>
-        <div class="input-blocks">
-          <label>Город*</label>
-          <input type="text">
-        </div>
-        <div class="input-blocks">
-          <label>Страна*</label>
-          <input type="text">
-        </div>
-        <div class="input-blocks">
-          <label>Гражданство*</label>
-          <input type="text">
-        </div>
-      </form>
+          <div class="input-blocks">
+            <div class="row">
+              <div class="col-3">
+                <label>Email*</label>
+              </div>
+              <div class="col-9">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <div class="input-blocks">
+            <div class="row">
+              <div class="col-3">
+                <label>Дата рождения*</label>
+              </div>
+              <div class="col-9">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <div class="input-blocks">
+            <div class="row">
+              <div class="col-3">
+                <label>Город*</label>
+              </div>
+              <div class="col-9">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <div class="input-blocks">
+            <div class="row">
+              <div class="col-3">
+                <label>Страна*</label>
+              </div>
+              <div class="col-9">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <div class="input-blocks">
+            <div class="row">
+              <div class="col-3">
+                <label>Гражданство*</label>
+              </div>
+              <div class="col-9">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
 
 
       <a href="#" class="forward button">сохранить</a>
@@ -128,23 +201,25 @@
     <section class="section">
       <div class="row">
         <h3 class="title underlined uppercase">выберите род вашей деятельности</h3>
-        <form class="activity-form">
-          <div class="activity-blocks">
-            <input type="radio" id="talent" name="activity" value="talent">
-            <label for="talent">Талант</label>
-            <p>актер, певец, танцор, акробат, модель, каскадер и прочии</p>
-          </div>
-          <div class="activity-blocks">
-            <input type="radio" id="filmmaker" name="activity" value="filmmaker">
-            <label for="filmmaker">Кинодеятель</label>
-            <p>режиссер, оператор, композитор, сценарист, художник, гример, костюмер, кастинг-директор и прочии</p>
-          </div>
-          <div class="activity-blocks">
-            <input type="radio" id="company" name="activity" value="company">
-            <label for="company">Компания</label>
-            <p>кинокомпания, продакшн, ивент агентство, маркетинговое агентство, рекламное агентство и прочии</p>
-          </div>
-        </form>
+        <div class="col-12">
+          <form class="activity-form">
+            <div class="activity-blocks">
+              <input type="radio" id="talent" name="activity" value="talent">
+              <label for="talent">Талант</label>
+              <p>актер, певец, танцор, акробат, модель, каскадер и прочии</p>
+            </div>
+            <div class="activity-blocks">
+              <input type="radio" id="filmmaker" name="activity" value="filmmaker">
+              <label for="filmmaker">Кинодеятель</label>
+              <p>режиссер, оператор, композитор, сценарист, художник, гример, костюмер, кастинг-директор и прочии</p>
+            </div>
+            <div class="activity-blocks">
+              <input type="radio" id="company" name="activity" value="company">
+              <label for="company">Компания</label>
+              <p>кинокомпания, продакшн, ивент агентство, маркетинговое агентство, рекламное агентство и прочии</p>
+            </div>
+          </form>
+        </div>
       </div>
 
 
@@ -161,49 +236,52 @@
       <h5 class="photo-title uppercase">Требование к основной фотографии</h5>
 
       <div class="row">
-        <div class="photo-section">
-          <div class="photo-blocks">
-            <h3>размер</h3>
-            <img class="vector" src="assets/images/photo-vector.svg" alt="">
-            <p>соотношение сторон фото – 2 х 2 </p>
-          </div>
-          <div class="photo-blocks">
-            <h3>крупность</h3>
-            <img class="vector" src="assets/images/photo-vector.svg" alt="">
-            <p>Лицо в кадре должно быть крупно без солнцезащитных очков и теней</p>
-          </div>
-          <div class="photo-blocks">
-            <h3>фон</h3>
-            <img src="assets/images/photo-bckg.jpg" alt="">
-            <p>Фон в кадре должен быть простым, монотонным без посторонних предметов быта</p>
-          </div>
-          <div class="photo-blocks">
-            <h3>пример</h3>
-            <img src="assets/images/face-16.jpg" alt="">
-          </div>
-        </div>
-
-        <div>
-          <h5 class="photo-title uppercase">Загрузить фотографию</h5>
+        <div class="col-12">
           <div class="photo-section">
-            <div class="photo-blocks-bottom ">
-              <div class="big-vector-p">
-                <p>Перетащите фотографию сюда <img class="arrow" src="assets/images/row.svg" alt=""></p>
-              </div>
+            <div class="photo-blocks">
+              <h3>размер</h3>
+              <img class="vector" src="assets/images/photo-vector.svg" alt="">
+              <p>соотношение сторон фото – 2 х 2 </p>
             </div>
-            <div class="photo-blocks-bottom">
-              <img class="big-vector" src="assets/images/big-vector.svg" alt="">
+            <div class="photo-blocks">
+              <h3>крупность</h3>
+              <img class="vector" src="assets/images/photo-vector.svg" alt="">
+              <p>Лицо в кадре должно быть крупно без солнцезащитных очков и теней</p>
             </div>
-            <div class="photo-blocks-bottom">
-              <p class="photo-text">Минимальный размер фотографии – 500 х 500 пикселей, максимальный размер – 1 500 х 1
-                500 пикселей.<br/><br/> Размер файла не должен привышать 3 мегабайта.</p>
+            <div class="photo-blocks">
+              <h3>фон</h3>
+              <img src="assets/images/photo-bckg.jpg" alt="">
+              <p>Фон в кадре должен быть простым, монотонным без посторонних предметов быта</p>
             </div>
-
+            <div class="photo-blocks">
+              <h3>пример</h3>
+              <img src="assets/images/face-16.jpg" alt="">
+            </div>
           </div>
+
+          <div>
+            <h5 class="photo-title uppercase">Загрузить фотографию</h5>
+            <div class="photo-section">
+              <div class="photo-blocks-bottom ">
+                <div class="big-vector-p">
+                  <p>Перетащите фотографию сюда <img class="arrow" src="assets/images/row.svg" alt=""></p>
+                </div>
+              </div>
+              <div class="photo-blocks-bottom">
+                <img class="big-vector" src="assets/images/big-vector.svg" alt="">
+              </div>
+              <div class="photo-blocks-bottom">
+                <p class="photo-text">Минимальный размер фотографии – 500 х 500 пикселей, максимальный размер – 1 500 х
+                  1
+                  500 пикселей.<br/><br/> Размер файла не должен привышать 3 мегабайта.</p>
+              </div>
+
+            </div>
+          </div>
+
+
+          <a href="#" class="forward button">сохранить</a>
         </div>
-
-
-        <a href="#" class="forward button">сохранить</a>
       </div>
     </section>
   </div>

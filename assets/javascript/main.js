@@ -76,16 +76,19 @@ $(function () {
 
 const startCounting = () => {
   $('.amount').each(function () {
-    $(this).prop('Counter', 0).animate({
+    $(this).prop('Counter',0).animate({
       Counter: $(this).text()
     }, {
-      duration: 5000,
+      duration: 2000,
       easing: 'swing',
       step: function (now) {
-        $(this).text(Math.ceil(now))
+        $(this).text(toArabic(Math.ceil(now)));
       }
-    })
-  })
+    });
+  });
+  function toArabic(x) {
+    return x.toLocaleString('cs-CZ');
+  }
 };
 
 //Wizard
@@ -108,8 +111,6 @@ $(function () {
     event.preventDefault();
     $("#wizard").steps('next');
   });
-
-
 
   // Select Dropdown
   $('html').click(function () {

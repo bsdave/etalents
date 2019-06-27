@@ -9,36 +9,36 @@
       }
     }
   }
+
+  .features {
+    margin: 20px 0;
+    .work-checkbox {
+      margin: 0 40px;
+      display: inline-flex;
+      label {
+        text-transform: capitalize;
+      }
+    }
+  }
+
   select {
     background: #fff;
     padding: 30px 10px 8px 15px;
     margin-bottom: 20px;
     width: 100%;
     border: 1px solid black;
+    -webkit-appearance: none;
+    border-radius: 0;
+    background: url('../images/arrow.svg') 98% 50% no-repeat;
+    background-size: 16px;
   }
 
-  .activity-info {
-    padding: 0 34% 0 43px;
-    letter-spacing: 1px;
-    margin-bottom: 50px;
-  }
-  .activity-form {
-    display: inline-flex;
-    margin-bottom: 50px;
-    p {
-      margin-left: 30px;
-      color: #777777;
-    }
-    .activity-blocks {
-      padding: 0 7px;
-      label {
-        text-transform: uppercase;
-      }
-    }
-  }
   .work-blocks {
     display: inline-block;
     margin-left: 40px;
+  }
+  .forward {
+    border: none;
   }
 
   .work-input {
@@ -101,50 +101,50 @@
     }
 
   }
-
-  .calculator {
-    float: right;
-    .count-button {
-      border-radius: 0;
-      margin-left: 10px;
-      width: 70px;
-      height: 70px;
-      position: relative;
+  .contacts {
+    .input-checkbox {
+      margin-left: 0;
     }
   }
 
+  .calculator {
+    float: right;
+    h3 {
+      line-height: 23px;
+      vertical-align: top;
+    }
+    .count-button {
+      border-radius: 0;
+      margin-left: 10px;
+      width: 50px;
+      height: 58px;
+
+    }
+    .plus {
+      position: relative;
+      display: inline-block;
+
+      background: url('../images/plus.png') 50% no-repeat;
+    }
+    .minus {
+      position: relative;
+      display: inline-block;
+
+      background: url('../images/minus.png') 50% no-repeat;
+    }
+  }
   .photo-card {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
+
     .photo-preview {
       width: 30%;
       float: left;
     }
     .photo {
-      width: 65%;
-      float: left;
       img {
-        margin: 22px 10px;
+        margin: 22px 12px;
       }
     }
-    .photo-cards {
-      a {
-        margin: 0;
-      }
-      img {
-        margin: 5px;
-      }
-    }
-  }
 
-  .gallery-info {
-    display: inline-flex;
-
-    p:first-child {
-      margin-right: 40px;
-      border-right: 1px solid #777777;
-    }
   }
 
   .photo-info {
@@ -168,25 +168,27 @@
     margin: 0 10px 0 23px;
   }
 
-  button {
-    background: $color-white;
-    color: $color-red;
-    display: inline-block;
-    border: 1px solid red;
-    border-radius: 17.5px;
-    padding: 3px 30px;
-    font-size: 15px;
-    line-height: 19px;
-  }
-
   .gray {
     color: #777777;
     font-size: 15px;
-    width: 53%;
+    margin-bottom: 30px;
   }
 
   .counter {
     display: none;
+  }
+  .contract-download {
+    button {
+      background: $color-white;
+      color: $color-red;
+      display: inline-block;
+      border: 1px solid red;
+      border-radius: 17.5px;
+      padding: 3px 30px;
+      font-size: 15px;
+      line-height: 19px;
+    }
+
   }
 
   .contract {

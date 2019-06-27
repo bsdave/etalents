@@ -104,9 +104,11 @@ $(function () {
   });
 
   // Custome Button Jquery Step
-  $('.forward').click(function () {
+  $('.forward').click(function (event) {
+    event.preventDefault();
     $("#wizard").steps('next');
-  })
+  });
+
 
 
   // Select Dropdown

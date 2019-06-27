@@ -8,6 +8,25 @@
 }
 
 #wizard {
+  .activity-info {
+    padding: 0 34% 0 43px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+  }
+  .activity-form {
+    display: inline-flex;
+    margin-bottom: 50px;
+    p {
+      margin-left: 30px;
+      color: #777777;
+    }
+    .activity-blocks {
+      padding: 0 7px;
+      label {
+        text-transform: uppercase;
+      }
+    }
+  }
   textarea {
     resize: none;
   }

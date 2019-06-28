@@ -1,7 +1,10 @@
 .form-box {
   padding-right: 20%;
-  .form-checkbox{
+  .form-checkbox {
     margin-bottom: 25px;
+    label {
+      padding-left: 50px;
+    }
   }
 
   input {
@@ -47,11 +50,11 @@
     text-decoration: none;
     margin-right: 30px;
   }
-  .white{
+  .white {
     color: $color-white;
     text-transform: uppercase;
   }
-  .red{
+  .red {
     color: red;
     text-transform: uppercase;
   }

@@ -1,0 +1,228 @@
+#wizard {
+  .number {
+    display: none;
+  }
+  &.second {
+    ul {
+      li:first-child {
+        display: none;
+      }
+    }
+  }
+
+  .features {
+    margin: 20px 0;
+    .work-checkbox {
+      margin: 0 40px;
+      display: inline-flex;
+      label {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  select {
+    background: #fff;
+    padding: 30px 10px 8px 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid black;
+    -webkit-appearance: none;
+    border-radius: 0;
+    background: url('../images/arrow.svg') 98% 50% no-repeat;
+    background-size: 16px;
+  }
+
+  .work-blocks {
+    display: inline-block;
+    margin-left: 40px;
+  }
+  .forward {
+    border: none;
+  }
+
+  .work-input {
+    display: inline-flex;
+    margin: 40px 20px 1px 40px;
+    vertical-align: top;
+    input {
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .work-text {
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        height: 125px;
+        width: 2px;
+        background: #777777;
+      }
+    }
+    p {
+
+      color: #777777;
+      margin-left: 10px;
+    }
+  }
+
+  .contract-download {
+    margin: 40px 0;
+    img {
+      margin-top: 40px;
+    }
+  }
+  .education-text {
+    padding: 0 37% 30px 0;
+    color: #777777;
+  }
+
+  .skill-info {
+    font-size: 16px;
+    line-height: 15px;
+    padding: 0 40% 0 0;
+    margin: 40px 0;
+
+    color: #777777;
+  }
+  .skills-special {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 15px 0;
+    .work-checkbox {
+      margin: 0 10px;
+      width: 31%;
+    }
+
+  }
+  .contacts {
+    .input-checkbox {
+      margin-left: 0;
+    }
+  }
+
+  .calculator {
+    float: right;
+    button {
+      background: $color-white;
+      color: $color-red;
+      display: inline-block;
+      border: 1px solid red;
+
+      font-size: 15px;
+      line-height: 19px;
+    }
+    h3 {
+      line-height: 23px;
+      vertical-align: top;
+    }
+    .count-button {
+      border-radius: 0;
+      margin-left: 10px;
+      width: 50px;
+      height: 50px;
+
+    }
+    .language-title{
+      font-size: 18px;
+      line-height: 23px;
+    }
+    .plus {
+      position: relative;
+      display: inline-block;
+
+      background: url('../images/plus.png') 50% no-repeat;
+    }
+    .minus {
+      position: relative;
+      display: inline-block;
+
+      background: url('../images/minus.png') 50% no-repeat;
+    }
+  }
+  .photo-card {
+
+    .photo-preview {
+      width: 30%;
+      float: left;
+    }
+    .photo {
+      img {
+        margin: 22px 12px;
+      }
+    }
+
+  }
+
+  .photo-info {
+    display: inline-flex;
+    border: 1px solid black;
+    margin: 40px 0;
+    p {
+      padding: 40px 40px 60px 40px;
+      border-right: 1px solid #777777;
+    }
+    p:last-child {
+      color: #777777;
+      border-right: none;
+    }
+  }
+
+  .circle {
+    background: black;
+    border-radius: 50%;
+    padding: 3px 13px;
+    margin: 0 10px 0 23px;
+  }
+
+  .gray {
+    color: #777777;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .counter {
+    display: none;
+  }
+  .contract-download {
+    button {
+      background: $color-white;
+      color: $color-red;
+      display: inline-block;
+      border: 1px solid red;
+      border-radius: 17.5px;
+      padding: 3px 30px;
+      font-size: 15px;
+      line-height: 19px;
+    }
+
+  }
+
+  .contract {
+
+    .contract-info {
+      margin: 30px 0;
+    }
+
+    .contract-btn {
+      background: $color-white;
+      color: $color-black;
+      border: 1px solid black;
+      padding: 3px 10px;
+    }
+    .contract-gray {
+      font-size: 12px;
+      padding: 0 48% 0 0;
+      margin-bottom: 30px;
+      line-height: 15px;
+      color: #777777;
+    }
+  }
+
+}

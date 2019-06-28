@@ -76,26 +76,23 @@ $(function () {
 
 const startCounting = () => {
   $('.amount').each(function () {
-    var $this = $(this),
-        countTo = $this.attr('data-count');
-
-    $({countNum: $this.text()}).animate({
-          countNum: countTo
-        },
-        {
-          duration: 5000,
-          easing: 'linear',
-          step: function () {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function () {
-            $this.text(this.countNum);
-          }
-        });
+    $(this).prop('Counter',0).animate({
+      Counter: $(this).text()
+    }, {
+      duration: 2000,
+      easing: 'swing',
+      step: function (now) {
+        $(this).text(toArabic(Math.ceil(now)));
+      }
+    });
   });
+  function toArabic(x) {
+    return x.toLocaleString('cs-CZ');
+  }
 };
 
 //Wizard
+
 $(function () {
   $("#wizard").steps({
     headerTag: "h4",
@@ -110,10 +107,10 @@ $(function () {
   });
 
   // Custome Button Jquery Step
-  $('.forward').click(function () {
+  $('.forward').click(function (event) {
+    event.preventDefault();
     $("#wizard").steps('next');
-  })
-
+  });
 
   // Select Dropdown
   $('html').click(function () {
@@ -130,4 +127,90 @@ $(function () {
     var text = $(this).attr('rel');
     $(this).parent().prev().find('div').text(text);
   })
+});
+
+$(function () {
+  $('.toggle').on('click', function () {
+    $(this).toggleClass('is-active');
+  });
+
+
+  $('#increment').on('click', function () {
+    addVisitor();
+    changeButtonState();
+  });
+
+  $('#decrement').on('click', function () {
+    removeVisitor();
+    changeButtonState();
+  });
+
+  const addVisitor = () => {
+    const visitorsCounter = $('#visitorsCounter');
+    let visitorsCount = parseInt(visitorsCounter.val());
+    const newVisitorsCount = ++visitorsCount;
+    visitorsCounter.val(newVisitorsCount);
+    recalculate(newVisitorsCount);
+
+    addVisitorHtml(newVisitorsCount);
+  };
+
+  const removeVisitor = () => {
+    const visitorsCounter = $('#visitorsCounter');
+    let visitorsCount = parseInt(visitorsCounter.val());
+    const newVisitorsCount = --visitorsCount;
+    visitorsCounter.val(newVisitorsCount);
+    recalculate(newVisitorsCount);
+
+    removeVisitorHtml();
+  };
+
+  const canAdd = (currentState) => {
+    const min = parseInt($('#visitorsCounter').prop('min'));
+    const max = parseInt($('#visitorsCounter').prop('max'));
+
+    if (currentState < max) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  const canRemove = (currentState) => {
+    const min = parseInt($('#visitorsCounter').prop('min'));
+    const max = parseInt($('#visitorsCounter').prop('max'));
+
+    if (currentState > min) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  const changeButtonState = () => {
+    const visitorsCounter = $('#visitorsCounter');
+    let visitorsCount = parseInt(visitorsCounter.val());
+
+    $('#increment').prop('disabled', !canAdd(visitorsCount));
+    $('#decrement').prop('disabled', !canRemove(visitorsCount));
+  };
+
+  const recalculate = (visitorsCount) => {
+
+  };
+
+  const addVisitorHtml = (number) => {
+    const visitorHtml = $('#visitor-1').clone();
+
+    visitorHtml.attr('id', `visitor-${number}`);
+    visitorHtml.find('.visitor-number').html(number);
+
+    $('.visitors').append(visitorHtml);
+  };
+
+  const removeVisitorHtml = () => {
+    $('.visitor').last().remove();
+  };
+
+  recalculate(parseInt($('#visitorsCounter').val()));
 });

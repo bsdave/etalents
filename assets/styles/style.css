@@ -1325,7 +1325,7 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard textarea { resize: none; }
 
-#wizard form { margin-top: 40px; position: relative; width: 100%; padding-bottom: 100px; }
+#wizard form { margin-top: 40px; width: 100%; padding-bottom: 100px; }
 
 #wizard .title { margin-bottom: 40px; }
 
@@ -1379,15 +1379,15 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .features .work-checkbox label { text-transform: capitalize; }
 
-#wizard select { background-color: #fff; padding: 30px 10px 8px 15px; margin-bottom: 20px; width: 100%; border: 1px solid black; -webkit-appearance: none; border-radius: 0; background-position: calc(100% - 10px) 50%; background-repeat: no-repeat; background-image: url(‘../images/arrow.svg’); background-size: 16px; }
+#wizard select { background-color: #fff; padding: 30px 10px 8px 15px; margin-bottom: 20px; width: 100%; border: 1px solid black; -webkit-appearance: none; border-radius: 0; background-position: calc(100% - 10px) 50%; background-repeat: no-repeat; background-image: url(/assets/images/arrow.png); background-size: 16px; }
 
 #wizard .work-blocks { display: inline-block; margin-left: 40px; }
 
-#wizard .forward { border: none; position: absolute; bottom: 0; }
+#wizard .forward { border: none; }
 
-#wizard .personal { position: relative; }
+#wizard .input { position: relative; }
 
-#wizard .personal .calculator { position: absolute; top: 0; right: 0; }
+#wizard .input .calculator { position: absolute; top: 0; right: 0; }
 
 #wizard .work-input { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; margin: 40px 20px 1px 40px; vertical-align: top; }
 
@@ -1423,7 +1423,7 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .calculator .count-button { border-radius: 0; margin-left: 10px; width: 50px; height: 50px; }
 
-#wizard .calculator .language-title { font-size: 18px; line-height: 23px; }
+#wizard .calculator .language-title { font-size: 18px; padding-bottom: 0; margin-bottom: 0; }
 
 #wizard .calculator .plus { position: relative; display: inline-block; background: url("../images/plus.png") 50% no-repeat; }
 

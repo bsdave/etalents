@@ -135,7 +135,7 @@ $(function () {
     const clonableArea = $(this).parents('.form-block').find('.form-blocks');
     const clonableInputGroups = clonableArea.find('.form');
 
-    clonableInputGroups.last().clone().appendTo(clonableArea);
+    clonableInputGroups.last().clone().appendTo(clonableInputGroups);
 
     const inputBlocks = $(this).parents('.inputs').find('.input');
     const input = inputBlocks.find('.add-input');

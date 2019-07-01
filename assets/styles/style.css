@@ -1325,7 +1325,7 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard textarea { resize: none; }
 
-#wizard form { margin-top: 40px; position: relative; width: 100%; padding-bottom: 100px; }
+#wizard form { margin-top: 40px; width: 100%; padding-bottom: 100px; }
 
 #wizard .title { margin-bottom: 40px; }
 
@@ -1383,7 +1383,7 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .work-blocks { display: inline-block; margin-left: 40px; }
 
-#wizard .forward { border: none; position: absolute; bottom: 0; }
+#wizard .forward { border: none; }
 
 #wizard .input { position: relative; }
 

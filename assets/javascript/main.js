@@ -76,18 +76,19 @@ $(function () {
 
 const startCounting = () => {
   $('.amount').each(function () {
-    $(this).prop('Counter',0).animate({
+    $(this).prop('Counter', 0).animate({
       Counter: $(this).text()
     }, {
       duration: 2000,
       easing: 'swing',
       step: function (now) {
-        $(this).text(toArabic(Math.ceil(now)));
+        $(this).text(putSpace(Math.ceil(now)));
       }
     });
   });
-  function toArabic(x) {
-    return x.toLocaleString('cs-CZ');
+
+  function putSpace(x) {
+    return x.toLocaleString('ru');
   }
 };
 
@@ -130,87 +131,29 @@ $(function () {
 });
 
 $(function () {
-  $('.toggle').on('click', function () {
-    $(this).toggleClass('is-active');
+  $('.plus').click(function () {
+    const clonableArea = $(this).parents('.form-blocks').find('.form-block');
+    const clonableInputGroups = clonableArea.find('.form');
+
+    clonableInputGroups.last().clone().appendTo(clonableArea);
+
+    const inputBlocks = $(this).parents('.inputs').find('.input');
+    const input = inputBlocks.find('.add-input');
+
+    input.last().clone().appendTo(inputBlocks);
   });
 
+  $('.minus').click(function () {
+    const clonableInputGroups = $(this).parents('.form-blocks').find('.form');
 
-  $('#increment').on('click', function () {
-    addVisitor();
-    changeButtonState();
-  });
+    const inputBlocks = $(this).parents('.inputs').find('.add-input');
 
-  $('#decrement').on('click', function () {
-    removeVisitor();
-    changeButtonState();
-  });
-
-  const addVisitor = () => {
-    const visitorsCounter = $('#visitorsCounter');
-    let visitorsCount = parseInt(visitorsCounter.val());
-    const newVisitorsCount = ++visitorsCount;
-    visitorsCounter.val(newVisitorsCount);
-    recalculate(newVisitorsCount);
-
-    addVisitorHtml(newVisitorsCount);
-  };
-
-  const removeVisitor = () => {
-    const visitorsCounter = $('#visitorsCounter');
-    let visitorsCount = parseInt(visitorsCounter.val());
-    const newVisitorsCount = --visitorsCount;
-    visitorsCounter.val(newVisitorsCount);
-    recalculate(newVisitorsCount);
-
-    removeVisitorHtml();
-  };
-
-  const canAdd = (currentState) => {
-    const min = parseInt($('#visitorsCounter').prop('min'));
-    const max = parseInt($('#visitorsCounter').prop('max'));
-
-    if (currentState < max) {
-      return true;
-    } else {
-      return false;
+    if (clonableInputGroups.length > 1) {
+      clonableInputGroups.last().remove();
     }
-  };
 
-  const canRemove = (currentState) => {
-    const min = parseInt($('#visitorsCounter').prop('min'));
-    const max = parseInt($('#visitorsCounter').prop('max'));
-
-    if (currentState > min) {
-      return true;
-    } else {
-      return false;
+    if (inputBlocks.length > 1) {
+      inputBlocks.last().remove();
     }
-  };
-
-  const changeButtonState = () => {
-    const visitorsCounter = $('#visitorsCounter');
-    let visitorsCount = parseInt(visitorsCounter.val());
-
-    $('#increment').prop('disabled', !canAdd(visitorsCount));
-    $('#decrement').prop('disabled', !canRemove(visitorsCount));
-  };
-
-  const recalculate = (visitorsCount) => {
-
-  };
-
-  const addVisitorHtml = (number) => {
-    const visitorHtml = $('#visitor-1').clone();
-
-    visitorHtml.attr('id', `visitor-${number}`);
-    visitorHtml.find('.visitor-number').html(number);
-
-    $('.visitors').append(visitorHtml);
-  };
-
-  const removeVisitorHtml = () => {
-    $('.visitor').last().remove();
-  };
-
-  recalculate(parseInt($('#visitorsCounter').val()));
+  });
 });

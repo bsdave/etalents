@@ -97,10 +97,12 @@
 .title {
   font-family: "Futura PT Book";
   font-size: 25px;
+  line-height: 32px;
+  letter-spacing: 0.25em;
   color: $color-red;
   display: inline-block;
   position: relative;
-  font-weight: normal;
+  font-weight: bold;
 
   &.underlined::after {
     content: "";
@@ -121,10 +123,12 @@
     margin-bottom: 40px;
   }
 }
+
 .forward {
   margin-top: 50px;
   min-width: 350px;
 }
+
 .red {
   color: red !important;
 }

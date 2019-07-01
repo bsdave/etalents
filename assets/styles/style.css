@@ -835,7 +835,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .man-profile img { display: inline-block; width: 100%; height: auto; margin-bottom: 20px; }
 
-.title { font-family: "Futura PT Book"; font-size: 25px; color: #ff0000; display: inline-block; position: relative; font-weight: normal; }
+.title { font-family: "Futura PT Book"; font-size: 25px; line-height: 32px; letter-spacing: 0.25em; color: #ff0000; display: inline-block; position: relative; font-weight: bold; }
 
 .title.underlined::after { content: ""; display: inline-block; position: absolute; width: 112px; height: 2px; bottom: -30px; left: 0; background: #ff0000; }
 
@@ -1159,7 +1159,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .shadow-layer .shadow-layer-films .shadow-film { -webkit-transition: -webkit-filter 500ms ease-in-out; transition: -webkit-filter 500ms ease-in-out; -o-transition: filter 500ms ease-in-out; transition: filter 500ms ease-in-out; transition: filter 500ms ease-in-out, -webkit-filter 500ms ease-in-out; -webkit-filter: grayscale(100%); filter: grayscale(100%); position: relative; }
 
-.shadow-layer .shadow-layer-films .shadow-film::after { content: ''; display: block; position: absolute; top: 0; opacity: 0; bottom: 0; left: 0; right: 0; background: url("../images/eye.svg") center no-repeat; }
+.shadow-layer .shadow-layer-films .shadow-film::after { content: ''; display: block; position: absolute; opacity: 0; top: 0; bottom: 0; left: 0; right: 0; background: url("../images/eye.svg") center no-repeat; background-size: contain; margin: auto; width: 40px; height: 40px; }
 
 .shadow-layer .shadow-layer-films .shadow-film:hover { cursor: pointer; -webkit-filter: grayscale(0%); filter: grayscale(0%); }
 
@@ -1325,7 +1325,7 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard textarea { resize: none; }
 
-#wizard form { margin-top: 40px; }
+#wizard form { margin-top: 40px; width: 100%; padding-bottom: 100px; }
 
 #wizard .title { margin-bottom: 40px; }
 
@@ -1379,11 +1379,15 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .features .work-checkbox label { text-transform: capitalize; }
 
-#wizard select { background: #fff; padding: 30px 10px 8px 15px; margin-bottom: 20px; width: 100%; border: 1px solid black; -webkit-appearance: none; border-radius: 0; background: url("../images/arrow.svg") 98% 50% no-repeat; background-size: 16px; }
+#wizard select { background-color: #fff; padding: 30px 10px 8px 15px; margin-bottom: 20px; width: 100%; border: 1px solid black; -webkit-appearance: none; border-radius: 0; background-position: calc(100% - 10px) 51%; background-repeat: no-repeat; background-image: url("../images/arrow.svg"); background-size: 16px; }
 
 #wizard .work-blocks { display: inline-block; margin-left: 40px; }
 
 #wizard .forward { border: none; }
+
+#wizard .input { position: relative; }
+
+#wizard .input .calculator { position: absolute; top: 0; right: 0; }
 
 #wizard .work-input { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; margin: 40px 20px 1px 40px; vertical-align: top; }
 
@@ -1407,17 +1411,19 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .skills-special .work-checkbox { margin: 0 10px; width: 31%; }
 
+#wizard .add-education { font-family: "Futura PT Book"; font-size: 25px; line-height: 32px; color: #ff0000; display: inline-block; position: relative; font-weight: bold; }
+
 #wizard .contacts .input-checkbox { margin-left: 0; }
 
 #wizard .calculator { float: right; }
 
-#wizard .calculator button { background: #fff; color: #ff0000; display: inline-block; border: 1px solid red; font-size: 15px; line-height: 19px; }
+#wizard .calculator button { background: #fff; color: #ff0000; display: block; border: 1px solid red; font-size: 15px; line-height: 19px; }
 
 #wizard .calculator h3 { line-height: 23px; vertical-align: top; }
 
 #wizard .calculator .count-button { border-radius: 0; margin-left: 10px; width: 50px; height: 50px; }
 
-#wizard .calculator .language-title { font-size: 18px; line-height: 23px; }
+#wizard .calculator .language-title { font-size: 18px; padding-bottom: 0; margin-bottom: 0; }
 
 #wizard .calculator .plus { position: relative; display: inline-block; background: url("../images/plus.png") 50% no-repeat; }
 

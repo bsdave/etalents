@@ -43,38 +43,42 @@
     <h4>анкета актера</h4>
 
     <section>
-      <div class="row">
-        <h3 class="title underlined uppercase">Анкета актера</h3>
-        <div class="activity-info">
-          <p class="uppercase">Чем подробнее вы заполните свой профиль, тем выше вы подниметесь во внутреннем рейтинге
-            платформы.<br/><br/>
-            Ваша позиция в рейтинге зависит от количества данных о себе, которые вы указали.</p>
-        </div>
+      <form class="forms">
+        <div class="row">
+          <h3 class="title underlined uppercase">Анкета актера</h3>
+          <div class="activity-info">
+            <p class="uppercase">Чем подробнее вы заполните свой профиль, тем выше вы подниметесь во внутреннем рейтинге
+              платформы.<br/><br/>
+              Ваша позиция в рейтинге зависит от количества данных о себе, которые вы указали.</p>
+          </div>
 
 
-        <div class="activity-form ">
-          <div class="activity-blocks">
-            <input type="radio" id="proffesional" name="actor" value="proffesional">
-            <label for="proffesional">актер профессионал</label>
-            <p>Вы получили высшее актерское образование, уверенно входите в образ по системе Станиславского и за
-              вашими
-              плечами огромный опыт съемок в кинофильмах?</p>
-            <p> А возможно вы талантливый артист из народа и уже не впервые
-              участвуете в крупных проектах?</p>
-            <p class="uppercase"> В обоих этих случаях вы можете смело считать себя профессионалом!</p>
+          <div class="activity-form ">
+            <div class="activity-blocks">
+              <input type="radio" id="proffesional" name="actor" value="proffesional">
+              <label for="proffesional">актер профессионал</label>
+              <p>Вы получили высшее актерское образование, уверенно входите в образ по системе Станиславского и за
+                вашими
+                плечами огромный опыт съемок в кинофильмах?</p>
+              <p> А возможно вы талантливый артист из народа и уже не впервые
+                участвуете в крупных проектах?</p>
+              <p class="uppercase"> В обоих этих случаях вы можете смело считать себя профессионалом!</p>
+            </div>
+            <div class="activity-blocks">
+              <input type="radio" id="amateur" name="actor" value="amateur">
+              <label for="amateur">актер любитель</label>
+              <p>Вас привлекает магия кинематографа, неудержимо манит свет софитов.</p>
+              <p>Вы уже участвовали в нескольких
+                небольших проектах или только мечтаете оказаться на съемочной площадке?</p>
+              <p class="uppercase">В таком случае, вы актер-любитель и это прекрасно!</p>
+            </div>
           </div>
-          <div class="activity-blocks">
-            <input type="radio" id="amateur" name="actor" value="amateur">
-            <label for="amateur">актер любитель</label>
-            <p>Вас привлекает магия кинематографа, неудержимо манит свет софитов.</p>
-            <p>Вы уже участвовали в нескольких
-              небольших проектах или только мечтаете оказаться на съемочной площадке?</p>
-            <p class="uppercase">В таком случае, вы актер-любитель и это прекрасно!</p>
-          </div>
+
         </div>
+
 
         <button class="forward button">сохранить</button>
-      </div>
+      </form>
     </section>
 
     <!-- SECTION 2 -->
@@ -89,6 +93,7 @@
       <div class="row">
         <div class=" col-12">
           <form class="form">
+
             <div class="work-blocks">
               <div class="work-checkbox">
                 <input type="checkbox" id="cinema">
@@ -154,6 +159,7 @@
                 </div>
               </div>
             </div>
+
             <button class="forward button">сохранить</button>
           </form>
         </div>
@@ -168,225 +174,229 @@
     <h4>Внешность</h4>
     <section>
       <div class="row">
-        <div class="col-9">
+        <div class="col-6">
           <h3 class="title underlined uppercase">Внешность</h3>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <form class="form">
-              <h3 class="red"> обязательные поля для заполнения (*)</h3>
-              <div class="input-blocks">
-                <div class="row">
-                  <div class="col-3">
-                    <label>тип внешности*</label>
-                  </div>
-                  <div class="col-9">
-                    <select>
-                      <option>азиатский</option>
-                      <option>европейский</option>
-                      <option>кавказский</option>
-                      <option>арабский</option>
-                      <option>славянский</option>
-                      <option>еврейский</option>
-                      <option>африканский</option>
-                      <option>индийский</option>
-                      <option>латино</option>
-                      <option>метис</option>
-                      <option>мулат</option>
-                      <option>другой</option>
-                    </select>
-                  </div>
+        <div class="col-6">
+          <h3 class="red"> обязательные поля для заполнения (*)</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <form class="form">
+            <div class="input-blocks">
+              <div class="row">
+                <div class="col-3">
+                  <label>тип внешности*</label>
+                </div>
+                <div class="col-9">
+                  <select>
+                    <option>азиатский</option>
+                    <option>европейский</option>
+                    <option>кавказский</option>
+                    <option>арабский</option>
+                    <option>славянский</option>
+                    <option>еврейский</option>
+                    <option>африканский</option>
+                    <option>индийский</option>
+                    <option>латино</option>
+                    <option>метис</option>
+                    <option>мулат</option>
+                    <option>другой</option>
+                  </select>
                 </div>
               </div>
+            </div>
 
-              <div class="input-blocks">
-                <div class="row">
-                  <div class="col-3">
-                    <label>Рост*</label>
-                  </div>
-                  <div class="col-3">
-                    <input type="text" placeholder="200">
-                  </div>
-                  <div class="col-3">
-                    <label>Вес*</label>
-                  </div>
-                  <div class="col-3">
-                    <input type="text" placeholder="90">
-                  </div>
+            <div class="input-blocks">
+              <div class="row">
+                <div class="col-3">
+                  <label>Рост*</label>
+                </div>
+                <div class="col-3">
+                  <input type="text" placeholder="200">
+                </div>
+                <div class="col-3">
+                  <label>Вес*</label>
+                </div>
+                <div class="col-3">
+                  <input type="text" placeholder="90">
                 </div>
               </div>
+            </div>
 
-              <div class="input-blocks">
-                <div class="row">
-                  <div class="col-3">
-                    <label>Цвет Глаз*</label>
-                  </div>
-                  <div class="col-9">
-                    <select>
-                      <option>синие</option>
-                      <option>серые</option>
-                      <option>карие</option>
-                      <option>зеленые</option>
-                      <option>другой</option>
-                    </select>
-                  </div>
+            <div class="input-blocks">
+              <div class="row">
+                <div class="col-3">
+                  <label>Цвет Глаз*</label>
+                </div>
+                <div class="col-9">
+                  <select>
+                    <option>синие</option>
+                    <option>серые</option>
+                    <option>карие</option>
+                    <option>зеленые</option>
+                    <option>другой</option>
+                  </select>
                 </div>
               </div>
+            </div>
 
-              <div class="input-blocks">
-                <div class="row">
-                  <div class="col-3">
-                    <label>Телосложение*</label>
-                  </div>
-                  <div class="col-9">
-                    <select>
-                      <option>атлетичное</option>
-                      <option>худое</option>
-                      <option>стройное</option>
-                      <option>среднее</option>
-                      <option>полное</option>
-                      <option>лишний вес</option>
-                      <option>бодибилдер</option>
-                    </select>
-                  </div>
+            <div class="input-blocks">
+              <div class="row">
+                <div class="col-3">
+                  <label>Телосложение*</label>
+                </div>
+                <div class="col-9">
+                  <select>
+                    <option>атлетичное</option>
+                    <option>худое</option>
+                    <option>стройное</option>
+                    <option>среднее</option>
+                    <option>полное</option>
+                    <option>лишний вес</option>
+                    <option>бодибилдер</option>
+                  </select>
                 </div>
               </div>
+            </div>
 
-              <div class="input-blocks">
-                <div class="row">
-                  <div class="col-3">
-                    <label>Обхват*</label>
-                  </div>
-                  <div class="col-3">
-                    <input type="text" placeholder="90">
-                  </div>
-                  <div class="col-3">
-                    <input type="text" placeholder="60">
-                  </div>
-                  <div class="col-3">
-                    <input type="text" placeholder="90">
-                  </div>
+            <div class="input-blocks">
+              <div class="row">
+                <div class="col-3">
+                  <label>Обхват*</label>
+                </div>
+                <div class="col-3">
+                  <input type="text" placeholder="90">
+                </div>
+                <div class="col-3">
+                  <input type="text" placeholder="60">
+                </div>
+                <div class="col-3">
+                  <input type="text" placeholder="90">
                 </div>
               </div>
+            </div>
 
-              <div class="input-blocks">
-                <div class="row">
-                  <div class="col-3">
-                    <label>цвет волос*</label>
-                  </div>
-                  <div class="col-9">
-                    <select>
-                      <option>блондин</option>
-                      <option>брюнет</option>
-                      <option>шатен</option>
-                      <option>русый</option>
-                      <option>рыжий</option>
-                      <option>седой</option>
-                      <option>другой</option>
-                    </select>
-                  </div>
+            <div class="input-blocks">
+              <div class="row">
+                <div class="col-3">
+                  <label>цвет волос*</label>
+                </div>
+                <div class="col-9">
+                  <select>
+                    <option>блондин</option>
+                    <option>брюнет</option>
+                    <option>шатен</option>
+                    <option>русый</option>
+                    <option>рыжий</option>
+                    <option>седой</option>
+                    <option>другой</option>
+                  </select>
                 </div>
               </div>
+            </div>
 
-              <div class="input-blocks">
-                <div class="row">
-                  <div class="col-3">
-                    <label>Размеры одежды*</label>
-                  </div>
-                  <div class="col-3">
-                    <label>верх</label>
-                    <select>
-                      <option>xxs</option>
-                      <option>xs</option>
-                      <option>s</option>
-                      <option>m</option>
-                      <option>l</option>
-                      <option>xl</option>
-                      <option>xxl</option>
-                      <option>xxxl</option>
-                    </select>
-                  </div>
+            <div class="input-blocks">
+              <div class="row">
+                <div class="col-3">
+                  <label>Размеры одежды*</label>
+                </div>
+                <div class="col-3">
+                  <label>верх</label>
+                  <select>
+                    <option>xxs</option>
+                    <option>xs</option>
+                    <option>s</option>
+                    <option>m</option>
+                    <option>l</option>
+                    <option>xl</option>
+                    <option>xxl</option>
+                    <option>xxxl</option>
+                  </select>
+                </div>
 
-                  <div class="col-3">
-                    <label>низ</label>
-                    <select>
-                      <option>xxs</option>
-                      <option>xs</option>
-                      <option>s</option>
-                      <option>m</option>
-                      <option>l</option>
-                      <option>xl</option>
-                      <option>xxl</option>
-                      <option>xxxl</option>
-                    </select>
-                  </div>
-                  <div class="col-3">
-                    <label>обувь</label>
-                    <input type="number" placeholder="35">
-                  </div>
+                <div class="col-3">
+                  <label>низ</label>
+                  <select>
+                    <option>xxs</option>
+                    <option>xs</option>
+                    <option>s</option>
+                    <option>m</option>
+                    <option>l</option>
+                    <option>xl</option>
+                    <option>xxl</option>
+                    <option>xxxl</option>
+                  </select>
+                </div>
+                <div class="col-3">
+                  <label>обувь</label>
+                  <input type="number" placeholder="35">
                 </div>
               </div>
+            </div>
 
-              <div class="input-blocks">
-                <div class="row">
-                  <div class="col-3">
-                    <label>Обхват головы</label>
-                  </div>
-                  <div class="col-3">
-                    <input type="number" placeholder="90">
-                  </div>
+            <div class="input-blocks">
+              <div class="row">
+                <div class="col-3">
+                  <label>Обхват головы</label>
+                </div>
+                <div class="col-3">
+                  <input type="number" placeholder="90">
                 </div>
               </div>
+            </div>
 
-              <div class="features">
-                <div class="row">
-                  <div class="col-3">
-                    <label>Особенности*</label>
-                  </div>
-                  <div class="col-9">
-
-                    <div class="work-checkbox">
-                      <input type="checkbox" id="check-28">
-                      <label class="uppercase" for="check-28">хромота</label>
-                    </div>
-
-                    <div class="work-checkbox">
-                      <input type="checkbox" id="check-29">
-                      <label class="uppercase" for="check-29">шрамы</label>
-                    </div>
-
-                    <div class="work-checkbox">
-                      <input type="checkbox" id="check-30">
-                      <label class="uppercase" for="check-30">пирсинг</label>
-                    </div>
-
-                    <div class="work-checkbox">
-                      <input type="checkbox" id="check-40">
-                      <label class="uppercase" for="check-40">есть близнец</label>
-                    </div>
-
-                    <div class="work-checkbox">
-                      <input type="checkbox" id="check-9">
-                      <label class="uppercase" for="check-9">крупные татуировки</label>
-                    </div>
-                  </div>
-
+            <div class="features">
+              <div class="row">
+                <div class="col-3">
+                  <label>Особенности*</label>
                 </div>
-              </div>
+                <div class="col-9">
 
-              <div class="input-blocks">
-                <div class="row">
-                  <div class="col-3">
-                    <label>Прочие особенности внешности</label>
+                  <div class="work-checkbox">
+                    <input type="checkbox" id="check-28">
+                    <label class="uppercase" for="check-28">хромота</label>
                   </div>
-                  <div class="col-3">
-                    <textarea cols="55" rows="7"></textarea>
+
+                  <div class="work-checkbox">
+                    <input type="checkbox" id="check-29">
+                    <label class="uppercase" for="check-29">шрамы</label>
+                  </div>
+
+                  <div class="work-checkbox">
+                    <input type="checkbox" id="check-30">
+                    <label class="uppercase" for="check-30">пирсинг</label>
+                  </div>
+
+                  <div class="work-checkbox">
+                    <input type="checkbox" id="check-40">
+                    <label class="uppercase" for="check-40">есть близнец</label>
+                  </div>
+
+                  <div class="work-checkbox">
+                    <input type="checkbox" id="check-9">
+                    <label class="uppercase" for="check-9">крупные татуировки</label>
                   </div>
                 </div>
+
               </div>
-              <button class="forward button">сохранить</button>
-            </form>
-          </div>
+            </div>
+
+            <div class="input-blocks">
+              <div class="row">
+                <div class="col-3">
+                  <label>Прочие особенности внешности</label>
+                </div>
+                <div class="col-3">
+                  <textarea cols="55" rows="7"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <button class="forward button">сохранить</button>
+          </form>
+
         </div>
       </div>
     </section>
@@ -405,71 +415,76 @@
 
       <div class="row">
         <div class="col-12">
-          <form class="form">
 
-            <div class="input-blocks">
-              <div class="row">
-                <div class="col-3">
-                  <label>название университета</label>
+          <form class="form-blocks">
+            <div class="form-block">
+              <div class="form">
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>название университета</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text" placeholder="Название университета">
+                    </div>
+                  </div>
                 </div>
-                <div class="col-9">
-                  <input type="text">
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Специальность</label>
+                    </div>
+                    <div class="col-4">
+                      <input type="text" placeholder="Специальность">
+                    </div>
+                    <div class="col-4">
+                      <select>
+                        <option> Высшая</option>
+                        <option>Магистр</option>
+                        <option>Доктор</option>
+                        <option>Неоконченное высшее</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Год</label>
+                    </div>
+                    <div class="col-3">
+                      <input class="input" type="number" placeholder="1995">
+                    </div>
+                    <div class="col-6">
+                      <div class="contract-download">
+                        <button>Загрузить диплом</button>
+                        <span class="circle"></span>
+                        <span>файл загружен</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
-            </div>
-
-            <div class="input-blocks">
               <div class="row">
-                <div class="col-3">
-                  <label>Специальность</label>
-                </div>
-                <div class="col-4">
-                  <input type="text" placeholder="Специальность">
-                </div>
-                <div class="col-4">
-                  <select>
-                    <option> Высшая</option>
-                    <option>Магистр</option>
-                    <option>Доктор</option>
-                    <option>Неоконченное высшее</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="input-blocks">
-              <div class="row">
-                <div class="col-3">
-                  <label>Год</label>
-                </div>
-                <div class="col-3">
-                  <input class="input" type="number" placeholder="1995">
-                </div>
-                <div class="col-6">
-                  <div class="contract-download">
-                    <button>Загрузить диплом</button>
-                    <span class="circle"></span>
-                    <span>файл загружен</span>
+                <div class="col-12">
+                  <div class="calculator">
+                    <h3 class="add-education uppercase">Добавить образование</h3>
+                    <button class="count-button plus" type="button"></button>
+                    <button class="count-button minus" type="button"></button>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-12">
-                <div class="calculator">
-                  <h3 class="title uppercase">Добавить образование</h3>
-                  <button id="increment"
-                          class="count-button plus" type="button"></button>
-                  <input id="visitorsCounter" class="button input counter" type="number" readonly min="1" max="5"
-                         value="1">
-                  <button id="decrement"
-                          class="count-button minus" type="button" disabled></button>
-                </div>
-              </div>
-            </div>
+
 
           </form>
+
         </div>
       </div>
 
@@ -480,54 +495,60 @@
       </div>
       <div class="row">
         <div class="col-9">
-          <form class="form">
 
-            <div class="input-blocks">
-              <div class="row">
-                <div class="col-3">
-                  <label>название</label>
+          <form class="form-blocks">
+            <div class="form-block">
+              <div class="form">
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>название</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text" placeholder="Название курса, имя мастера, город проведения">
+                    </div>
+                  </div>
                 </div>
-                <div class="col-9">
-                  <input type="text" placeholder="Название курса, имя мастера, город проведения">
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Год</label>
+                    </div>
+                    <div class="col-3">
+                      <input class="input" type="number" placeholder="1995">
+                    </div>
+                    <div class="col-6">
+                      <div class="contract-download">
+                        <button>Загрузить диплом</button>
+                        <span class="circle"></span>
+                        <span>файл загружен</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
               </div>
-            </div>
-
-            <div class="input-blocks">
               <div class="row">
-                <div class="col-3">
-                  <label>Год</label>
-                </div>
-                <div class="col-3">
-                  <input class="input" type="number" placeholder="1995">
-                </div>
-                <div class="col-6">
-                  <div class="contract-download">
-                    <button>Загрузить диплом</button>
-                    <span class="circle"></span>
-                    <span>файл загружен</span>
+                <div class="col-12">
+                  <div class="calculator">
+                    <h3 class="add-education uppercase education">Добавить дополнительное образование</h3>
+                    <button class="count-button plus" type="button"></button>
+                    <button class="count-button minus" type="button"></button>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-12">
-                <div class="calculator">
-                  <h3 class="title uppercase education">Добавить дополнительно образование</h3>
-                  <button id="increment"
-                          class="count-button plus" type="button"></button>
-                  <input id="visitorsCounter" class="button input counter" type="number" readonly min="1" max="5"
-                         value="1">
-                  <button id="decrement"
-                          class="count-button minus" type="button" disabled></button>
-                </div>
-              </div>
-            </div>
+
+
 
             <button class="forward button">сохранить</button>
 
           </form>
+
+
         </div>
       </div>
 
@@ -665,16 +686,16 @@
                 <label class="uppercase" for="check-8">сопрано</label>
               </div>
               <div class="work-checkbox">
-                <input type="checkbox" id="check-9">
-                <label class="uppercase" for="check-9">Меццо-сопрано </label>
+                <input type="checkbox" id="check-34">
+                <label class="uppercase" for="check-34">Меццо-сопрано </label>
               </div>
               <div class="work-checkbox">
                 <input type="checkbox" id="check-10">
                 <label class="uppercase" for="check-10">Контральто</label>
               </div>
               <div class="work-checkbox">
-                <input type="checkbox" id="check-19">
-                <label class="uppercase" for="check-19">Тенор</label>
+                <input type="checkbox" id="check-32">
+                <label class="uppercase" for="check-32">Тенор</label>
               </div>
               <div class="work-checkbox">
                 <input type="checkbox" id="check-11">
@@ -915,50 +936,50 @@
       </div>
       <div class="row">
         <div class="col-9">
-          <form class="form">
+          <form class="inputs">
 
-            <div class="input-blocks">
-              <div class="row">
-                <div class="col-4">
-                  <label>язык</label>
-                  <select>
-                    <option>Русский</option>
-                    <option>Казахский</option>
-                    <option>Французский</option>
-                    <option>Немецкий</option>
-                    <option>Испанский</option>
-                    <option>Итальянский</option>
-                    <option>Украинский</option>
-                    <option>Белорусский</option>
-                    <option>Японский</option>
-                    <option>Китайский</option>
-                  </select>
-                </div>
+            <div class="input">
+              <div class="add-input">
 
-                <div class="col-4">
-                  <label>Уровень</label>
-                  <select>
-                    <option>Базовый</option>
-                    <option>Разговорный</option>
-                    <option>Свободный</option>
-                  </select>
-                </div>
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-4">
+                      <label>язык</label>
+                      <select>
+                        <option>Русский</option>
+                        <option>Казахский</option>
+                        <option>Французский</option>
+                        <option>Немецкий</option>
+                        <option>Испанский</option>
+                        <option>Итальянский</option>
+                        <option>Украинский</option>
+                        <option>Белорусский</option>
+                        <option>Японский</option>
+                        <option>Китайский</option>
+                      </select>
+                    </div>
 
-
-                  <div class="col-3">
-                    <div class="calculator">
-                      <h6 class="language-title">Добавить</h6>
-                      <button id="increment"
-                              class="count-button plus" type="button"></button>
-                      <input id="visitorsCounter" class="button input counter" type="number" readonly min="1" max="5"
-                             value="1">
-                      <button id="decrement"
-                              class="count-button minus" type="button" disabled></button>
+                    <div class="col-4">
+                      <label>Уровень</label>
+                      <select>
+                        <option>Базовый</option>
+                        <option>Разговорный</option>
+                        <option>Свободный</option>
+                      </select>
                     </div>
                   </div>
 
+                </div>
               </div>
+
+              <div class="calculator">
+                <h6 class="language-title">Добавить</h6>
+                <button id="increment" class="count-button plus" type="button"></button>
+                <button id="decrement" class="count-button minus" type="button"></button>
+              </div>
+
             </div>
+
 
           </form>
         </div>
@@ -1022,343 +1043,358 @@
 
     <h4>творческий опыт</h4>
     <section class="section">
+
       <div class="row">
-        <div class="col-9">
+        <div class="col-6">
           <h3 class="title underlined uppercase">творческий опыт</h3>
         </div>
       </div>
-      <div class="order-form-overlay opened">
-        <div class="form-box">
 
-          <div class="form">
+      <div class="row">
+        <div class="col-12">
 
-            <form action="/leads" method="post">
+
+          <form class="form-blocks">
+            <div class="form-block">
               <div class="row">
-                <div class="visitors col-12">
+                <div class="col-6">
+                  <h3 class="red"> обязательные поля для заполнения (*)</h3>
+                </div>
+              </div>
 
-                  <div class="visitor" id="visitor-1" data-visitor="1">
-                    <h3 class="title underlined uppercase">Роли в кино <span class="visitor-number"> </span></h3>
+              <div class="form">
 
-                    <div class="input-blocks">
-                      <div class="row">
-                        <div class="col-3">
-                          <label>тип проекта*</label>
-                        </div>
-                        <div class="col-9">
-                          <select>
-                            <option>Художественный фильм</option>
-                            <option>Сериал</option>
-                            <option>Короткометражный фильм</option>
-                            <option>Документальный фильм</option>
-                            <option>Социальный ролик</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="input-blocks">
-                      <div class="row">
-                        <div class="col-3">
-                          <label>Название*</label>
-                        </div>
-                        <div class="col-9">
-                          <input type="text">
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="input-blocks">
-                      <div class="row">
-                        <div class="col-3">
-                          <label>статус роли*</label>
-                        </div>
-                        <div class="col-9">
-                          <select>
-                            <option>Главная роль</option>
-                            <option>Роль второго плана</option>
-                            <option>Эпизодическая роль</option>
-                            <option>Массовка</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="input-blocks">
-                      <div class="row">
-                        <div class="col-3">
-                          <label>статус роли*</label>
-                        </div>
-                        <div class="col-9">
-                          <select>
-                            <option>Главная роль</option>
-                            <option>Роль второго плана</option>
-                            <option>Эпизодическая роль</option>
-                            <option>Массовка</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="input-blocks">
-                      <div class="row">
-                        <div class="col-3">
-                          <label>Роль*</label>
-                        </div>
-                        <div class="col-9">
-                          <input type="text" placeholder="Не обязательно">
-                        </div>
-                      </div>
-                    </div>
-
-
-                    <div class="input-blocks">
-                      <div class="row">
-                        <div class="col-3">
-                          <label>Режиссёр*</label>
-                        </div>
-                        <div class="col-9">
-                          <input type="text" placeholder="Не обязательно">
-                        </div>
-                      </div>
-                    </div>
-
-
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="calculator">
-                          <h3 class="title uppercase">Добавить</h3>
-                          <button id="increment"
-                                  class="count-button plus" type="button"></button>
-                          <input id="visitorsCounter" class="button input counter" type="number" readonly min="1"
-                                 max="5"
-                                 value="1">
-                          <button id="decrement"
-                                  class="count-button minus" type="button" disabled></button>
-                        </div>
-                      </div>
-                    </div>
-
+                <div class="row">
+                  <div class="col-6">
+                    <h3 class="title underlined uppercase">Роли в кино</h3>
                   </div>
                 </div>
-            </form>
-          </div>
-        </div>
-      </div>
 
-
-      <h3 class="title underlined uppercase">роли в театре</h3>
-      <div class="row">
-        <div class="col-9">
-          <form class="form">
-
-            <div class="input-blocks">
-              <div class="row">
-                <div class="col-3">
-                  <label>Театр</label>
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>тип проекта</label>
+                    </div>
+                    <div class="col-9">
+                      <select>
+                        <option>Художественный фильм</option>
+                        <option>Сериал</option>
+                        <option>Короткометражный фильм</option>
+                        <option>Документальный фильм</option>
+                        <option>Социальный ролик</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-9">
-                  <input type="text">
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Название*</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text">
+                    </div>
+                  </div>
                 </div>
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>статус роли</label>
+                    </div>
+                    <div class="col-9">
+                      <select>
+                        <option>Главная роль</option>
+                        <option>Роль второго плана</option>
+                        <option>Эпизодическая роль</option>
+                        <option>Массовка</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>год*</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Роль</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text" placeholder="Не обязательно">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Режиссёр</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text" placeholder="Не обязательно">
+                    </div>
+                  </div>
+                </div>
+
               </div>
-            </div>
 
-            <div class="input-blocks">
               <div class="row">
-                <div class="col-3">
-                  <label>Название*</label>
-                </div>
-                <div class="col-9">
-                  <input type="text">
-                </div>
-              </div>
-            </div>
-
-            <div class="input-blocks">
-              <div class="row">
-                <div class="col-3">
-                  <label>Роль</label>
-                </div>
-                <div class="col-9">
-                  <input type="text" placeholder="Не обязательно">
-                </div>
-              </div>
-            </div>
-
-            <div class="input-blocks">
-              <div class="row">
-                <div class="col-3">
-                  <label>Режиссёр*</label>
-                </div>
-                <div class="col-9">
-                  <input type="text" placeholder="Не обязательно">
-                </div>
-              </div>
-            </div>
-
-            <div class="input-blocks">
-              <div class="row">
-                <div class="col-3">
-                  <label>Год</label>
-                </div>
-                <div class="col-9">
-                  <input type="text" placeholder="Не обязательно">
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-12">
-                <div class="calculator">
-                  <h3 class="title uppercase">Добавить</h3>
-                  <button id="increment"
-                          class="count-button plus" type="button"></button>
-                  <input id="visitorsCounter" class="button input counter" type="number" readonly min="1" max="5"
-                         value="1">
-                  <button id="decrement"
-                          class="count-button minus" type="button" disabled></button>
+                <div class="col-12">
+                  <div class="calculator">
+                    <h3 class="title uppercase">Добавить</h3>
+                    <button class="count-button plus" type="button"></button>
+                    <button class="count-button minus" type="button"></button>
+                  </div>
                 </div>
               </div>
             </div>
 
 
           </form>
+
         </div>
       </div>
 
-
-      <h3 class="title underlined uppercase">роли в рекламе</h3>
-
       <div class="row">
         <div class="col-9">
-          <form class="form">
 
-            <div class="input-blocks">
+          <form class="form-blocks">
+            <div class="form-block">
+              <div class="form">
+                <h3 class="title underlined uppercase">роли в театре</h3>
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Театр</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Название*</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Роль</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text" placeholder="Не обязательно">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Режиссёр*</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text" placeholder="Не обязательно">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Год*</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text" placeholder="Не обязательно">
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
               <div class="row">
-                <div class="col-3">
-                  <label>название*</label>
-                </div>
-                <div class="col-9">
-                  <input type="text">
-                </div>
-              </div>
-            </div>
-
-            <div class="input-blocks">
-              <div class="row">
-                <div class="col-3">
-                  <label>Роль</label>
-                </div>
-                <div class="col-9">
-                  <select>
-                    <option>Главная роль</option>
-                    <option>Роль второго плана</option>
-                    <option>Эпизодическая роль</option>
-                    <option>Массовка</option>
-                  </select>
+                <div class="col-12">
+                  <div class="calculator">
+                    <h3 class="title uppercase">Добавить</h3>
+                    <button class="count-button plus" type="button"></button>
+                    <button class="count-button minus" type="button"></button>
+                  </div>
                 </div>
               </div>
             </div>
 
 
-            <div class="input-blocks">
-              <div class="row">
-                <div class="col-3">
-                  <label>Режиссёр</label>
-                </div>
-                <div class="col-9">
-                  <input type="text">
-                </div>
-              </div>
-            </div>
-
-
-            <div class="input-blocks">
-              <div class="row">
-                <div class="col-3">
-                  <label>Год</label>
-                </div>
-                <div class="col-9">
-                  <input type="text" placeholder="Не обязательно">
-                </div>
-              </div>
-            </div>
-
-
-            <div class="row">
-              <div class="col-12">
-                <div class="calculator">
-                  <h3 class="title uppercase">Добавить</h3>
-                  <button id="increment"
-                          class="count-button plus" type="button"></button>
-                  <input id="visitorsCounter" class="button input counter" type="number" readonly min="1" max="5"
-                         value="1">
-                  <button id="decrement"
-                          class="count-button minus" type="button" disabled></button>
-                </div>
-              </div>
-            </div>
 
 
           </form>
+
         </div>
       </div>
 
 
-      <h3 class="title underlined uppercase">награды иноминации</h3>
+      <div class="row">
+        <div class="col-9">
+
+          <form class="form-blocks">
+            <div class="form-block">
+
+              <div class="form">
+                <h3 class="title underlined uppercase">роли в рекламе</h3>
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>название*</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Роль</label>
+                    </div>
+                    <div class="col-9">
+                      <select>
+                        <option>Главная роль</option>
+                        <option>Роль второго плана</option>
+                        <option>Эпизодическая роль</option>
+                        <option>Массовка</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Год*</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text" placeholder="Не обязательно">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Режиссёр</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="calculator">
+                    <h3 class="title uppercase">Добавить</h3>
+                    <button class="count-button plus" type="button"></button>
+                    <button class="count-button minus" type="button"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </form>
+
+        </div>
+      </div>
+
 
       <div class="row">
         <div class="col-9">
-          <form class="form">
 
-            <div class="input-blocks">
+
+          <form class="form-blocks">
+            <div class="form-block">
+
+              <div class="form">
+                <h3 class="title underlined uppercase">Награды и номинации</h3>
+
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>название*</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text" placeholder="Оскар, Золотой глобус, НИКА, Золотая маска">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>категория</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text" placeholder="Лучшая мужская роль, лучшая женская роль, лучшая режиссура">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Год*</label>
+                    </div>
+                    <div class="col-9">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
               <div class="row">
-                <div class="col-3">
-                  <label>название*</label>
-                </div>
-                <div class="col-9">
-                  <input type="text" placeholder="Оскар, Золотой глобус, НИКА, Золотая маска">
-                </div>
-              </div>
-            </div>
-
-            <div class="input-blocks">
-              <div class="row">
-                <div class="col-3">
-                  <label>категория</label>
-                </div>
-                <div class="col-9">
-                  <input type="text" placeholder="Лучшая мужская роль, лучшая женская роль, лучшая режиссура">
+                <div class="col-12">
+                  <div class="calculator">
+                    <h3 class="title uppercase">Добавить</h3>
+                    <button class="count-button plus" type="button"></button>
+                    <button class="count-button minus" type="button"></button>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="input-blocks">
-              <div class="row">
-                <div class="col-3">
-                  <label>Год*</label>
-                </div>
-                <div class="col-9">
-                  <input type="text">
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-12">
-                <div class="calculator">
-                  <h3 class="title uppercase">Добавить</h3>
-                  <button id="increment"
-                          class="count-button plus" type="button"></button>
-                  <input id="visitorsCounter" class="button input counter" type="number" readonly min="1" max="5"
-                         value="1">
-                  <button id="decrement"
-                          class="count-button minus" type="button" disabled></button>
-                </div>
-              </div>
-            </div>
 
             <button class="forward button">сохранить</button>
           </form>
+
+
         </div>
       </div>
 
@@ -1563,6 +1599,7 @@
     <h4>Контакты</h4>
 
     <section class="section">
+
       <div class="row">
         <div class="col-9">
           <h3 class="title underlined uppercase">Контакты</h3>
@@ -1571,31 +1608,36 @@
 
       <div class="row">
         <div class="col-12">
-          <form class="form">
+          <form class="inputs">
             <h3>Добавить персональные контакты</h3>
 
-            <div class="input-blocks">
-              <div class="row">
-                <div class="col-3">
-                  <label>номер телефона*</label>
-                </div>
-                <div class="col-5">
-                  <input type="number" placeholder="+7 (---) --- -- -- ">
-                </div>
 
-                <div class="col-3">
-                  <div class="calculator">
-                    <button id="increment"
-                            class="count-button plus" type="button"></button>
-                    <input id="visitorsCounter" class="button input counter" type="number" readonly min="1" max="5"
-                           value="1">
-                    <button id="decrement"
-                            class="count-button minus" type="button" disabled></button>
+            <div class="input">
+              <div class="add-input">
+
+                <div class="input-blocks">
+                  <div class="row">
+                    <div class="col-3">
+                      <label>номер телефона*</label>
+                    </div>
+                    <div class="col-5">
+                      <input type="number" placeholder="+7 (---) --- -- -- ">
+                    </div>
                   </div>
                 </div>
 
               </div>
+
+              <div>
+                <div class="calculator">
+                  <button class="count-button plus" type="button"></button>
+
+                  <button class="count-button minus" type="button"></button>
+                </div>
+              </div>
+
             </div>
+
 
             <div class="input-checkbox">
               <input type="radio" id="whats" name="contact" value="whats_app">
@@ -1622,80 +1664,86 @@
                 </div>
                 <div class="col-9">
                   <div class="contacts">
+
                     <div class="input-checkbox">
                       <input type="radio" id="kino" name="access" value="kino">
                       <label for="kino">Проверенным кинодеятелям</label>
                     </div>
+
                     <div class="input-checkbox">
                       <input type="radio" id="all" name="access" value="all">
                       <label for="all">Всем посетителям профиля</label>
                     </div>
+
                     <div class="input-checkbox">
                       <input type="radio" id="req" name="access" value="req">
                       <label for="req">Только по запросу (кинодеятель отправляет вам запрос, а вы решаете открыть ли
                         доступ)</label>
                     </div>
+
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="input-blocks">
-                <div class="row">
-                  <div class="col-3">
-                    <label>Facebook</label>
-                  </div>
-                  <div class="col-9">
-                    <input type="text" placeholder="ссылка на профиль">
-                  </div>
+            <div class="input-blocks">
+              <div class="row">
+                <div class="col-3">
+                  <label>Facebook</label>
+                </div>
+
+                <div class="col-9">
+                  <input type="text" placeholder="ссылка на профиль">
                 </div>
               </div>
+            </div>
 
-              <div class="input-blocks">
-                <div class="row">
-                  <div class="col-3">
-                    <label>email</label>
-                  </div>
-                  <div class="col-9">
-                    <input type="email" placeholder="@">
-                  </div>
+            <div class="input-blocks">
+              <div class="row">
+                <div class="col-3">
+                  <label>email</label>
+                </div>
+                <div class="col-9">
+                  <input type="email" placeholder="@">
                 </div>
               </div>
+            </div>
 
-              <div class="input-blocks">
-                <div class="row">
-                  <div class="col-3">
-                    <label>instagram</label>
-                  </div>
-                  <div class="col-9">
-                    <input type="text" placeholder="ссылка на профиль">
-                  </div>
+            <div class="input-blocks">
+              <div class="row">
+                <div class="col-3">
+                  <label>instagram</label>
+                </div>
+                <div class="col-9">
+                  <input type="text" placeholder="ссылка на профиль">
                 </div>
               </div>
+            </div>
 
-              <div class="input-blocks">
-                <div class="row">
-                  <div class="col-3">
-                    <label>vk</label>
-                  </div>
-                  <div class="col-9">
-                    <input type="text" placeholder="ссылка на профиль">
-                  </div>
+            <div class="input-blocks">
+              <div class="row">
+                <div class="col-3">
+                  <label>vk</label>
+                </div>
+                <div class="col-9">
+                  <input type="text" placeholder="ссылка на профиль">
                 </div>
               </div>
+            </div>
 
-              <div class="input-blocks">
-                <div class="row">
-                  <div class="col-3">
-                    <label>о себе</label>
-                  </div>
-                  <div class="col-9">
-                    <textarea name="" id="" cols="63" rows="10"></textarea>
-                  </div>
+            <div class="input-blocks">
+              <div class="row">
+                <div class="col-3">
+                  <label>о себе</label>
+                </div>
+                <div class="col-9">
+                  <textarea cols="63" rows="10"></textarea>
                 </div>
               </div>
+            </div>
 
 
-              <button class="forward button">сохранить</button>
+            <button class="forward button">сохранить</button>
           </form>
         </div>
       </div>
@@ -1752,7 +1800,7 @@
         <form class="form">
           <div class="input-blocks">
             <label>Состояние вашего здоровья*</label>
-            <textarea name="" id="" cols="45" rows="7"></textarea>
+            <textarea cols="45" rows="7"></textarea>
           </div>
           <button class="forward button">сохранить</button>
         </form>
@@ -1839,9 +1887,6 @@
   </div>
 </div>
 
-
-<script>
-</script>
 
 </body>
 </html>

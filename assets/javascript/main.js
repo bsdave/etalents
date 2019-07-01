@@ -132,10 +132,10 @@ $(function () {
 
 $(function () {
   $('.plus').click(function () {
-    const clonableArea = $(this).parents('.form-block').find('.form-blocks');
+    const clonableArea = $(this).parents('.form-blocks').find('.form-block');
     const clonableInputGroups = clonableArea.find('.form');
 
-    clonableInputGroups.last().clone().appendTo(clonableInputGroups);
+    clonableInputGroups.last().clone().appendTo(clonableArea);
 
     const inputBlocks = $(this).parents('.inputs').find('.input');
     const input = inputBlocks.find('.add-input');
@@ -144,7 +144,7 @@ $(function () {
   });
 
   $('.minus').click(function () {
-    const clonableInputGroups = $(this).parents('.form-block').find('.form');
+    const clonableInputGroups = $(this).parents('.form-blocks').find('.form');
 
     const inputBlocks = $(this).parents('.inputs').find('.add-input');
 

@@ -1379,7 +1379,7 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .features .work-checkbox label { text-transform: capitalize; }
 
-#wizard select { background-color: #fff; padding: 30px 10px 8px 15px; margin-bottom: 20px; width: 100%; border: 1px solid black; -webkit-appearance: none; border-radius: 0; background-position: calc(100% - 10px) 50%; background-repeat: no-repeat; background-image: url(/assets/images/arrow.png); background-size: 16px; }
+#wizard select { background-color: #fff; padding: 30px 10px 8px 15px; margin-bottom: 20px; width: 100%; border: 1px solid black; -webkit-appearance: none; border-radius: 0; background-position: calc(100% - 10px) 51%; background-repeat: no-repeat; background-image: url("../images/arrow.svg"); background-size: 16px; }
 
 #wizard .work-blocks { display: inline-block; margin-left: 40px; }
 

@@ -1,0 +1,142 @@
+#wizard {
+  .prompt {
+    margin: 50px 53% 50px 0;
+    .description {
+      font-size: 18px;
+      line-height: 23px;
+      text-transform: uppercase;
+
+      &:first-child {
+        color: #FF0000;
+      }
+      &:last-child {
+        color: #000;
+      }
+    }
+  }
+  .gender {
+    margin: 30px 0;
+    .women {
+      margin-right: 50px;
+    }
+    .gender-label {
+      padding-right: 111px;
+      margin-bottom: 30px;
+      &:first-child {
+        text-transform: uppercase;
+      }
+    }
+  }
+  .datepicker {
+    background-color: #fff;
+    color: #777777;
+    padding: 30px 10px 8px 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid black;
+    -webkit-appearance: none;
+    border-radius: 0;
+    background-position: calc(100% - 10px) 51%;
+    background-repeat: no-repeat;
+    background-image: url("../images/datepicker.svg");
+    background-size: 33px;
+
+  }
+
+  .photo-section {
+    display: flex;
+    flex-wrap: wrap;
+    &.top {
+      border-bottom: 1px solid #777777;
+    }
+    .photo-block {
+      flex-basis: 24%;
+      padding: 0 15px;
+      &.border {
+        border: 1px solid black;
+        padding: 10px 40px 155px 40px;
+      }
+      &.text {
+        flex-basis: 35%;
+        font-size: 15px;
+        line-height: 19px;
+
+        color: #777777;
+      }
+      &.image {
+        flex-basis: 20%;
+        max-height: 150px;
+        margin-right: 30px;
+        .arrow {
+          margin-bottom: -74px;
+          margin-left: 50px;
+        }
+        .big-vector {
+          border: 1px solid black;
+          padding: 40px 50px 0 50px;
+        }
+      }
+      .title-photo {
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      .check-mark {
+        margin-top: 20px;
+        display: block;
+        border: 2px solid black;
+        padding: 4px 2px;
+      }
+    }
+  }
+
+  .work-blocks {
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+  }
+
+  .work-input {
+    display: inline-flex;
+    margin-top: 30px;
+    .work-text{
+      flex-basis: 34%;
+      font-size: 15px;
+      line-height: 19px;
+      color: #777777;
+    }
+    .currency{
+      width: 25%;
+      select{
+        height: 50px;
+        padding-top: 10px;
+      }
+    }
+    .md-input {
+      width: 100px;
+      height: 50px;
+      text-align: left;
+      padding-left: 15px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .sm-input {
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .work-text {
+      color: #777777;
+      margin-left: 10px;
+      padding-left: 10px;
+      border-left: 1px solid #777777;
+    }
+  }
+  .language-title{
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}

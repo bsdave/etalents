@@ -1,0 +1,220 @@
+#wizard{
+
+  .features {
+    margin: 20px 0;
+    .work-checkbox {
+      margin: 0 55px 0 0;
+      display: inline-flex;
+      label {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .education-description {
+    color: #777777;
+    padding-right: 15%;
+    margin: 50px 0;
+  }
+
+  .creation-description {
+    padding-right: 30%;
+  }
+
+  .audio-img {
+    margin: 50px 0;
+  }
+
+  .forward {
+    border: none;
+  }
+
+  .contract-download {
+    margin: 40px 0;
+    img {
+      margin-top: 40px;
+    }
+  }
+  .education-text {
+    padding: 0 37% 30px 0;
+    color: #777777;
+  }
+
+  .skill-info {
+
+    padding: 0 30% 0 0;
+    margin: 40px 0;
+    .description {
+      font-size: 18px;
+      line-height: 23px;
+      color: $color-black;
+    }
+  }
+  .skills-special {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 15px 0;
+    .work-checkbox {
+      margin: 0 10px;
+      width: 31%;
+    }
+
+  }
+  .add-education {
+    font-family: "Futura PT Book";
+    font-size: 25px;
+    line-height: 32px;
+    color: $color-red;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+  }
+  .contacts {
+    .input-checkbox {
+      margin-left: 0;
+    }
+  }
+
+  .photo-info {
+    display: inline-flex;
+    border: 1px solid black;
+    position: relative;
+    .arrow{
+      position: absolute;
+      bottom: -21px;
+      right: 30px;
+    }
+    .description {
+      position: relative;
+      &::before {
+
+      }
+    }
+    p {
+      padding: 40px 40px 60px 40px;
+      border-right: 1px solid #777777;
+    }
+    p:last-child {
+      color: #777777;
+      border-right: none;
+    }
+  }
+
+  .circle {
+    background: black;
+    border-radius: 50%;
+    padding: 3px 13px;
+    margin: 0 10px 0 23px;
+  }
+
+  .gray {
+    font-size: 18px;
+    line-height: 23px;
+    color: #777777;
+  }
+
+  .personal-contact {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 40px;
+
+    color: #000000;
+  }
+
+  .agent-block {
+    .form-checkbox {
+      margin-left: 26%;
+    }
+    .text-block {
+      margin: 30px 0;
+      width: 65%;
+      .description {
+        &:first-child {
+          font-size: 18px;
+          line-height: 23px;
+          text-transform: uppercase;
+          color: #FF0000;
+        }
+        &:last-child {
+          color: #777777;
+        }
+      }
+    }
+  }
+
+  .counter {
+    display: none;
+  }
+  .preview {
+    border: 1px solid black;
+    width: 549px;
+    height: 349px;
+    display: table-cell;
+    vertical-align: middle;
+    .description {
+      text-align: center;
+      color: #777777;
+    }
+  }
+
+  .contract {
+
+    .contract-info {
+      margin: 30px 0;
+      padding-right: 10%;
+    }
+
+    .contract-btn {
+      background: $color-white;
+      color: $color-black;
+      border: 1px solid black;
+      margin: 40px 0;
+      border-radius: 15px;
+      padding: 7px 20px;
+    }
+    .contract-gray {
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 19px;
+      color: #777777;
+    }
+  }
+
+  .gallery-info {
+    .description {
+      font-size: 18px;
+      line-height: 23px;
+      padding-right: 26%;
+    }
+  }
+
+  .download {
+    margin-top: 15px;
+    margin-bottom: 70px;
+    .circle {
+      margin-left: 0;
+    }
+    .download-button {
+      margin-left: 20px;
+    }
+  }
+
+  .status-block {
+    display: inline-flex;
+    margin-bottom: 50px;
+    .description {
+      margin-left: 30px;
+      color: #777777;
+    }
+    .activity-blocks {
+      padding: 0 125px 0 0;
+      .uppercase {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+}

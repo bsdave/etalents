@@ -29,6 +29,113 @@
   }
 }
 
+.btn {
+  border: none;
+  font-size: 15px;
+  line-height: 19px;
+  background: $color-white;
+  color: $color-black;
+  display: block;
+}
+
+.textarea {
+  resize: none;
+  padding: 30px;
+}
+
+.download-block {
+  text-align: right;
+}
+
+.download-button {
+  background: #fff;
+  color: #ff0000;
+  display: inline-block;
+  border: 1px solid red;
+  border-radius: 17.5px;
+  padding: 3px 30px;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.download-span {
+  font-size: 15px;
+  line-height: 19px;
+  margin-right: 20px;
+}
+
+
+.select {
+  background-color: #fff;
+  color: #777777;
+  padding: 30px 10px 8px 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid black;
+  -webkit-appearance: none;
+  border-radius: 0;
+  background-position: calc(100% - 10px) 51%;
+  background-repeat: no-repeat;
+  background-image: url("../images/arrow.svg");
+  background-size: 16px;
+}
+
+.input {
+  position: relative;
+  .calculator {
+    position: absolute;
+    top: 0;
+    right: 62px;
+    &.audio-buttons{
+      position: absolute;
+      top: 60px;
+      left: 35%;
+    }
+  }
+}
+
+.calculator {
+  float: right;
+  &.media-add-button{
+    float: none;
+    .red{
+      vertical-align: top;
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+  .count-button {
+    background: $color-white;
+    color: $color-red;
+    display: block;
+    border: 1px solid red;
+    font-size: 15px;
+    line-height: 19px;
+    border-radius: 0;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+
+  }
+  .language-title {
+    font-size: 18px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .plus {
+    position: relative;
+    display: inline-block;
+
+    background: url('../images/plus.png') 50% no-repeat;
+  }
+  .minus {
+    position: relative;
+    display: inline-block;
+
+    background: url('../images/minus.png') 50% no-repeat;
+  }
+}
+
 .black {
   color: $color-black !important;
 }
@@ -91,6 +198,38 @@
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+  }
+}
+
+.body-block {
+  margin-left: 50px;
+}
+
+.required {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  font-family: "Futura PT Book";
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0;
+  color: $color-red;
+  margin: 50px 0;
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+
+  &.underlined::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 112px;
+    height: 2px;
+    bottom: -30px;
+    left: 0;
+    background: $color-red;
   }
 }
 

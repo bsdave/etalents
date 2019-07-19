@@ -1323,10 +1323,6 @@ body.blacked .form-box .button, body.blacked .form-box button { border: none; }
 
 body.blacked .form-box .button:hover, body.blacked .form-box button:hover { background: white; color: black; }
 
-.input-blocks { margin-bottom: 10px; }
-
-.input-blocks label { line-height: 50px; vertical-align: top; }
-
 .input-blocks input { width: 100%; color: #777777; padding: 30px 10px 8px 15px; margin-bottom: 20px; border: 1px solid black; }
 
 .input-blocks input::-webkit-input-placeholder { font-size: 18px; line-height: 23px; color: #777777; }
@@ -1484,6 +1480,12 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 #wizard .prompt .description:first-child { color: #FF0000; }
 
 #wizard .prompt .description:last-child { color: #000; }
+
+#wizard .model-checkbox { margin-left: 10px; margin-top: 15px; }
+
+#wizard .model { margin-top: 20px; }
+
+#wizard .model label { line-height: 50px; }
 
 #wizard .gender { margin: 30px 0; }
 

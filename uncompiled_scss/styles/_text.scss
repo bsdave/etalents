@@ -15,14 +15,26 @@
 .black {
   color: black;
 }
+.white {
+  color: white;
+}
+
+
+.gray-text {
+  color: #777777;
+}
 
 .text {
   font-size: 18px;
   margin-top: 0;
   font-weight: 900;
+  color: white;
 
   letter-spacing: 0.5px;
     line-height: 1;
+  &.gray-text {
+    color: #777777;
+  }
 }
 
 .uppercase {

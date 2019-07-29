@@ -2,205 +2,220 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/styles/style.css">
-  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
-          integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <script src="assets/javascript/slick/slick.js"></script>
-  <script src="assets/javascript/main.js"></script>
-  <script type="text/javascript">
-    var onloadCallback = function () {
-      grecaptcha.render('html_element', {
-        'sitekey': 'your_site_key'
-      });
-    };
-  </script>
-  <title>Registration page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="assets/javascript/slick/slick.js"></script>
+    <script src="assets/javascript/main.js"></script>
+    <script type="text/javascript">
+        var onloadCallback = function () {
+            grecaptcha.render('html_element', {
+                'sitekey': 'your_site_key'
+            });
+        };
+    </script>
+    <title>Registration page</title>
 </head>
 
 <body class="bg-image blacked">
 
-<div class="container">
-  <div class="header-box">
-    <a href="#" class="link-to-home"><img src="assets/images/logo.svg" alt=""></a>
+<div class="container container-disable-on-mobile">
+    <div class="header-box">
+        <a href="#" class="link-to-home"><img src="assets/images/logo.svg" alt=""></a>
 
-    <header class="header">
-      <nav class="header-nav">
-        <ul class="navigation">
-          <li class="menu-item languages-menu">
-            <span class="current-language bg-white">EN</span>
-            <ul class="languages bg-white">
-              <li class="language bg-white">RU</li>
-              <li class="language bg-white">KZ</li>
-            </ul>
-          </li>
-          <li class="menu-item multilinks">
-            <a href="#" class="menu-link">ВОЙТИ</a>
-            <a href="#" class="menu-link">ЗАРЕГИСТРИРОВАТЬСЯ</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </div>
+        <header class="header">
+            <nav class="header-nav">
+                <ul class="navigation">
+                    <li class="menu-item languages-menu">
+                        <span class="current-language bg-white">EN</span>
+                        <ul class="languages bg-white">
+                            <li class="language bg-white">RU</li>
+                            <li class="language bg-white">KZ</li>
+                        </ul>
+                    </li>
+                    <li class="menu-item multilinks">
+                        <a href="#" class="menu-link uppercase">Главная</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 </div>
 
 
 <div class="container">
-  <div class="slider-box">
-    <div class="slider">
+    <div class="slider-box">
+        <div class="slider">
 
-      <div class="slide">
-        <div class="slide-body">
-          <div class="left-side">
-            <h3 class="title underlined mb uppercase">регистрация</h3>
+            <div class="slide">
+                <div class="slide-body">
+                    <div class="left-side">
+                        <h3 class="title underlined mb uppercase">регистрация</h3>
 
-            <div class="form-box">
-              <form action="">
-                <div class="inputs">
-                  <input type="text" placeholder="ваше имя">
-                  <input type="text" placeholder="ваша фамилия">
-                  <input type="email" placeholder="email">
-                  <input type="password" placeholder="пароль">
-                  <input type="password" placeholder="подтвердите пароль">
-                  <div class="form-checkbox">
-                    <input type="checkbox" id="checkbox">
-                    <label class="bg-white" for="checkbox">Регистрируясь, Вы принимаете все условия использования
-                      сервиса, политику конфиденциальности и соглашаетесь с обработкой персональных данных</label>
-                  </div>
+                        <div class="form-box">
+                            <form action="">
+                                <div class="inputs">
+                                    <input type="text" placeholder="ваше имя">
+                                    <input type="text" placeholder="ваша фамилия">
+                                    <input type="email" placeholder="email">
+                                    <input type="password" placeholder="пароль">
+                                    <input type="password" placeholder="подтвердите пароль">
+                                    <div class="form-checkbox">
+                                        <input type="checkbox" id="checkbox">
+                                        <label class="bg-white" for="checkbox">Регистрируясь, Вы принимаете все условия
+                                            использования
+                                            сервиса, политику конфиденциальности и соглашаетесь с обработкой
+                                            персональных данных</label>
+                                    </div>
+                                </div>
+
+                                <h3 class="title underlined mb uppercase">Выберите род вашей деятельности</h3>
+
+                                <div class="careers-checkbox">
+                                    <div class="careers">
+                                        <div class="row">
+                                            <div class="col-12 col-md-4">
+
+                                                <div class="career">
+                                                    <input type="radio" id="talent1" name="activity" value="talent">
+                                                    <label class="red" for="talent1">Талант</label>
+                                                    <p class="description">актер, певец, танцор, акробат, модель,
+                                                        каскадер и прочии</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-4">
+                                                <div class="career">
+                                                    <input type="radio" id="talent2" name="activity" value="talent">
+                                                    <label class="red" for="talent2">кинодеятель</label>
+                                                    <p class="description">режиссер, оператор, композитор, сценарист,
+                                                        художник, гример, костюмер, кастинг-директор и
+                                                        другие</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-4">
+                                                <div class="career">
+                                                    <input type="radio" id="talent3" name="activity" value="talent">
+                                                    <label class="red" for="talent3">компания</label>
+                                                    <p class="description">кинокомпания, продакшн, ивент агентство,
+                                                        маркетинговое агентство, рекламное агентство и
+                                                        другие</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <button class="button">зарегистрироваться</button>
+                            </form>
+
+                            <form action="?" method="POST">
+                                <div class="g-recaptcha" data-sitekey="6LdZTqoUAAAAAH66gY_9EpipzTyWsxt7fIoUp1kI"></div>
+                                <br/>
+                            </form>
+                        </div>
+
+                        <div class="form-btn">
+                            <a href="#" class="link-recovery white">Уже есть аккаунт?</a>
+                            <a href="#" class="link-recovery red">Войти</a>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="film-box" data-background-color="b0caea"
+                             style="background-image:url('assets/images/slides/market-slide.png')">
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="careers-checkbox">
-                  <h3 class="title underlined mb uppercase">Выберите род вашей деятельности</h3>
-                  <div class="careers">
-
-                    <div class="career">
-                      <input type="radio" id="talent1" name="activity" value="talent">
-                      <label class="red" for="talent1">Талант</label>
-                      <p class="description">актер, певец, танцор, акробат, модель, каскадер и прочии</p>
-                    </div>
-
-                    <div class="career">
-                      <input type="radio" id="talent2" name="activity" value="talent">
-                      <label class="red" for="talent2">кинодеятель</label>
-                      <p class="description">режиссер, оператор, композитор, сценарист, художник, гример, костюмер, кастинг-директор и
-                        другие</p>
-                    </div>
-
-                    <div class="career">
-                      <input type="radio" id="talent3" name="activity" value="talent">
-                      <label class="red" for="talent3">компания</label>
-                      <p class="description">кинокомпания, продакшн, ивент агентство, маркетинговое агентство, рекламное агентство и
-                        другие</p>
-                    </div>
-                  </div>
-                </div>
-
-                <button class="button">зарегистрироваться</button>
-              </form>
-
-              <form action="?" method="POST">
-                <div class="g-recaptcha" data-sitekey="6LdZTqoUAAAAAH66gY_9EpipzTyWsxt7fIoUp1kI"></div>
-                <br/>
-              </form>
-              <a href="#" class="button facebook-color">зарегистрироваться С ПОМОЩЬЮ FACEBOOK</a>
             </div>
 
-            <div class="form-btn">
-              <a href="#" class="link-recovery white">Уже есть аккаунт?</a>
-              <a href="#" class="link-recovery red">Войти</a>
-            </div>
-          </div>
-
-          <div class="right-side">
-            <div class="film-box" data-background-color="b0caea"
-                 style="background-image:url('assets/images/slides/market-slide.png')">
-            </div>
-          </div>
         </div>
-      </div>
-
     </div>
-  </div>
 </div>
 
 <div class="container">
-  <div class="footer-box">
-    <footer class="footer">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="footer-section-head" id="contacts">
-            <h3 class="title underlined">КОНТАКТЫ</h3>
-          </div>
+    <div class="footer-box">
+        <footer class="footer">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-section-head" id="contacts">
+                        <h3 class="title underlined">КОНТАКТЫ</h3>
+                    </div>
 
-          <div class="footer-section-body">
-            <p class="bg-white">Вы можете связаться с нами по номерам:</p>
+                    <div class="footer-section-body">
+                        <p class="bg-white">Вы можете связаться с нами по номерам:</p>
 
-            <ul class="contacts">
-              <li><a href="#" class="contact bg-white">+7 (771) 766 05 00</a></li>
-              <li><a href="#" class="contact bg-white">+7 (771) 766 08 00</a></li>
-              <li><a href="#" class="contact bg-white">+7 (771) 766 09 00</a></li>
-            </ul>
+                        <ul class="contacts">
+                            <li><a href="#" class="contact bg-white">+7 (771) 766 05 00</a></li>
+                            <li><a href="#" class="contact bg-white">+7 (771) 766 08 00</a></li>
+                            <li><a href="#" class="contact bg-white">+7 (771) 766 09 00</a></li>
+                        </ul>
 
-            <p class="bg-white">Мы расположены по адресу: <br><br> Казахстан, город Алматы, Бульвар Мендикулова, 22,
-              жилой комплекс
-              «ТУРКУАЗ»
-            </p>
-          </div>
+                        <p class="bg-white">Мы расположены по адресу: <br><br> Казахстан, город Алматы, Бульвар
+                            Мендикулова, 22,
+                            жилой комплекс
+                            «ТУРКУАЗ»
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="footer-section-head" id="faq">
+                        <h3 class="title underlined">FAQ</h3>
+                    </div>
+
+                    <div class="footer-section-body">
+                        <ul class="links">
+                            <li><a href="#" class="link bg-white">За что я плачу деньги?</a></li>
+                            <li><a href="#" class="link bg-white">Какие гарантии, что меня позовут на съемку?</a></li>
+                            <li><a href="#" class="link bg-white">Могу ли я сразу получить свои фотографии и видео?</a>
+                            </li>
+                            <li><a href="#" class="link bg-white">У меня нет опыта и актерского образования, будут ли
+                                меня звать в
+                                проекты?</a>
+                            </li>
+                            <li><a href="#" class="link bg-white">ВСЕ ВОПРОСЫ И ОТВЕТЫ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="footer-section-head">
+                        <h3 class="title underlined">ДОКУМЕНТЫ</h3>
+                    </div>
+
+                    <div class="footer-section-body">
+                        <ul class="links">
+                            <li><a href="#" class="link bg-white">Lorem ipsum dolor sit amet </a></li>
+                            <li><a href="#" class="link bg-white">Consectetuer adipiscing elit </a></li>
+                            <li><a href="#" class="link bg-white">Sed diam nonummy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="row">
+            <div class="col-md-8 offset-md-4">
+
+                <div class="socials">
+                    <h3 class="title small bg-white">ПРИСОЕДИНЯЙТЕСЬ К НАМ</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><span class="facebook-bl"></span></a>
+                        <a href="#" class="social-link"><span class="instagram-bl"></span></a>
+                        <a href="#" class="social-link"><span class="youtube-bl"></span></a>
+                        <a href="#" class="social-link"><span class="vk-bl"></span></a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="col-md-4">
-          <div class="footer-section-head" id="faq">
-            <h3 class="title underlined">FAQ</h3>
-          </div>
-
-          <div class="footer-section-body">
-            <ul class="links">
-              <li><a href="#" class="link bg-white">За что я плачу деньги?</a></li>
-              <li><a href="#" class="link bg-white">Какие гарантии, что меня позовут на съемку?</a></li>
-              <li><a href="#" class="link bg-white">Могу ли я сразу получить свои фотографии и видео?</a></li>
-              <li><a href="#" class="link bg-white">У меня нет опыта и актерского образования, будут ли меня звать в
-                проекты?</a>
-              </li>
-              <li><a href="#" class="link bg-white">ВСЕ ВОПРОСЫ И ОТВЕТЫ</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="footer-section-head">
-            <h3 class="title underlined">ДОКУМЕНТЫ</h3>
-          </div>
-
-          <div class="footer-section-body">
-            <ul class="links">
-              <li><a href="#" class="link bg-white">Lorem ipsum dolor sit amet </a></li>
-              <li><a href="#" class="link bg-white">Consectetuer adipiscing elit </a></li>
-              <li><a href="#" class="link bg-white">Sed diam nonummy</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <div class="row">
-      <div class="col-md-8 offset-md-4">
-
-        <div class="socials">
-          <h3 class="title small bg-white">ПРИСОЕДИНЯЙТЕСЬ К НАМ</h3>
-          <div class="social-links">
-            <a href="#" class="social-link"><span class="facebook-bl"></span></a>
-            <a href="#" class="social-link"><span class="instagram-bl"></span></a>
-            <a href="#" class="social-link"><span class="youtube-bl"></span></a>
-            <a href="#" class="social-link"><span class="vk-bl"></span></a>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
 
 

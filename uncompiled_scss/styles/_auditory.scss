@@ -16,13 +16,14 @@
     justify-content: space-between;
 
     .cart-image {
-      text-align: center;
+      text-align: left;
       height: 180px;
-      margin-bottom: 0px;
+      margin-bottom: 30px;
 
       .image {
         height: 100%;
         width: auto;
+        margin-left: -40px;
       }
     }
 

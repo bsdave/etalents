@@ -15,12 +15,20 @@
   &:hover {
     background: $color-black;
   }
-
+  &.black-btn {
+    border: 1px solid $color-white;
+    color: $color-white;
+    background: $color-black;
+    &:hover {
+      background: $color-red;
+      color: $color-white;
+      border: 1px solid $color-red;
+    }
+  }
   &.white {
     background: $color-white;
     color: $color-black;
     border: 1px solid $color-black;
-
     &:hover {
       background: $color-red;
       color: $color-white;
@@ -54,8 +62,9 @@
   border: 1px solid red;
   border-radius: 17.5px;
   padding: 3px 30px;
-  font-size: 15px;
-  line-height: 19px;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 15px;
 }
 
 .download-span {
@@ -63,7 +72,6 @@
   line-height: 19px;
   margin-right: 20px;
 }
-
 
 .select {
   background-color: #fff;
@@ -83,10 +91,15 @@
 .input {
   position: relative;
   .calculator {
-    position: absolute;
-    top: 0;
-    right: 62px;
-    &.audio-buttons{
+    position: relative;
+    .calculator-title {
+      color: $color-red;
+      text-transform: lowercase;
+      font-size: 15px;
+      line-height: 15px;
+      display: inline-block;
+    }
+    &.audio-buttons {
       position: absolute;
       top: 60px;
       left: 35%;
@@ -95,15 +108,17 @@
 }
 
 .calculator {
-  float: right;
-  &.media-add-button{
+  float: none;
+  vertical-align: center;
+  &.media-add-button {
     float: none;
-    .red{
+    .red {
       vertical-align: top;
       font-size: 18px;
       line-height: 23px;
     }
   }
+
   .count-button {
     background: $color-white;
     color: $color-red;
@@ -113,8 +128,8 @@
     line-height: 19px;
     border-radius: 0;
     margin-left: 10px;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
 
   }
   .language-title {
@@ -160,18 +175,11 @@
 }
 
 .price {
-  > * {
+  .text {
     font-weight: 900;
     font-size: 18px;
     margin-bottom: 20px;
-  }
-
-  > *:nth-child(odd) {
     color: red;
-  }
-
-  > *:nth-child(even) {
-    color: gray;
   }
 }
 
@@ -202,18 +210,21 @@
 }
 
 .body-block {
-  margin-left: 50px;
+  margin-left: 0;
 }
 
 .required {
+  float: right;
+  font-size: 15px;
+  line-height: 13px;
   margin-top: 60px;
   margin-bottom: 50px;
 }
 
 .subtitle {
   font-family: "Futura PT Book";
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 15px;
+  line-height: 15px;
   letter-spacing: 0;
   color: $color-red;
   margin: 50px 0;
@@ -233,16 +244,14 @@
   }
 }
 
-.title {
-  font-family: "Futura PT Book";
-  font-size: 25px;
-  line-height: 32px;
-  letter-spacing: 0.25em;
-  color: $color-red;
+.profile-title {
   display: inline-block;
   position: relative;
-  font-weight: bold;
-
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  padding: 0;
+  color: $color-red;
   &.underlined::after {
     content: "";
     display: inline-block;
@@ -252,6 +261,21 @@
     bottom: -30px;
     left: 0;
     background: $color-red;
+  }
+}
+
+.title {
+  font-family: "Futura PT Book";
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.25em;
+  color: $color-black;
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+
+  &.underlined::after {
+    display: none;
   }
 
   &.small {
@@ -277,4 +301,69 @@
 }
 
 @include desktop {
+  .required {
+    float: left;
+    font-size: 18px;
+    line-height: 23px;
+
+  }
+
+  .download-button {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .input {
+    position: relative;
+    .calculator {
+      position: absolute;
+      top: 0;
+      right: 62px;
+      .calculator-title {
+        display: none;
+      }
+      &.audio-buttons {
+        position: absolute;
+        top: 60px;
+        left: 35%;
+      }
+    }
+  }
+  .body-block {
+    margin-left: 50px;
+  }
+  .calculator {
+    .add-education {
+      float: left;
+
+    }
+    .count-button {
+      float: right;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .profile-title {
+    display: none;
+  }
+  .subtitle {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .title {
+    font-size: 25px;
+    line-height: 32px;
+    padding: 0;
+    color: $color-red;
+    &.underlined::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 112px;
+      height: 2px;
+      bottom: -30px;
+      left: 0;
+      background: $color-red;
+    }
+  }
 }

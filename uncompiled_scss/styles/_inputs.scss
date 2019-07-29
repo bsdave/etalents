@@ -1,5 +1,10 @@
 .input-blocks {
   label{
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .label{
+    line-height: 5;
   }
   input {
     width: 100%;
@@ -102,7 +107,7 @@ input[type="radio"]:checked,
 input[type="radio"]:checked + label,
 input[type="radio"]:not(:checked) + label {
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 40px;
   position: relative;
   padding-left: 35px;
@@ -149,4 +154,30 @@ input[type="radio"]:checked + label:after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+@include desktop{
+  input[type="radio"]:checked + label,
+  input[type="radio"]:not(:checked) + label {
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 40px;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    color: $color-black;
+    &.bg-white {
+      color: white;
+    }
+  }
+  .input-blocks{
+    .label{
+      line-height: 0;
+    }
+    label{
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
 }

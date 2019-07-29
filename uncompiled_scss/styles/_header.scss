@@ -1,22 +1,20 @@
 .header-box {
   position: relative;
   .title-steps{
-    position: absolute;
-    padding: 40px 60px 5px 8px;
-    top:0;
-    right: 300px;
-    font-size: 25px;
-    line-height: 32px;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: red;
+    display: none;
   }
   .link-to-home {
     position: absolute;
     top: 60px;
-    left: -75px;
+    left: 0px;
+    .logo-sm{
+      display: block;
+    }
+    .logo-desc{
+      display: none;
+    }
     &.sm-logo {
-      top: 35px;
+      top: 50px;
       left: 50px;
     }
   }
@@ -25,15 +23,12 @@
     display: flex;
     justify-content: flex-end;
     &.sm-header {
-      border-bottom: 1px solid red;
+      border-bottom: none;
       padding: 50px 0;
     }
     .header-nav {
       flex-basis: 45%;
       background: red;
-      &.sm-nav {
-        flex-basis: 300px;
-      }
       .navigation {
         display: flex;
         list-style: none;
@@ -49,24 +44,34 @@
           font-size: 14px;
           font-weight: bold;
 
-          .profile-ico {
-            background: url("../images/star.svg") center no-repeat, red;
+          .profile-filmmaker {
+            background: url("../images/logo-filmmaker.svg") center no-repeat, red;
+            display: block;
+            height: 50px;
+          }
+          .profile-company {
+            background: url("../images/logo-company.svg") center no-repeat, red;
             display: block;
             height: 50px;
           }
 
           .current-language {
-            background: url("../images/menu.svg") center no-repeat, black;
+            background: white;
             height: 50px;
-            color: white;
+            color: black;
             padding: 10px 11px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+
           }
           .bg-white {
             background: white;
             color: black
+          }
+          .bg-black{
+            background: black;
+            color: white;
           }
 
           &.languages-menu {
@@ -74,7 +79,7 @@
 
             .languages {
               position: absolute;
-              top: -200px;
+              top: -900px;
               z-index: 5;
               list-style: none;
               padding: 0;
@@ -85,14 +90,18 @@
                 height: 50px;
                 padding: 11px;
 
-                background: black;
-                color: white;
+                background: white;
+                color: black;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
                 &.bg-white {
                   background: white;
                   color: black
+                }
+                &.bg-black{
+                  background: black;
+                  color: white;
                 }
                 &:hover {
                   background: red;
@@ -114,6 +123,9 @@
             padding: 10px 11px;
 
             .menu-link {
+              position: absolute;
+              bottom: 0;
+              margin-bottom: 5px;
               text-decoration: none;
               font-weight: bold;
               margin-top: 1px;
@@ -139,5 +151,169 @@
       }
     }
   }
+}
+
+@include desktop{
+  .header-box {
+    position: relative;
+    .title-steps{
+      position: absolute;
+      display: block;
+      padding: 40px 60px 5px 8px;
+      top:0;
+      right: 300px;
+      font-size: 25px;
+      line-height: 32px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: red;
+    }
+    .link-to-home {
+      position: absolute;
+      top: 60px;
+      left: -75px;
+      .logo-desc{
+        display: block;
+      }
+      .logo-sm{
+        display: none;
+      }
+      &.sm-logo {
+        top: 35px;
+        left: 50px;
+      }
+    }
+
+    .header {
+      display: flex;
+      justify-content: flex-end;
+      &.sm-header {
+        border-bottom: 1px solid red;
+        padding: 50px 0;
+      }
+      .header-nav {
+        flex-basis: 45%;
+        background: red;
+        margin-top: 0;
+        &.sm-nav {
+          flex-basis: 300px;
+        }
+        .navigation {
+          display: flex;
+          list-style: none;
+          height: 50px;
+          padding: 0;
+          margin: 0;
+          position: relative;
+
+          .menu-item {
+            flex-basis: 50px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            font-size: 14px;
+            font-weight: bold;
+
+            .profile-ico {
+              background: url("../images/star.svg") center no-repeat, red;
+              display: block;
+              height: 50px;
+            }
+
+            .current-language {
+              background: white;
+              height: 50px;
+              color: black;
+              padding: 10px 11px;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+
+            }
+            .bg-white {
+              background: white;
+              color: black
+            }
+            .bg-black{
+              background: black;
+              color: white;
+            }
+
+            &.languages-menu {
+              position: relative;
+
+              .languages {
+                position: absolute;
+                top: -200px;
+                z-index: 5;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                .language {
+                  width: 50px;
+                  height: 50px;
+                  padding: 11px;
+
+                  background: white;
+                  color: black;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-end;
+                  &.bg-white {
+                    background: white;
+                    color: black
+                  }
+                  &.bg-black{
+                    background: black;
+                    color: white;
+                  }
+                  &:hover {
+                    background: red;
+                    cursor: pointer;
+                  }
+                }
+              }
+
+              &:hover {
+                .languages {
+                  top: 50px;
+                }
+              }
+            }
+
+            &.multilinks {
+              display: flex;
+              flex-direction: column;
+              padding: 10px 11px;
+
+              .menu-link {
+                text-decoration: none;
+                font-weight: bold;
+                margin-top: 1px;
+
+                &:first-child {
+                  color: black;
+                }
+
+                &:last-child {
+                  color: white;
+                }
+              }
+            }
+
+            &:hover {
+              cursor: pointer;
+
+              .drop-menu-body {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
 }
 

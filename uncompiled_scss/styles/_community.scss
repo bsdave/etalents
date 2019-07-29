@@ -16,11 +16,13 @@
 }
 
 .our-community-body {
-  padding-right: 50%;
+  padding-right: 70%;
   padding-left: 8%;
-
   padding-top: 30px;
   padding-bottom: 30px;
+  .text{
+    line-height: 1.2;
+  }
 }
 
 .animation-box {

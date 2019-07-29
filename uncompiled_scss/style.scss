@@ -43,8 +43,7 @@ body {
 
   transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9);
   &.bg-image {
-    background: url("../images/background.svg") left top no-repeat, url("../images/film.svg") 50% -110px no-repeat,
-    url("../images/film.svg") 50% 550px no-repeat;
+    background: url("../images/background.svg") left top no-repeat,
   }
   &.blacked {
     background-color: black !important;
@@ -57,6 +56,10 @@ body {
 
 @include desktop {
   body {
+    &.bg-image {
+      background: url("../images/background.svg") left top no-repeat, url("../images/film.svg") 50% -110px no-repeat,
+      url("../images/film.svg") 50% 550px no-repeat;
+    }
     &.darkened {
       &::before {
         content: "";

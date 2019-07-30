@@ -2,14 +2,24 @@
   font-family: 'Futura PT Book', 'sans-serif';
   font-size: 25px;
   color: $color-red;
-  text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   font-weight: 900;
   line-height: 1.4;
 
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  &.underlined::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 112px;
+    height: 2px;
+    bottom: -30px;
+    left: 0;
+    background: $color-red;
+  }
 }
 
 .black {

@@ -42,7 +42,7 @@
 
   .skill-info {
 
-    padding: 0 30% 0 0;
+    padding: 0 0 0 0;
     margin: 40px 0;
     .description {
       font-size: 18px;
@@ -79,25 +79,21 @@
 
   .photo-info {
     display: inline-flex;
+    flex-direction: column;
     border: 1px solid black;
     position: relative;
+    padding: 30px 40% 30px 30px;
     .arrow{
       position: absolute;
-      bottom: -21px;
+      bottom: 30px;
       right: 30px;
     }
-    .description {
-      position: relative;
-      &::before {
-
-      }
-    }
     p {
-      padding: 40px 40px 60px 40px;
-      border-right: 1px solid #777777;
+      padding: auto;
+      border-right: none;
     }
     p:last-child {
-      color: #777777;
+      color: $color-red;
       border-right: none;
     }
   }
@@ -129,7 +125,7 @@
     }
     .text-block {
       margin: 30px 0;
-      width: 65%;
+      width: 100%;
       .description {
         &:first-child {
           font-size: 18px;
@@ -150,7 +146,7 @@
   .preview {
     border: 1px solid black;
     width: 549px;
-    height: 349px;
+    height: 250px;
     display: table-cell;
     vertical-align: middle;
     .description {
@@ -204,13 +200,16 @@
 
   .status-block {
     display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 25px;
     margin-bottom: 50px;
     .description {
       margin-left: 30px;
       color: #777777;
     }
     .activity-blocks {
-      padding: 0 125px 0 0;
+      padding: 0 30px 0 0;
       .uppercase {
         text-transform: uppercase;
       }
@@ -222,6 +221,70 @@
     .contract {
       .contract-info {
         padding-right: 10%;
+      }
+    }
+    .agent-block {
+      .form-checkbox {
+        margin-left: 26%;
+      }
+      .text-block {
+        margin: 30px 0;
+        width: 65%;
+        .description {
+          &:first-child {
+            font-size: 18px;
+            line-height: 23px;
+          }
+        }
+      }
+    }
+
+    .preview {
+      height: 349px;
+    }
+
+    .skill-info {
+      padding: 0 30% 0 0;
+    }
+
+    .status-block {
+      display: inline-flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      margin-bottom: 50px;
+      padding: auto;
+      .description {
+        margin-left: 30px;
+        color: #777777;
+      }
+      .activity-blocks {
+        padding: 0 125px 0 0;
+        .uppercase {
+          text-transform: uppercase;
+        }
+      }
+    }
+    .photo-info {
+      display: inline-flex;
+      flex-direction: row;
+      border: 1px solid black;
+      position: relative;
+      padding: 0;
+      .arrow {
+        position: absolute;
+        bottom: -21px;
+        right: 30px;
+      }
+      .description {
+        position: relative;
+      }
+      p {
+        padding: 40px 40px 60px 40px;
+        border-right: 1px solid #777777;
+      }
+      p:last-child {
+        color: #777777;
+        border-right: none;
       }
     }
 

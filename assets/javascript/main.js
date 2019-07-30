@@ -18,7 +18,23 @@ $(function () {
     autoplaySpeed: 3000,
     slidesToShow: 5,
     prevArrow: $('.back1'),
-    nextArrow: $('.next1')
+    nextArrow: $('.next1'),
+      responsive: [
+          {
+              breakpoint: 520,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+              }
+          },
+          {
+              breakpoint: 960,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+              }
+          }
+      ]
   });
 
   $('.carousel2').slick({
@@ -28,7 +44,23 @@ $(function () {
     autoplaySpeed: 3000,
     slidesToShow: 5,
     prevArrow: $('.back2'),
-    nextArrow: $('.next2')
+    nextArrow: $('.next2'),
+      responsive: [
+          {
+              breakpoint: 520,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+              }
+          },
+          {
+              breakpoint: 960,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+              }
+          }
+      ]
   });
 
   $('.carousel3').slick({
@@ -38,7 +70,23 @@ $(function () {
     autoplaySpeed: 3000,
     slidesToShow: 5,
     prevArrow: $('.back3'),
-    nextArrow: $('.next3')
+    nextArrow: $('.next3'),
+      responsive: [
+          {
+              breakpoint: 520,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+              }
+          },
+          {
+              breakpoint: 960,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+              }
+          }
+      ]
   });
 
   $('.locations').slick({

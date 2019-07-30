@@ -48,7 +48,10 @@
 
 .textarea {
   resize: none;
+  display: block;
   padding: 30px;
+  min-height: 8em;
+  min-width: 20em;
 }
 
 .download-block {
@@ -95,9 +98,10 @@
     .calculator-title {
       color: $color-red;
       text-transform: lowercase;
-      font-size: 15px;
+      font-size: 14px;
       line-height: 15px;
       display: inline-block;
+      float: left;
     }
     &.audio-buttons {
       position: absolute;
@@ -105,6 +109,9 @@
       left: 35%;
     }
   }
+}
+.display-none{
+  display: none;
 }
 
 .calculator {
@@ -130,7 +137,7 @@
     margin-left: 10px;
     width: 35px;
     height: 35px;
-
+    float: right;
   }
   .language-title {
     font-size: 18px;
@@ -162,6 +169,7 @@
 
 .costs-left,
 .costs-right {
+  padding-left: 30px;
   height: 100%;
 
   .advantages-list {
@@ -170,7 +178,6 @@
 }
 
 .costs-left {
-  border-right: 1px solid #7e7e7e;
   padding-right: 25px;
 }
 
@@ -289,7 +296,7 @@
 
 .forward {
   margin-top: 50px;
-  min-width: 350px;
+  min-width: 100%;
 }
 
 .red {
@@ -300,6 +307,7 @@
   position: relative;
 }
 
+
 @include desktop {
   .required {
     float: left;
@@ -307,10 +315,35 @@
     line-height: 23px;
 
   }
+  .display-none{
+    display: block;
+  }
+
+  .costs-left,
+  .costs-right {
+    padding-right: 25%;
+    padding-left: 30px;
+    height: 100%;
+
+    .advantages-list {
+      margin-bottom: 80px;
+    }
+  }
+
+  .costs-left {
+    border-right: 1px solid #7e7e7e;
+    padding-right: 25px;
+  }
 
   .download-button {
     font-size: 15px;
     line-height: 19px;
+  }
+
+  .select {
+    background-position: calc(100% - 10px) 51%;
+    background-repeat: no-repeat;
+    background-image: url("../images/arrow.svg");
   }
 
   .input {
@@ -319,6 +352,9 @@
       position: absolute;
       top: 0;
       right: 62px;
+      &.calculator-language{
+        top: 30px;
+      }
       .calculator-title {
         display: none;
       }
@@ -331,6 +367,10 @@
   }
   .body-block {
     margin-left: 50px;
+  }
+  .textarea {
+    height: 10em;
+    min-width: 25em;
   }
   .calculator {
     .add-education {
@@ -346,10 +386,16 @@
   .profile-title {
     display: none;
   }
+
   .subtitle {
     font-size: 18px;
     line-height: 23px;
   }
+  .forward {
+    margin-top: 50px;
+    min-width: 350px;
+  }
+
   .title {
     font-size: 25px;
     line-height: 32px;

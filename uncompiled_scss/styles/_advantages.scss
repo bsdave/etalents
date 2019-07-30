@@ -2,7 +2,7 @@
   position: relative;
 
   .advantages-head {
-    margin-bottom: 30px;
+    margin-bottom: 20%;
 
     .advantages-toggle-button {
       display: inline-block;
@@ -11,6 +11,7 @@
       background: url("../images/toggler.svg") center no-repeat;
       background-size: contain;
       margin-left: 60px;
+      float:right;
 
       transition: transform 0.3s ease-in-out;
 
@@ -55,4 +56,33 @@
 
 .uppercase {
   text-transform: uppercase;
+}
+
+
+.advantages-body {
+  padding-right: 0;
+  .button{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@include desktop{
+  .advantages-box{
+    .advantages-head{
+      margin-bottom: 30px;
+    }
+  }
+
+}
+
+@include tablet{
+  .advantages-body {
+    padding-right: 0;
+    .button{
+      width: 350px;
+      margin-bottom: 50px;
+    }
+  }
+
 }

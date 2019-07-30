@@ -12,6 +12,7 @@
     width: 20px;
     height: 20px;
     background: url('../images/slick-arrow.svg') center no-repeat;
+    filter: brightness(0) invert(1);
     left: -30px;
     top: 45%;
     transform: rotate(180deg);
@@ -24,6 +25,7 @@
     width: 20px;
     height: 20px;
     background: url('../images/slick-arrow.svg') center no-repeat;
+    filter: brightness(0) invert(1);
     right: -30px;
     top: 45%;
     cursor: pointer;

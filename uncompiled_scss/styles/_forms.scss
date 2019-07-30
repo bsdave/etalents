@@ -77,7 +77,8 @@
       }
       &.image {
         flex-basis: 20%;
-        max-height: 150px;
+        max-height: 0;
+        margin-left: 30px;
         .arrow {
           margin-bottom: -74px;
           margin-left: 50px;
@@ -110,12 +111,18 @@
 
   .work-input {
     display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 30px;
     .work-text {
-      flex-basis: 34%;
+      flex-basis: 100%;
       font-size: 15px;
       line-height: 19px;
       color: #777777;
+    }
+    .description{
+      font-size: 14px;
+      line-height: 15px;
     }
     .currency {
       width: 25%;
@@ -143,7 +150,7 @@
       color: #777777;
       margin-left: 10px;
       padding-left: 10px;
-      border-left: 1px solid #777777;
+      border-left: none;
     }
   }
   .language-title {
@@ -167,6 +174,41 @@
     }
     .prompt {
       margin: 50px 53% 50px 0;
+    }
+    .work-input {
+      display: inline-flex;
+      flex-wrap: nowrap;
+      margin-top: 30px;
+      .work-text {
+        flex-basis: 34%;
+        font-size: 15px;
+        line-height: 19px;
+        color: #777777;
+      }
+      .currency {
+        width: 25%;
+        select {
+          height: 50px;
+          padding-top: 10px;
+        }
+      }
+      .md-input {
+        padding-left: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      .sm-input {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      .work-text {
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 1px solid #777777;
+      }
     }
 
     .add-title{
@@ -195,6 +237,7 @@
         &.image {
           flex-basis: 20%;
           max-height: 150px;
+          margin-left: 0;
           margin-right: 30px;
           .arrow {
             margin-bottom: -74px;

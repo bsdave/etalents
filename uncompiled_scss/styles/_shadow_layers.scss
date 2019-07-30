@@ -6,7 +6,7 @@
   width: 365px;
 
   .shadow-layer-films {
-    display: flex;
+    display: none;
     flex-direction: column;
 
     .shadow-film {
@@ -97,6 +97,14 @@
       :nth-child(3) {
         align-self: center;
       }
+    }
+  }
+}
+
+@include desktop{
+  .shadow-layer {
+    .shadow-layer-films {
+      display: flex;
     }
   }
 }

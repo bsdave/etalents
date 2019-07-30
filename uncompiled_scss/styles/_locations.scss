@@ -4,11 +4,13 @@
   }
 }
 .locations {
+  margin-right: -25px;
+  margin-left: -25px;
   margin-top: 50px;
   margin-bottom: 50px;
 
   .loc-left {
-    padding-left: 100px;
+    padding-left: 30px;
     padding-right: 50px;
     padding-top: 50px;
   }
@@ -52,5 +54,16 @@
 
   .next-loc {
     right: 40px;
+  }
+}
+
+@include desktop{
+  .locations {
+    margin: auto;
+    .loc-left {
+      padding-left: 100px;
+      padding-right: 50px;
+      padding-top: 50px;
+    }
   }
 }

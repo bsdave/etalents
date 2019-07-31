@@ -59,8 +59,7 @@
   }
 
   .photo-section {
-    display: flex;
-    flex-wrap: wrap;
+
     &.top {
       border-bottom: 1px solid #777777;
     }
@@ -115,7 +114,6 @@
     flex-wrap: wrap;
     margin-top: 30px;
     .work-text {
-      flex-basis: 100%;
       font-size: 15px;
       line-height: 19px;
       color: #777777;
@@ -165,6 +163,53 @@
     color: $color-red;
   }
 
+  @include tablet{
+    .work-input {
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-top: 30px;
+      .work-text {
+        flex-basis: 100%;
+        font-size: 15px;
+        line-height: 19px;
+        color: #777777;
+      }
+      .description{
+        font-size: 14px;
+        line-height: 15px;
+      }
+      .currency {
+        width: 25%;
+        select {
+          height: 50px;
+          padding-top: 10px;
+        }
+      }
+      .md-input {
+        width: 100px;
+        height: 50px;
+        text-align: left;
+        padding-left: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      .sm-input {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      .work-text {
+        color: #777777;
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: none;
+      }
+    }
+  }
+
 
   @include desktop {
     .title {
@@ -176,6 +221,7 @@
       margin: 50px 53% 50px 0;
     }
     .work-input {
+      width: 100%;
       display: inline-flex;
       flex-wrap: nowrap;
       margin-top: 30px;
@@ -186,7 +232,7 @@
         color: #777777;
       }
       .currency {
-        width: 25%;
+        width: 15%;
         select {
           height: 50px;
           padding-top: 10px;
@@ -194,7 +240,7 @@
       }
       .md-input {
         padding-left: 15px;
-        margin-right: 10px;
+        margin-right: 20px;
         margin-left: 10px;
       }
       .sm-input {

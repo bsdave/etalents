@@ -129,12 +129,14 @@
             padding: 10px 11px;
 
             .menu-link {
-              position: absolute;
-              bottom: 0;
               margin-bottom: 5px;
               text-decoration: none;
               font-weight: bold;
               margin-top: 1px;
+              &.bottom{
+                position: absolute;
+                bottom: 0;
+              }
 
               &:first-child {
                 color: black;
@@ -296,6 +298,7 @@
                 text-decoration: none;
                 font-weight: bold;
                 margin-top: 1px;
+
 
                 &:first-child {
                   color: black;

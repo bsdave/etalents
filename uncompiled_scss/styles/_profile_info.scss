@@ -1,0 +1,73 @@
+.left-block {
+  position: absolute;
+  left: 0;
+  top: 200px;
+}
+
+.right-block{
+  position: absolute;
+  right: 80px;
+  top: 200px;
+  .menu-list{
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+    .list-item{
+      list-style: none;
+      margin-bottom: 20px;
+      a{
+        text-decoration: none;
+        color: #000000;
+        font-size: 18px;
+        line-height: 23px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.profile-info{
+  .big-title{
+    font-size: 21px;
+    line-height: 27px;
+    letter-spacing: 0;
+  }
+  .description{
+    font-family: $futura_pt_demi;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: normal;
+
+    color: #000000;
+    &.bold{
+      font-weight: bold;
+    }
+  }
+  .bold{
+    font-weight: bold;
+  }
+}
+.about-user{
+  font-family: "Futura PT Demi";
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: normal;
+  text-transform: lowercase;
+  letter-spacing: 0.1px;
+
+  color: #000000;
+}
+
+
+@include desktop{
+  .profile-info{
+    padding-left: 30%;
+    .description{
+
+    }
+
+  }
+  .about-user{
+
+  }
+
+}

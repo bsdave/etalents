@@ -17,7 +17,7 @@
     }
   }
   .inputs {
-    padding-right: 20%;
+    padding-right: 0;
   }
   .form-checkbox {
     margin-bottom: 25px;
@@ -117,6 +117,9 @@ body.blacked {
 
 @include desktop{
   .form-box{
+    .inputs {
+      padding-right: 20%;
+    }
     .link-recovery{
       font-size: 14px;
       line-height: 18px;

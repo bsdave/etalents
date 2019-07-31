@@ -35,6 +35,14 @@
       border: 1px solid $color-red;
     }
   }
+  &.hover-white{
+    &:hover{
+      background: $color-white;
+      color: black;
+      border: 1px solid $color-black;
+
+    }
+  }
 }
 
 .btn {
@@ -51,7 +59,7 @@
   display: block;
   padding: 30px;
   min-height: 8em;
-  min-width: 20em;
+  min-width: 100%;
 }
 
 .download-block {
@@ -95,6 +103,7 @@
   position: relative;
   .calculator {
     position: relative;
+    margin-bottom: 70px;
     .calculator-title {
       color: $color-red;
       text-transform: lowercase;
@@ -307,6 +316,20 @@
   position: relative;
 }
 
+@include tablet{
+  .forward {
+    margin-top: 50px;
+    min-width: 350px;
+  }
+  .textarea {
+    resize: none;
+    display: block;
+    padding: 30px;
+    min-height: 8em;
+    min-width: 23em;
+  }
+}
+
 
 @include desktop {
   .required {
@@ -351,7 +374,10 @@
     .calculator {
       position: absolute;
       top: 0;
-      right: 62px;
+      right: 50px;
+      &.mt{
+        margin-top: 25px;
+      }
       &.calculator-language{
         top: 30px;
       }
@@ -391,10 +417,7 @@
     font-size: 18px;
     line-height: 23px;
   }
-  .forward {
-    margin-top: 50px;
-    min-width: 350px;
-  }
+
 
   .title {
     font-size: 25px;

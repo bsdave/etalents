@@ -45,7 +45,13 @@
 .youtube,
 .instagram,
 .facebook,
-.vk {
+.vk,
+.youtube-gray,
+.instagram-gray,
+.facebook-gray,
+.vk-gray,
+.telegram-gray,
+.link-icon-gray{
   &::after {
     content: '';
     display: inline-block;
@@ -88,6 +94,31 @@
 
 .vk::after {
   background-image: url('../images/vk.svg');
+}
+
+
+.youtube-gray::after {
+  background-image: url('../images/ytb.svg');
+}
+
+.telegram-gray::after {
+  background-image: url('../images/telegram-gray.svg');
+}
+
+.link-icon-gray::after {
+  background-image: url('../images/Link-icon-gray.svg');
+}
+
+.instagram-gray::after {
+  background-image: url('../images/inst-black.svg');
+}
+
+.facebook-gray::after {
+  background-image: url('../images/fb-gray.svg');
+}
+
+.vk-gray::after {
+  background-image: url('../images/vk-gray.svg');
 }
 
 .youtube-bl::after {

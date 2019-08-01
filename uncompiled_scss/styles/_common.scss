@@ -338,8 +338,27 @@
     line-height: 23px;
 
   }
+  .none{
+    display: none;
+  }
+  &.underlined::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 112px;
+    height: 2px;
+    bottom: -30px;
+    left: 0;
+    background: $color-red;
+  }
   .display-none{
     display: block;
+  }
+  .button{
+    &.display-none{
+      display: inline-block;
+      min-width: 350px;
+    }
   }
 
   .costs-left,

@@ -904,7 +904,10 @@ input[type="number"] { -moz-appearance: textfield; }
   .textarea { resize: none; display: block; padding: 30px; min-height: 8em; min-width: 23em; } }
 
 @media (min-width: 992px) { .required { float: left; font-size: 18px; line-height: 23px; }
+  .none { display: none; }
+  .underlined::after { content: ""; display: inline-block; position: absolute; width: 112px; height: 2px; bottom: -30px; left: 0; background: #ff0000; }
   .display-none { display: block; }
+  .button.display-none { display: inline-block; min-width: 350px; }
   .costs-left, .costs-right { padding-right: 25%; padding-left: 30px; height: 100%; }
   .costs-left .advantages-list, .costs-right .advantages-list { margin-bottom: 80px; }
   .costs-left { border-right: 1px solid #7e7e7e; padding-right: 25px; }
@@ -929,6 +932,8 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .big-title.underlined::after { content: ""; display: inline-block; position: absolute; width: 112px; height: 2px; bottom: -30px; left: 0; background: #ff0000; }
 
+.title-black { font-size: 18px; line-height: 23px; text-transform: uppercase; font-family: "Futura PT Demi"; color: #000000; }
+
 .big-description { font-family: 'Futura PT Book', 'sans-serif'; font-size: 25px; color: #ff0000; text-decoration: none; display: inline-block; font-weight: 900; line-height: 1.4; margin-top: 0px; margin-bottom: 20px; position: relative; }
 
 .big-description.underlined::after { content: ""; display: inline-block; position: absolute; width: 112px; height: 2px; bottom: -30px; left: 0; background: #ff0000; }
@@ -950,6 +955,12 @@ input[type="number"] { -moz-appearance: textfield; }
 @media (min-width: 992px) { .text { font-size: 18px; } }
 
 .header-box { position: relative; }
+
+.header-box .navigation-menu { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; margin: 0 auto; text-align: center; width: 100%; position: relative; margin-top: 20px; }
+
+.header-box .navigation-menu .menu-item { margin-right: 13%; list-style: none; }
+
+.header-box .navigation-menu .menu-item .menu-link { text-decoration: none; font-size: 18px; line-height: 23px; font-family: "Futura PT Demi"; color: #000000; text-transform: uppercase; }
 
 .header-box .title-steps { display: none; }
 
@@ -1129,7 +1140,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .our-community-body .text { line-height: 1.2; }
 
-.animation-box { margin-left: -25px; margin-right: -25px; margin-top: -370px; margin-bottom: -50px; }
+.animation-box { z-index: 10; margin-left: -25px; margin-right: -25px; margin-top: -370px; margin-bottom: -50px; }
 
 .animation-box .inimation-img { display: block; width: 100%; height: auto; }
 
@@ -1317,7 +1328,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .socials .social-links:after { content: ''; display: block; position: absolute; height: 31px; width: 185px; margin-top: -2px; right: -185px; background: url("../images/film-red-foot.svg") center no-repeat; }
 
-.youtube::after, .instagram::after, .facebook::after, .vk::after { content: ''; display: inline-block; height: 29px; width: 41px; background-size: contain; background-repeat: no-repeat; background-position: center; }
+.youtube::after, .instagram::after, .facebook::after, .vk::after, .youtube-gray::after, .instagram-gray::after, .facebook-gray::after, .vk-gray::after, .telegram-gray::after, .link-icon-gray::after { content: ''; display: inline-block; height: 29px; width: 41px; background-size: contain; background-repeat: no-repeat; background-position: center; }
 
 .youtube-bl::after, .instagram-bl::after, .facebook-bl::after, .vk-bl::after { content: ''; display: inline-block; height: 29px; width: 41px; background-size: contain; background-repeat: no-repeat; background-position: center; }
 
@@ -1328,6 +1339,18 @@ input[type="number"] { -moz-appearance: textfield; }
 .facebook::after { background-image: url("../images/fb.svg"); }
 
 .vk::after { background-image: url("../images/vk.svg"); }
+
+.youtube-gray::after { background-image: url("../images/ytb.svg"); }
+
+.telegram-gray::after { background-image: url("../images/telegram-gray.svg"); }
+
+.link-icon-gray::after { background-image: url("../images/Link-icon-gray.svg"); }
+
+.instagram-gray::after { background-image: url("../images/inst-black.svg"); }
+
+.facebook-gray::after { background-image: url("../images/fb-gray.svg"); }
+
+.vk-gray::after { background-image: url("../images/vk-gray.svg"); }
 
 .youtube-bl::after { background-image: url("../images/ytb-black.svg"); }
 
@@ -1551,7 +1574,9 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 #wizard .number { display: none; }
 
-#wizard .steps { display: none; padding-bottom: 20px; border-bottom: 2px solid #000000; }
+#wizard .steps { display: none; padding-bottom: 20px; position: relative; }
+
+#wizard .steps::after { content: ""; display: inline-block; position: absolute; width: 200px; height: 2px; bottom: -20px; right: 15px; background: #000; }
 
 #wizard .steps li { margin-bottom: 16px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 31px; position: relative; }
 
@@ -1782,15 +1807,13 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 
 .photo-card .photo .display-desc-none { display: block; }
 
-.photo-card .photo .arrow { position: absolute; bottom: 80px; left: 20px; -webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1); }
-
-.photo-card .photo .arrow.right { margin-left: 120px; }
+.photo-card .photo .arrow { position: absolute; bottom: 80px; left: 20px; width: 30px; height: 30px; background-size: contain; -webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1); }
 
 .photo-card .photo .photo-description { padding-left: 20px; padding-right: 20px; position: absolute; top: 0; left: 0; }
 
 .photo-card .photo .photo-description .uppercase { font-size: 15px; line-height: 19px; color: #fff; }
 
-.photo-card .photo .photo-description .description { font-size: 10px; line-height: 13px; color: #fff; width: 100px; }
+.photo-card .photo .photo-description .description { font-size: 15px; line-height: 13px; color: #fff; width: 100px; }
 
 .photo-card .photo-1 { -ms-grid-column: 1; -ms-grid-column-span: 4; grid-column: 1/5; -ms-grid-row: 1; grid-row: 1/1; }
 
@@ -1829,6 +1852,8 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
 .photo-card .photo-18 { -ms-grid-column: 5; -ms-grid-column-span: 4; grid-column: 5/9; -ms-grid-row: 12; -ms-grid-row-span: 1; grid-row: 12/13; }
 
 @media (min-width: 992px) { .photo-card { -ms-grid-columns: (1fr)[8]; grid-template-columns: repeat(8, 1fr); -ms-grid-rows: (1fr)[3]; grid-template-rows: repeat(3, 1fr); grid-column-gap: 1em; grid-row-gap: 1em; }
+  .photo-card .photo .arrow { position: absolute; bottom: 80px; left: 20px; width: 50px; height: 50px; background-size: contain; -webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1); }
+  .photo-card .photo .arrow.right { margin-left: 120px; }
   .photo-card .photo .display-sm-none { display: block; }
   .photo-card .photo .display-desc-none { display: none; }
   .photo-card .photo .photo-description .description { font-size: 12px; line-height: 15px; }
@@ -1851,27 +1876,127 @@ input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale
   .photo-card .photo-17 { -ms-grid-column: 1; -ms-grid-column-span: 3; grid-column: 1/4; -ms-grid-row: 8; -ms-grid-row-span: 1; grid-row: 8/9; }
   .photo-card .photo-18 { -ms-grid-column: 4; -ms-grid-column-span: 3; grid-column: 4/7; -ms-grid-row: 8; -ms-grid-row-span: 1; grid-row: 8/9; } }
 
-.left-block { position: absolute; left: 0; top: 200px; }
+.left-block { position: absolute; left: 0; top: 180px; }
 
-.right-block { position: absolute; right: 80px; top: 200px; }
+.left-block .menu-list { margin-left: 20px; margin-top: 30px; display: block; }
 
-.right-block .menu-list { margin: 0; padding: 0; border-bottom: 1px solid black; }
+.left-block .second { margin-top: 40px; position: relative; }
 
-.right-block .menu-list .list-item { list-style: none; margin-bottom: 20px; }
+.left-block .second::after { content: ""; display: inline-block; position: absolute; width: 130px; height: 2px; bottom: -30px; left: 0; background: #ff0000; }
 
-.right-block .menu-list .list-item a { text-decoration: none; color: #000000; font-size: 18px; line-height: 23px; text-transform: uppercase; }
+.left-block .button-block { margin-top: 40px; margin-bottom: 30px; position: relative; }
 
-.profile-info .big-title { font-size: 21px; line-height: 27px; letter-spacing: 0; }
+.left-block .button-block::after { content: ""; display: inline-block; position: absolute; width: 130px; height: 2px; top: -20px; left: 0; background: #ff0000; }
 
-.profile-info .description { font-family: "../fonts/futura_pt_demi"; font-size: 18px; line-height: 23px; font-weight: normal; color: #000000; }
+.left-block .socials { margin-left: 0; }
+
+.left-block .link-block { margin-top: 20px; margin-left: 20px; }
+
+.left-block .title { font-size: 12px; line-height: 15px; text-transform: uppercase; letter-spacing: 0.1em; }
+
+.left-block .block { margin-left: 20px; }
+
+.left-block .contacts-block { margin-top: 40px; margin-bottom: 30px; }
+
+.left-block .contacts-block .description { font-size: 12px; line-height: 12px; }
+
+.left-block .contacts-block .title { margin-bottom: 50px; }
+
+.left-block .contacts-block-info { position: relative; margin-bottom: 60px; }
+
+.left-block .contacts-block-info .title { margin-bottom: 10px; }
+
+.left-block .contacts-block-info .description { font-size: 12px; line-height: 12px; }
+
+.left-block .socials { position: relative; }
+
+.button-border { font-family: "Futura PT Demi"; background: transparent; color: #000; border: 1px solid black; text-align: left; font-size: 9px; line-height: 12px; text-transform: uppercase; text-decoration: none; padding: 25px 20px 10px; display: block; margin-bottom: 20px; }
+
+.right-block { display: none; position: relative; right: 0; top: 180px; }
+
+.right-block .title { font-size: 12px; line-height: 15px; text-transform: uppercase; letter-spacing: 0.1em; }
+
+.right-block .link-block { margin: 35px 0; }
+
+.link-views { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
+
+.link-views .description { font-size: 12px; line-height: 12px; margin-left: 20px; }
+
+.menu-list { margin: 0; padding: 0; }
+
+.menu-list .list-item { list-style: none; margin-bottom: 20px; font-family: "Futura PT Demi"; }
+
+.menu-list .list-item a { text-decoration: none; color: #000000; font-size: 12px; line-height: 15px; text-transform: uppercase; }
+
+.profile-info { padding-left: 40%; position: relative; }
+
+.profile-info:last-child { margin-bottom: 115px; }
+
+.profile-info .audio-block { margin-bottom: 60px; }
+
+.profile-info .audio-block .img-block { margin-top: 20px; }
+
+.profile-info .edit-img { position: absolute; right: 30%; margin-top: 30px; }
+
+.profile-info .photo-card { margin-bottom: 50px; grid-column-gap: 1em; grid-row-gap: 1em; -ms-grid-rows: (300px)[1]; grid-template-rows: repeat(1, 300px); }
+
+.profile-info .photo-card .photo-1 { -ms-grid-column: 1; -ms-grid-column-span: 4; grid-column: 1/5; -ms-grid-row: 1; -ms-grid-row-span: 1; grid-row: 1/2; }
+
+.profile-info .photo-card .photo-2 { -ms-grid-column: 5; -ms-grid-column-span: 4; grid-column: 5/9; -ms-grid-row: 1; -ms-grid-row-span: 1; grid-row: 1/2; }
+
+.profile-info .photo-card .photo-3 { -ms-grid-column: 1; -ms-grid-column-span: 4; grid-column: 1/5; -ms-grid-row: 3; -ms-grid-row-span: 1; grid-row: 3/4; }
+
+.profile-info .photo-card .photo-4 { -ms-grid-column: 5; -ms-grid-column-span: 4; grid-column: 5/9; -ms-grid-row: 3; -ms-grid-row-span: 1; grid-row: 3/4; }
+
+.profile-info .photo-card .photo-5 { -ms-grid-column: 1; -ms-grid-column-span: 4; grid-column: 1/5; -ms-grid-row: 4; -ms-grid-row-span: 1; grid-row: 4/5; }
+
+.profile-info .photo-card .photo-6 { -ms-grid-column: 5; -ms-grid-column-span: 4; grid-column: 5/9; -ms-grid-row: 4; -ms-grid-row-span: 1; grid-row: 4/5; }
+
+.profile-info .photo-card .photo-7 { -ms-grid-column: 1; -ms-grid-column-span: 4; grid-column: 1/5; -ms-grid-row: 5; -ms-grid-row-span: 1; grid-row: 5/6; }
+
+.profile-info .photo-card .photo-8 { -ms-grid-column: 5; -ms-grid-column-span: 4; grid-column: 5/9; -ms-grid-row: 5; -ms-grid-row-span: 1; grid-row: 5/6; }
+
+.profile-info .big-title { font-size: 12px; line-height: 15px; letter-spacing: 0; }
+
+.profile-info .description-bold { font-family: "Futura PT Demi"; font-size: 10px; line-height: 13px; font-weight: normal; }
+
+.profile-info .description { font-family: "Futura PT Medium"; font-size: 15px; line-height: 13px; color: #000000; }
 
 .profile-info .description.bold { font-weight: bold; }
 
 .profile-info .bold { font-weight: bold; }
 
-.about-user { font-family: "Futura PT Demi"; font-size: 18px; line-height: 23px; font-weight: normal; text-transform: lowercase; letter-spacing: 0.1px; color: #000000; }
+.about-user { font-family: "Futura PT Book"; font-size: 18px; line-height: 23px; font-weight: normal; text-transform: lowercase; letter-spacing: 0.1px; color: #000000; }
 
-@media (min-width: 992px) { .profile-info { padding-left: 30%; } }
+@media (min-width: 992px) { .right-block { display: block; position: absolute; }
+  .right-block .title { font-size: 18px; line-height: 23px; }
+  .right-block .link-views { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
+  .right-block .link-views .description { font-size: 18px; line-height: 23px; margin-left: 20px; }
+  .right-block .menu-list .list-item a { font-size: 18px; line-height: 23px; }
+  .button-block { display: none; }
+  .block { margin-left: 50px; }
+  .left-block .link-views { display: none; }
+  .left-block .link-views .description { margin-left: 20px; }
+  .left-block .second { display: none; }
+  .left-block .title { font-size: 18px; line-height: 23px; }
+  .left-block .menu-list { display: none; }
+  .button-border { font-size: 18px; line-height: 23px; }
+  .profile-info { padding-left: 30%; }
+  .profile-info .big-title { font-size: 21px; line-height: 27px; }
+  .profile-info .description-bold { font-size: 18px; line-height: 23px; }
+  .profile-info .description { font-size: 18px; line-height: 23px; } }
+
+.our-team .our-team-body { margin-top: 40px; }
+
+.our-team .our-team-body .teammate { margin-left: 40px; }
+
+.our-team .our-team-body .teammate .description-block { margin-left: 15px; }
+
+.our-team .our-team-body .teammate img { border-radius: 50%; }
+
+.our-team .our-team-body .teammate .our-title { font-size: 15px; line-height: 135%; text-transform: uppercase; color: #FFFFFF; }
+
+.our-team .our-team-body .teammate .our-description { font-size: 15px; line-height: 135%; color: #FFFFFF; }
 
 body { font-family: "Futura PT Medium", sans-serif; font-style: normal; font-weight: 100; font-size: 18px; -webkit-transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9); -o-transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9); transition: background-color 500ms cubic-bezier(0.28, 0.01, 0.3, 0.9); }
 

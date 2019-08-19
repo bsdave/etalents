@@ -17,7 +17,6 @@
   .container-disable-on-mobile {
     padding-left: 0;
     padding-right: 0;
-    overflow-x: hidden;
   }
 }
 
@@ -29,11 +28,22 @@
   order: 1;
 }
 
+
+@include desktop {
+  .d-order-0 {
+    order: 0;
+  }
+
+  .d-order-1 {
+    order: 1;
+  }
+}
+
 @include tablet {
   .t-order-0 {
     order: 0;
   }
-  
+
   .t-order-1 {
     order: 1;
   }

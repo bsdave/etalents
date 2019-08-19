@@ -1,4 +1,16 @@
 $(function () {
+    $(document).ready(function() {
+        $('#nav-btn').click(function(){
+            $('.navigation-menu').slideToggle("slide");
+            if ($(this).hasClass('not-active')) {
+                $(this).addClass('is-active').removeClass('not-active');
+            }else{
+                $('.is-active').addClass('not-active').removeClass('is-active');
+            }
+        });
+    });
+
+
   $('.slider').slick({
     dots: true,
     appendDots: '.slides-control',
@@ -18,7 +30,23 @@ $(function () {
     autoplaySpeed: 3000,
     slidesToShow: 5,
     prevArrow: $('.back1'),
-    nextArrow: $('.next1')
+    nextArrow: $('.next1'),
+      responsive: [
+          {
+              breakpoint: 520,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+              }
+          },
+          {
+              breakpoint: 960,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+              }
+          }
+      ]
   });
 
   $('.carousel2').slick({
@@ -28,7 +56,23 @@ $(function () {
     autoplaySpeed: 3000,
     slidesToShow: 5,
     prevArrow: $('.back2'),
-    nextArrow: $('.next2')
+    nextArrow: $('.next2'),
+      responsive: [
+          {
+              breakpoint: 520,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+              }
+          },
+          {
+              breakpoint: 960,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+              }
+          }
+      ]
   });
 
   $('.carousel3').slick({
@@ -38,7 +82,23 @@ $(function () {
     autoplaySpeed: 3000,
     slidesToShow: 5,
     prevArrow: $('.back3'),
-    nextArrow: $('.next3')
+    nextArrow: $('.next3'),
+      responsive: [
+          {
+              breakpoint: 520,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+              }
+          },
+          {
+              breakpoint: 960,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+              }
+          }
+      ]
   });
 
   $('.locations').slick({
@@ -51,8 +111,8 @@ $(function () {
   });
 
   $(window).scroll(function () {
-    var hT = $('.countings-box').offset().top,
-        hH = $('.countings-box').outerHeight(),
+    var hT = $('.amount').offset().top,
+        hH = $('.amount').outerHeight(),
         wH = $(window).height(),
         wS = $(this).scrollTop();
     if (wS > (hT + hH - wH - 100)) {

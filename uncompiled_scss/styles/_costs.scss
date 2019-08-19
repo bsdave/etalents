@@ -3,14 +3,11 @@
   margin-bottom: 40px;
 
   .costs-subheader {
-    padding-right: 40%;
+    padding-right: 0;
     padding-left: 60px;
     padding-top: 50px;
     padding-bottom: 40px;
 
-    .text {
-      font-size: 20px;
-    }
   }
 
   .costs-subheaders {
@@ -20,7 +17,9 @@
     padding-bottom: 40px;
 
     .text {
-      font-size: 20px;
+      letter-spacing: 1px;
+      line-height: 15px;
+      font-size: 15px;
     }
   }
 }
@@ -28,4 +27,19 @@
 .w100 {
   width: 100%;
   padding: 0 !important;
+}
+
+@include desktop {
+  .costs-box {
+    position: relative;
+    margin-bottom: 40px;
+
+    .costs-subheader {
+      padding-right: 40%;
+      padding-left: 60px;
+      padding-top: 50px;
+      padding-bottom: 40px;
+
+    }
+  }
 }

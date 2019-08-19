@@ -10,10 +10,11 @@
     display: block;
     position: absolute;
     width: 20px;
-    height: 20px;
+    height: 40px;
     background: url('../images/slick-arrow.svg') center no-repeat;
-    left: -30px;
-    top: 45%;
+    filter: brightness(0) invert(1);
+    left: -20px;
+    top: 39%;
     transform: rotate(180deg);
   }
 
@@ -22,10 +23,11 @@
     display: block;
     position: absolute;
     width: 20px;
-    height: 20px;
+    height: 40px;
     background: url('../images/slick-arrow.svg') center no-repeat;
-    right: -30px;
-    top: 45%;
+    filter: brightness(0) invert(1);
+    right: -20px;
+    top: 39%;
     cursor: pointer;
   }
 

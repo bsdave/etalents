@@ -1,23 +1,45 @@
-#wizard{
-  &.filmmaker-wizard{
-    .prompt{
-      margin: 50px 46% 50px 0;
+#wizard {
+  &.filmmaker-wizard {
+    .prompt {
+      margin: 50px 0 50px 0;
+      .description {
+        font-size: 15px;
+        line-height: 15px;
+      }
     }
   }
-  .access{
-    .access-label{
+  .access {
+    .access-label {
       display: flex;
       padding-bottom: 20px;
     }
   }
-  .inspiration-block{
+  .inspiration-block {
     margin-top: 50px;
   }
-  .company-label{
-    margin-right: 23%;
+  .company-label {
+    margin-right: 10%;
   }
-  .filmmaker-label{
+  .filmmaker-label {
     text-transform: uppercase;
     margin: 15px 5px;
   }
+
+  @include desktop {
+
+    .company-label {
+      margin-right: 23%;
+    }
+    .prompt {
+      margin: 50px 46% 50px 0;
+      .description {
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+  }
+
+
 }
+
+

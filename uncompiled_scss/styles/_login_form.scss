@@ -1,10 +1,14 @@
 
 .form-box {
   .careers-checkbox {
+    display: inline-flex;
     margin-right: -60%;
     .career {
+      display: inline-flex;
+      flex-direction: column;
+      flex-wrap: wrap;
       .description {
-        width: 40%;
+        padding-right: 41%;
         padding-left: 40px;
       }
       .red {
@@ -13,7 +17,7 @@
     }
   }
   .inputs {
-    padding-right: 20%;
+    padding-right: 0;
   }
   .form-checkbox {
     margin-bottom: 25px;
@@ -40,6 +44,9 @@
   .link-recovery {
     text-decoration: none;
     margin-left: 10px;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
   }
   button {
     width: 100%;
@@ -59,11 +66,17 @@
   }
 }
 
+
 .form-btn {
   margin: 30px 0;
   a {
     text-decoration: none;
     margin-right: 30px;
+  }
+  label{
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
   }
   .white {
     color: $color-white;
@@ -97,6 +110,43 @@ body.blacked {
       &:hover {
         background: white;
         color: black;
+      }
+    }
+  }
+}
+
+@include desktop{
+  .form-box{
+    .inputs {
+      padding-right: 20%;
+    }
+    .link-recovery{
+      font-size: 14px;
+      line-height: 18px;
+    }
+    .careers-checkbox {
+      display: inline-flex;
+      margin-right: -60%;
+      .career {
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .description {
+          padding-right: 41%;
+          padding-left: 40px;
+        }
+        .red {
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .form-btn {
+
+      label {
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
       }
     }
   }

@@ -1,0 +1,28 @@
+.our-team {
+  .our-team-body {
+    margin-top: 40px;
+    .teammate {
+      .description-block{
+        margin-left: 15px;
+      }
+      margin-left: 40px;
+      img {
+        border-radius: 50%;
+      }
+      .our-title {
+        font-size: 15px;
+        line-height: 135%;
+
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+      }
+      .our-description {
+        font-size: 15px;
+        line-height: 135%;
+        color: #FFFFFF;
+      }
+    }
+
+  }
+}

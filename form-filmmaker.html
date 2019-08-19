@@ -14,17 +14,20 @@
 <body>
 
 <div class="header-box">
-  <a href="#" class="link-to-home sm-logo"><img src="assets/images/logo.svg" alt=""></a>
+  <a href="#" class="link-to-home sm-logo">
+    <img class="logo-desc" src="assets/images/logo.svg" alt="">
+    <img class="logo-sm" src="assets/images/logo-sm.svg" alt="">
+  </a>
   <h4 class="title-steps">Профайл кинодеятеля</h4>
   <header class="header sm-header">
     <nav class="header-nav sm-nav">
       <ul class="navigation">
-        <li class="menu-item"><span class="profile-ico"></span></li>
+        <li class="menu-item"><span class="profile-filmmaker"></span></li>
         <li class="menu-item languages-menu">
-          <span class="current-language">EN</span>
+          <span class="current-language bg-black">EN</span>
           <ul class="languages">
-            <li class="language">RU</li>
-            <li class="language">KZ</li>
+            <li class="language bg-black">RU</li>
+            <li class="language bg-black">KZ</li>
           </ul>
         </li>
         <li class="menu-item multilinks">
@@ -46,22 +49,32 @@
 
 
     <section>
-      <div class="prompt">
-        <p class="description uppercase red"> Для того, чтобы открыть доступ к поиску талантов и киностафу и их
-          контактной
-          информации, мы должны получить от вас дополнительную информацию.
-        </p>
+
+      <div class="row">
+        <div class="col-12">
+          <h3 class="profile-title underlined uppercase">профайл кинодеятеля</h3>
+        </div>
       </div>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="prompt">
+            <p class="description uppercase red">Для того, чтобы открыть доступ к поиску талантов и кинодеятелей
+              внесите дополнительную информацию.
+            </p>
+          </div>
+        </div>
+      </div>
+
 
       <div class="row">
         <div class="col-12">
 
           <form class="form">
             <div class="row">
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-lg-6">
                 <h3 class="title underlined uppercase">Общие данные</h3>
               </div>
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-lg-6">
                 <h3 class="red required"> обязательные поля для заполнения (*)</h3>
               </div>
             </div>
@@ -69,20 +82,20 @@
             <div class="body-block">
               <div class="input-blocks">
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col-12 col-md-3">
                     <label>Имя*</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-12 col-md-6">
                     <input type="text">
                   </div>
                 </div>
               </div>
               <div class="input-blocks">
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col-12 col-md-3">
                     <label>Фамилия*</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-12 col-md-6">
                     <input type="text">
                   </div>
                 </div>
@@ -90,10 +103,10 @@
 
               <div class="input-blocks">
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col-12 col-md-3">
                     <label>Отчество</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-12 col-md-6">
                     <input type="text" placeholder="заполняется на ваше усмотрение">
                   </div>
                 </div>
@@ -101,10 +114,10 @@
 
               <div class="input-blocks gender">
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col-12 col-md-3">
                     <label class="gender-label">Пол*</label>
                   </div>
-                  <div class="col-9">
+                  <div class="col-12 col-md-9">
                     <input type="radio" id="women" name="gender" value="women">
                     <label class="women" for="women">Женский</label>
                     <input type="radio" id="men" name="gender" value="men">
@@ -114,10 +127,10 @@
 
               <div class="input-blocks">
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col-12 col-md-3">
                     <label>Дата рождения*</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-12 col-md-6">
                     <input class="datepicker" type="text">
                   </div>
                 </div>
@@ -125,10 +138,10 @@
 
               <div class="input-blocks">
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col-12 col-md-3">
                     <label>Город*</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-12 col-md-6">
                     <select class="select">
                       <option>Алматы</option>
                       <option>Нур-Султан</option>
@@ -144,10 +157,10 @@
 
               <div class="input-blocks">
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col-12 col-md-3">
                     <label>Страна*</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-12 col-md-6">
                     <select class="select">
                       <option>Казахстан</option>
                       <option>Кыргызстан</option>
@@ -158,10 +171,10 @@
 
               <div class="input-blocks">
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col-12 col-md-3">
                     <label>Гражданство*</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-12 col-md-6">
                     <input type="text" placeholder="Казахстан">
                   </div>
                 </div>
@@ -199,12 +212,14 @@
               <div class="photo-block">
                 <h3 class="title-photo">крупность</h3>
                 <img class="vector" src="assets/images/profile-photo-2.jpg" alt="">
-                <p class="description">Лицо в кадре должно быть крупно без солнцезащитных очков и теней</p>
+                <p class="description">Лицо в кадре должно быть крупно без солнцезащитных очков и
+                  теней</p>
               </div>
               <div class="photo-block">
                 <h3 class="title-photo">фон</h3>
                 <img src="assets/images/photo-bckg.jpg" alt="">
-                <p class="description">Фон в кадре должен быть простым, монотонным без посторонних предметов быта</p>
+                <p class="description">Фон в кадре должен быть простым, монотонным без посторонних
+                  предметов быта</p>
               </div>
               <div class="photo-block">
                 <h3 class="title-photo">пример</h3>
@@ -214,9 +229,9 @@
 
             </div>
 
-            <div class="photo-section-bottom">
+            <div class="">
               <h5 class="subtitle uppercase underlined">ЗАГРУЗИТЬ вашу фотографию</h5>
-              <div class="photo-section">
+              <div class="photo-section-bottom">
                 <div class="photo-block image border">
                   <p class="description-image">Перетащите фотографию сюда
                     <img class="arrow" src="assets/images/row.svg" alt="">
@@ -227,9 +242,7 @@
                   <img class="big-vector" src="assets/images/filmmaker-vector.svg" alt="">
                 </div>
                 <div class="photo-block text">
-                  <p class="photo-text">Минимальный размер фотографии – 500 х 500 пикселей, максимальный размер – 1 500
-                    х 1 500 пикселей.</p>
-                  <p>Размер файла не должен привышать 3 мегабайта.</p>
+                  <p class="photo-text">Размер файла не должен привышать 3 мегабайта</p>
                 </div>
 
               </div>
@@ -262,6 +275,36 @@
                 <label class="filmmaker-label" for="checkbox-3">В КОМПАНИИ / ПРОДАКШЕНЕ</label>
                 <input type="radio" id="checkbox-4" name="work" value="checkbox-4">
                 <label class="filmmaker-label" for="checkbox-4">НЕЗАВИСИМЫЙ КИНОДЕЯТЕЛЬ</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-block gender">
+            <div class="row">
+              <div class="col-12">
+                <input type="radio" id="checkbox-5" name="work2" value="checkbox-5">
+                <label class="filmmaker-label" for="checkbox-5">Готов к малобюджетным проектам</label>
+                <input type="radio" id="checkbox-6" name="work2" value="checkbox-6">
+                <label class="filmmaker-label" for="checkbox-6">Готов к длительным командировкам</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="work-input">
+                <p class="description">Ставка за съемочную смену от</p>
+                <input class="md-input" type="number" placeholder="0">
+                <p>до</p>
+                <input class="md-input" type="number" placeholder="0">
+                <div class="currency">
+                  <select class="select">
+                    <option>KZT</option>
+                    <option>RRub</option>
+                    <option>Euro</option>
+                    <option>$</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
@@ -427,39 +470,7 @@
             </div>
 
           </div>
-
-          <div class="row">
-            <div class="col-12">
-              <div class="work-input">
-                <p>Ставка за съемочную смену от</p>
-                <input class="md-input" type="number" placeholder="0">
-                <p>до</p>
-                <input class="md-input" type="number" placeholder="0">
-                <div class="currency">
-                  <select class="select">
-                    <option>KZT</option>
-                    <option>RRub</option>
-                    <option>Euro</option>
-                    <option>$</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="input-block gender">
-            <div class="row">
-              <div class="col-12">
-                <input type="radio" id="checkbox-5" name="work2" value="checkbox-5">
-                <label class="filmmaker-label" for="checkbox-5">Готов к малобюджетным проектам</label>
-                <input type="radio" id="checkbox-6" name="work2" value="checkbox-6">
-                <label class="filmmaker-label" for="checkbox-6">Готов к длительным командировкам</label>
-              </div>
-            </div>
-          </div>
         </div>
-
-
 
 
         <button class="forward button">сохранить</button>
@@ -474,7 +485,7 @@
     <h4>Образование</h4>
     <section class="section">
       <div class="row">
-        <div class="col-9">
+        <div class="col-12 col-md-9">
           <h3 class="title underlined uppercase">образование</h3>
         </div>
       </div>
@@ -489,24 +500,25 @@
 
                   <div class="input-blocks">
                     <div class="row">
-                      <div class="col-3">
+                      <div class="col-12 col-md-3">
                         <label>Название университета</label>
                       </div>
-                      <div class="col-9">
-                        <input type="text" placeholder="Казахская Национальная Академия искусств им. Т. К. Жургенова">
+                      <div class="col-12 col-md-9">
+                        <input type="text"
+                               placeholder="Казахская Национальная Академия искусств им. Т. К. Жургенова">
                       </div>
                     </div>
                   </div>
 
                   <div class="input-blocks">
                     <div class="row">
-                      <div class="col-3">
+                      <div class="col-12 col-md-3">
                         <label>Специальность</label>
                       </div>
-                      <div class="col-4">
+                      <div class="col-12 col-md-4">
                         <input type="text" placeholder="Режиссер игрового кино">
                       </div>
-                      <div class="col-4">
+                      <div class="col-12 col-md-4">
                         <select class="select">
                           <option>Высшее</option>
                           <option>Магистр</option>
@@ -519,17 +531,17 @@
 
                   <div class="input-blocks">
                     <div class="row">
-                      <div class="col-3">
+                      <div class="col-3 col-md-3">
                         <label>Год</label>
                       </div>
-                      <div class="col-2">
+                      <div class="col-6 col-md-2">
                         <input class="input" type="number" placeholder="1995">
                       </div>
-                      <div class="col-7">
+                      <div class="col-12 col-md-7">
                         <div class="contract-download">
                           <button class="download-button">Загрузить диплом</button>
                           <span class="circle"></span>
-                          <span>файл загружен</span>
+                          <span class="download-span">файл загружен</span>
                         </div>
                       </div>
                     </div>
@@ -542,8 +554,8 @@
                 <div class="col-12">
                   <div class="calculator">
                     <h3 class="add-education uppercase">Добавить образование</h3>
-                    <button class="count-button plus" type="button"></button>
                     <button class="count-button minus" type="button"></button>
+                    <button class="count-button plus" type="button"></button>
                   </div>
                 </div>
               </div>
@@ -555,19 +567,20 @@
       </div>
 
       <div class="row">
-        <div class="col-9">
+        <div class="col-12 col-md-9">
           <div class="body-block">
-            <h3 class="title underlined uppercase">дополнительное образование</h3>
+            <h3 class="subtitle underlined uppercase">дополнительное образование</h3>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-9">
+        <div class="col-12 col-md-9">
 
           <form class="form-blocks">
             <div class="form-block">
               <div class="body-block">
-                <p class="education-description">Напишите обо всех пройденных вами курсах, мастер-классах, повышение
+                <p class="education-description">Напишите обо всех пройденных вами курсах,
+                  мастер-классах, повышение
                   квалификации,
                   которые могут быть важны кастинг-директору.</p>
               </div>
@@ -576,41 +589,44 @@
 
                   <div class="input-blocks">
                     <div class="row">
-                      <div class="col-3">
+                      <div class="col-12 col-md-3">
                         <label>название</label>
                       </div>
-                      <div class="col-9">
-                        <input type="text" placeholder="Название курса, имя мастера, город проведения">
+                      <div class="col-12 col-md-9">
+                        <input type="text"
+                               placeholder="Название курса, имя мастера, город проведения">
                       </div>
                     </div>
                   </div>
 
                   <div class="input-blocks">
                     <div class="row">
-                      <div class="col-3">
+                      <div class="col-3 col-md-3">
                         <label>Год</label>
                       </div>
-                      <div class="col-2">
+                      <div class="col-6 col-md-2">
                         <input class="input" type="number" placeholder="1995">
                       </div>
-                      <div class="col-7">
+                      <div class="col-12 col-md-7">
                         <div class="contract-download">
                           <button class="download-button">загрузить сертификат</button>
                           <span class="circle"></span>
-                          <span>файл загружен</span>
+                          <span class="download-span">файл загружен</span>
                         </div>
                       </div>
                     </div>
                   </div>
 
                 </div>
-                <div class="row">
-                  <div class="col-12">
-                    <div class="calculator">
-                      <h3 class="add-education uppercase education">Добавить дополнительное образование</h3>
-                      <button class="count-button plus" type="button"></button>
-                      <button class="count-button minus" type="button"></button>
-                    </div>
+
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="calculator">
+                    <h3 class="add-education uppercase education">Добавить дополнительное
+                      образование</h3>
+                    <button class="count-button minus" type="button"></button>
+                    <button class="count-button plus" type="button"></button>
                   </div>
                 </div>
               </div>
@@ -633,19 +649,19 @@
     <h4>навыки</h4>
     <section class="section">
       <div class="row">
-        <div class="col-9">
+        <div class="col-12 col-md-9">
           <h3 class="title underlined uppercase">навыки</h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-9">
+        <div class="col-6 col-md-9">
           <div class="body-block">
             <h3 class="subtitle underlined uppercase">Языковые навыки</h3>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-9">
+        <div class="col-12 col-md-9">
           <form class="inputs">
 
             <div class="body-block">
@@ -654,7 +670,7 @@
 
                   <div class="input-blocks">
                     <div class="row">
-                      <div class="col-4">
+                      <div class="col-6 col-md-4">
                         <label>Язык*</label>
                         <select class="select">
                           <option>Русский</option>
@@ -670,7 +686,7 @@
                         </select>
                       </div>
 
-                      <div class="col-4">
+                      <div class="col-6 col-md-4">
                         <label>Уровень*</label>
                         <select class="select">
                           <option>Базовый</option>
@@ -683,11 +699,16 @@
                   </div>
                 </div>
 
-                <div class="calculator">
-                  <p class="language-title">Добавить</p>
-                  <button class="count-button plus" type="button"></button>
-                  <button class="count-button minus" type="button"></button>
+                <div class="row">
+                  <div class="col-12 col-md-9">
+                    <div class="calculator mt">
+                      <p class="calculator-title">добавить язык</p>
+                      <button class="count-button plus" type="button"></button>
+                      <button class="count-button minus" type="button"></button>
+                    </div>
+                  </div>
                 </div>
+
 
               </div>
             </div>
@@ -730,14 +751,14 @@
 
       <div class="body-block">
         <div class="row">
-          <div class="col-9">
+          <div class="col-12 col-md-9">
             <h3 class="subtitle underlined uppercase">хобби</h3>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-9">
+        <div class="col-12 col-md-9">
           <form class="inputs">
             <div class="body-block">
               <div class="input">
@@ -746,10 +767,10 @@
 
                   <div class="input-blocks">
                     <div class="row">
-                      <div class="col-3">
+                      <div class="col-12 col-md-3">
                         <label>Ваше хобби</label>
                       </div>
-                      <div class="col-6">
+                      <div class="col-12 col-md-6">
                         <input type="text" placeholder="В произвольной форме">
                       </div>
                     </div>
@@ -757,6 +778,7 @@
 
                 </div>
                 <div class="calculator asd">
+                  <h3 class="calculator-title  uppercase education">добавить хобби</h3>
                   <button class="count-button plus" type="button"></button>
                   <button class="count-button minus" type="button"></button>
                 </div>
@@ -779,10 +801,10 @@
     <section class="section">
 
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-lg-6">
           <h3 class="title underlined uppercase">творческий опыт</h3>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-lg-6">
           <h3 class="red required"> обязательные поля для заполнения (*)</h3>
         </div>
       </div>
@@ -868,7 +890,7 @@
                 <div class="row">
                   <div class="col-12">
                     <div class="calculator">
-                      <h3 class="title uppercase">Добавить</h3>
+                      <h3 class="add-title">Добавить</h3>
                       <button class="count-button plus" type="button"></button>
                       <button class="count-button minus" type="button"></button>
                     </div>
@@ -884,7 +906,7 @@
 
 
       <div class="row">
-        <div class="col-9">
+        <div class="col-12 col-md-9">
 
 
           <form class="form-blocks">
@@ -902,7 +924,8 @@
                         <label>Название*</label>
                       </div>
                       <div class="col-9">
-                        <input type="text" placeholder="Оскар, Золотой глобус, НИКА, Золотая маска">
+                        <input type="text"
+                               placeholder="Оскар, Золотой глобус, НИКА, Золотая маска">
                       </div>
                     </div>
                   </div>
@@ -913,7 +936,8 @@
                         <label>Категория</label>
                       </div>
                       <div class="col-9">
-                        <input type="text" placeholder="Лучшая мужская роль, лучшая женская роль, лучшая режиссура">
+                        <input type="text"
+                               placeholder="Лучшая мужская роль, лучшая женская роль, лучшая режиссура">
                       </div>
                     </div>
                   </div>
@@ -935,7 +959,7 @@
                 <div class="row">
                   <div class="col-12">
                     <div class="calculator">
-                      <h3 class="title uppercase">Добавить</h3>
+                      <h3 class="add-title">добавить награды и номинации</h3>
                       <button class="count-button plus" type="button"></button>
                       <button class="count-button minus" type="button"></button>
                     </div>
@@ -959,14 +983,15 @@
 
     <section class="section">
 
-      <div class="col-6">
+      <div class="col-12 col-lg-6">
         <h3 class="title underlined uppercase">медиа - файлы</h3>
       </div>
 
       <div class="row">
-        <div class="col-9">
+        <div class="col-12 col-md-9">
           <div class="gallery-info">
-            <p class="description">В данном разделе Вы можете собрать свое профессиональное портфолио, загрузив
+            <p class="description">В данном разделе Вы можете собрать свое профессиональное портфолио,
+              загрузив
               шоурил, видео проектов, синопсисы, краткое содержание сценариев, описание своих идей, эскизы
               художественых работ.</p>
             <p class="description">Все материалы помогут отобразить Ваш творческий потенциал.</p>
@@ -986,7 +1011,7 @@
                     <div class="col-3">
                       <label>Видео 1</label>
                     </div>
-                    <div class="download-block col-12 col-md-6">
+                    <div class="download-block col-9 col-md-6">
                       <input type="text" placeholder="ссылка на ролик / шоурил">
                     </div>
                   </div>
@@ -997,7 +1022,7 @@
                     <div class="col-3">
                       <label>Видео 2</label>
                     </div>
-                    <div class="download-block col-12 col-md-6">
+                    <div class="download-block col-9 col-md-6">
                       <input type="text" placeholder="ссылка на ролик">
                     </div>
                   </div>
@@ -1009,7 +1034,7 @@
                     <div class="col-3">
                       <label>Видео 3</label>
                     </div>
-                    <div class="download-block col-12 col-md-6">
+                    <div class="download-block col-9 col-md-6">
                       <input type="text" placeholder="ссылка на ролик">
                     </div>
                   </div>
@@ -1019,9 +1044,9 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-md-6">
               <div class="calculator media-add-button">
-                <h3 class="title red uppercase">Добавить</h3>
+                <h3 class="add-title">добавить видео ссылку</h3>
                 <button class="count-button plus" type="button"></button>
                 <button class="count-button minus" type="button"></button>
               </div>
@@ -1035,7 +1060,7 @@
 
 
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="photo-info">
               <p class="description uppercase">загрузить
                 <img class="arrow" src="assets/images/row.svg" alt="">
@@ -1059,6 +1084,10 @@
 
         <div class="photo photo-11">
           <img class="img-block" src="assets/images/bg-7.jpg" alt="">
+          <div class="photo-description">
+            <p class="description">Загрузите фотографию в формате JPG</p>
+          </div>
+          <img class="arrow" src="assets/images/row.svg" alt="">
           <div class="div">
             <button type="button" class="btn red">редактировать</button>
             <button type="button" class="btn">удалить</button>
@@ -1067,6 +1096,10 @@
 
         <div class="photo photo-12">
           <img class="img-block" src="assets/images/bg-8.jpg" alt="">
+          <div class="photo-description">
+            <p class="description">Загрузите фотографию в формате JPG</p>
+          </div>
+          <img class="arrow" src="assets/images/row.svg" alt="">
           <div class="div">
             <button type="button" class="btn red">редактировать</button>
             <button type="button" class="btn">удалить</button>
@@ -1074,7 +1107,11 @@
         </div>
 
         <div class="photo photo-13">
-          <img class="img-block" src="assets/images/bg-4.jpg" alt="">
+          <img class="img-block" src="assets/images/bg-6.jpg" alt="">
+          <div class="photo-description">
+            <p class="description">Загрузите фотографию в формате JPG</p>
+          </div>
+          <img class="arrow" src="assets/images/row.svg" alt="">
           <div class="div">
             <button type="button" class="btn red">редактировать</button>
             <button type="button" class="btn">удалить</button>
@@ -1083,6 +1120,10 @@
 
         <div class="photo photo-14">
           <img class="img-block" src="assets/images/bg-5.jpg" alt="">
+          <div class="photo-description">
+            <p class="description">Загрузите фотографию в формате JPG</p>
+          </div>
+          <img class="arrow" src="assets/images/row.svg" alt="">
           <div class="div">
             <button type="button" class="btn red">редактировать</button>
             <button type="button" class="btn">удалить</button>
@@ -1090,7 +1131,12 @@
         </div>
 
         <div class="photo photo-15">
-          <img class="img-block" src="assets/images/bg-6.jpg" alt="">
+          <img class="img-block display-sm-none" src="assets/images/bg-4.jpg" alt="">
+          <img class="img-block display-desc-none" src="assets/images/bg-20.jpg" alt="">
+          <div class="photo-description">
+            <p class="description">Загрузите фотографию в формате JPG</p>
+          </div>
+          <img class="arrow" src="assets/images/row.svg" alt="">
           <div class="div">
             <button type="button" class="btn red">редактировать</button>
             <button type="button" class="btn">удалить</button>
@@ -1098,7 +1144,12 @@
         </div>
 
         <div class="photo photo-16">
-          <img class="img-block" src="assets/images/bg-1.jpg" alt="">
+          <img class="img-block display-sm-none" src="assets/images/bg-1.jpg" alt="">
+          <img class="img-block display-desc-none" src="assets/images/bg-19.jpg" alt="">
+          <div class="photo-description">
+            <p class="description">Загрузите фотографию в формате JPG</p>
+          </div>
+          <img class="arrow" src="assets/images/row.svg" alt="">
           <div class="div">
             <button type="button" class="btn red">редактировать</button>
             <button type="button" class="btn">удалить</button>
@@ -1107,6 +1158,10 @@
 
         <div class="photo photo-17">
           <img class="img-block" src="assets/images/bg-2.jpg" alt="">
+          <div class="photo-description">
+            <p class="description">Загрузите фотографию в формате JPG </p>
+          </div>
+          <img class="arrow" src="assets/images/row.svg" alt="">
           <div class="div">
             <button type="button" class="btn red">редактировать</button>
             <button type="button" class="btn">удалить</button>
@@ -1114,12 +1169,17 @@
         </div>
 
         <div class="photo photo-18">
-          <img class="img-block" src="assets/images/bg-2.jpg" alt="">
+          <img class="img-block" src="assets/images/bg-green.jpg" alt="">
+          <div class="photo-description">
+            <p class="description">Загрузите фотографию в формате JPG</p>
+          </div>
+          <img class="arrow" src="assets/images/row.svg" alt="">
           <div class="div">
             <button type="button" class="btn red">редактировать</button>
             <button type="button" class="btn">удалить</button>
           </div>
         </div>
+
 
       </div>
 
@@ -1132,7 +1192,7 @@
 
 
     <section>
-      <div class="col-6">
+      <div class="col-12 col-lg-6">
         <h3 class="title underlined uppercase">Вдохновение</h3>
       </div>
 
@@ -1141,7 +1201,7 @@
           <div class="body-block">
 
             <div class="row">
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="input-blocks">
                   <label class="uppercase">Любимые режиссеры</label>
                   <input type="text" placeholder="В произвольной форме">
@@ -1149,14 +1209,14 @@
               </div>
 
 
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="input-blocks">
                   <label class="uppercase">Любимые фильмы</label>
                   <input type="text" placeholder="В произвольной форме">
                 </div>
               </div>
 
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="input-blocks">
                   <label class="uppercase">Любимая музыка</label>
                   <input type="text" placeholder="В произвольной форме">
@@ -1164,7 +1224,7 @@
               </div>
 
 
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="input-blocks">
                   <label class="uppercase">Любимые художники</label>
                   <input type="text" placeholder="В произвольной форме">
@@ -1190,7 +1250,7 @@
     <section class="section">
 
       <div class="row">
-        <div class="col-9">
+        <div class="col-12 col-md-9">
           <h3 class="title underlined uppercase">Контакты*</h3>
         </div>
       </div>
@@ -1211,19 +1271,30 @@
                         <div class="col-3">
                           <label>Номер телефона*</label>
                         </div>
-                        <div class="col-5">
+                        <div class="col-9 col-md-5">
                           <input type="number" placeholder="+7 (---) --- -- -- ">
                         </div>
                       </div>
                     </div>
 
+                    <div class="input-checkbox">
+                      <input type="radio" id="whats" name="contact" value="whats_app">
+                      <label for="whats">WhatsApp</label>
+                      <input type="radio" id="telegram" name="contact" value="telegram">
+                      <label for="telegram">Telegram</label>
+                    </div>
+
+
                   </div>
 
-                  <div>
-                    <div class="calculator">
-                      <button class="count-button plus" type="button"></button>
-
-                      <button class="count-button minus" type="button"></button>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="calculator m-order-1 d-order-0">
+                        <h3 class="calculator-title">Добавить номер
+                          телефона</h3>
+                        <button class="count-button minus" type="button"></button>
+                        <button class="count-button plus" type="button"></button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1231,12 +1302,6 @@
               </div>
 
 
-              <div class="input-checkbox">
-                <input type="radio" id="whats" name="contact" value="whats_app">
-                <label for="whats">WhatsApp</label>
-                <input type="radio" id="telegram" name="contact" value="telegram">
-                <label for="telegram">Telegram</label>
-              </div>
 
               <div class="input-blocks">
                 <div class="row">
@@ -1244,7 +1309,7 @@
                     <label>Email*</label>
                   </div>
 
-                  <div class="col-6">
+                  <div class="col-9 col-md-6">
                     <input type="text" placeholder="@">
                   </div>
                 </div>
@@ -1252,12 +1317,13 @@
 
               <div class="input-blocks access">
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col-12 col-md-3">
                     <label>Доступно</label>
                   </div>
-                  <div class="col-9">
+                  <div class="col-12 col-md-9">
                     <input type="radio" id="checkbox-1" name="access" value="checkbox-1">
-                    <label class="access-label" for="checkbox-1">Всем посетителям профиля (весь интернет)</label>
+                    <label class="access-label" for="checkbox-1">Всем посетителям профиля (весь
+                      интернет)</label>
                     <input type="radio" id="checkbox-2" name="access" value="checkbox-2">
                     <label class="access-label" for="checkbox-2">Только по запросу</label></div>
                 </div>
@@ -1270,7 +1336,7 @@
                     <label>Facebook</label>
                   </div>
 
-                  <div class="col-6">
+                  <div class="col-9 col-md-6">
                     <input type="text" placeholder="https://www.facebook.com/eurasia_talents">
                   </div>
                 </div>
@@ -1282,7 +1348,7 @@
                   <div class="col-3">
                     <label>Instagram</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-9 col-md-6">
                     <input type="text" placeholder="https://www.instagram.com/eurasia_talents">
                   </div>
                 </div>
@@ -1293,7 +1359,7 @@
                   <div class="col-3">
                     <label>VK</label>
                   </div>
-                  <div class="col-6">
+                  <div class="col-9 col-md-6">
                     <input type="text" placeholder="https://vk.com/eurasia_talents">
                   </div>
                 </div>
@@ -1314,30 +1380,28 @@
 
     <section class="section">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
           <h3 class="title underlined uppercase">О себе</h3>
         </div>
 
 
         <form class="form">
-          <div class="col-9">
+          <div class="col-12 col-md-9">
             <div class="body-block">
               <div class="input-blocks">
                 <textarea class="textarea"
-                          placeholder="Здесь вы можете написать о себе, помните, что краткость – сестра таланта."
-                          cols="35" rows="5"></textarea>
+                          placeholder="Здесь вы можете написать о себе, помните, что краткость – сестра таланта."></textarea>
               </div>
             </div>
           </div>
 
 
-          <div class="col-9">
+          <div class="col-12 col-md-9">
             <div class="body-block">
               <h3 class="subtitle underlined uppercase">ЗДОРОВЬЕ*</h3>
               <div class="input-blocks">
                 <textarea class="textarea"
-                          placeholder="Здесь вы можете написать о состоянии вашего здоровья (болезни, хронические, хромота, остуствие конечности)"
-                          cols="35" rows="5"></textarea>
+                          placeholder="Здесь вы можете написать о состоянии вашего здоровья (болезни, хронические, хромота, остуствие конечности)"></textarea>
               </div>
             </div>
           </div>
@@ -1354,25 +1418,27 @@
     <section class="section">
 
       <div class="row">
-        <div class="col-9">
+        <div class="col-12 col-md-9">
           <h3 class="title underlined uppercase">документы*</h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-9">
+        <div class="col-12 col-md-9">
           <div class="contract">
             <div class="body-block">
 
               <div class="contract-info">
                 <p>Приложите копию удостоверения личности.</p>
                 <p> Eurasia Talents гарантирует конфиденциальность.</p>
-                <p>Информация из удостоверения никуда не передается и хранится закрыто от посторонних лиц.</p>
+                <p>Информация из удостоверения никуда не передается и хранится закрыто от посторонних
+                  лиц.</p>
               </div>
               <div class="contract-download">
                 <button class="download-button">Загрузить</button>
                 <span class="circle"></span>
-                <span>файлы загружены</span>
-                <p class="contract-gray">*Прикрепить удостоверение личности (две стороны) или первую страницу
+                <span class="download-span">файлы загружены</span>
+                <p class="contract-gray">*Прикрепить удостоверение личности (две стороны) или первую
+                  страницу
                   паспорта.</p>
               </div>
 
@@ -1401,7 +1467,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="footer-section-head" id="contacts">
-            <h3 class="title underlined">КОНТАКТЫ</h3>
+            <h3 class="big-title underlined">КОНТАКТЫ</h3>
           </div>
 
           <div class="footer-section-body">
@@ -1413,14 +1479,15 @@
               <li><a href="#" class="contact">+7 (771) 766 09 00</a></li>
             </ul>
 
-            <p>Мы расположены по адресу: <br><br> Казахстан, город Алматы, Бульвар Мендикулова, 22, жилой комплекс
+            <p>Мы расположены по адресу: <br><br> Казахстан, город Алматы, Бульвар Мендикулова, 22, жилой
+              комплекс
               «ТУРКУАЗ»</p>
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="footer-section-head" id="faq">
-            <h3 class="title underlined">FAQ</h3>
+            <h3 class="big-title underlined">FAQ</h3>
           </div>
 
           <div class="footer-section-body">
@@ -1428,7 +1495,8 @@
               <li><a href="#" class="link">За что я плачу деньги?</a></li>
               <li><a href="#" class="link">Какие гарантии, что меня позовут на съемку?</a></li>
               <li><a href="#" class="link">Могу ли я сразу получить свои фотографии и видео?</a></li>
-              <li><a href="#" class="link">У меня нет опыта и актерского образования, будут ли меня звать в
+              <li><a href="#" class="link">У меня нет опыта и актерского образования, будут ли меня звать
+                в
                 проекты?</a>
               </li>
               <li><a href="#" class="link">ВСЕ ВОПРОСЫ И ОТВЕТЫ</a></li>
@@ -1438,7 +1506,7 @@
 
         <div class="col-md-4">
           <div class="footer-section-head">
-            <h3 class="title underlined">ДОКУМЕНТЫ</h3>
+            <h3 class="big-title underlined">ДОКУМЕНТЫ</h3>
           </div>
 
           <div class="footer-section-body">

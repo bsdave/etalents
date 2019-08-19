@@ -2,44 +2,15 @@
   max-width: 100%;
   margin-bottom: 150px;
   margin-top: 100px;
+  display: none;
+  .count{
+    margin-right: 30px;
+  }
 }
 
 .counting {
   display: block;
   position: relative;
-
-  .amount {
-    display: block;
-    font-size: 50px;
-    position: relative;
-
-    &.stars,
-    &.film-makers,
-    &.companies {
-      &::after {
-        content: "";
-        height: 30px;
-        width: 30px;
-        position: absolute;
-        top: -30px;
-      }
-    }
-
-    &.stars::after {
-      background: url("../images/stars.svg") center no-repeat;
-      background-size: 100%;
-    }
-
-    &.companies::after {
-      background: url("../images/moviemaker-ico.svg") center no-repeat;
-      background-size: 100%;
-    }
-
-    &.film-makers::after {
-      background: url("../images/camera-icon.svg") center no-repeat;
-      background-size: 100%;
-    }
-  }
 
   .title {
     margin-top: 10px;
@@ -51,7 +22,7 @@
       content: "";
       display: inline-block;
       position: absolute;
-      right: 17%;
+      right: 3%;
       top: 0;
       bottom: 0;
 
@@ -60,3 +31,74 @@
     }
   }
 }
+
+.amount {
+  display: block;
+  color: white;
+  font-size: 50px;
+  position: relative;
+
+  &.stars,
+  &.film-makers,
+  &.companies {
+    &::after {
+      content: "";
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      top: -30px;
+    }
+  }
+
+  &.stars::after {
+    background: url("../images/stars.svg") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.companies::after {
+    background: url("../images/moviemaker-ico.svg") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.film-makers::after {
+    background: url("../images/camera-icon.svg") center no-repeat;
+    background-size: 100%;
+  }
+}
+
+@include tablet{
+  .counting {
+    &.right-border {
+      &::after {
+        right: -10%;
+
+      }
+    }
+  }
+}
+
+
+
+@include desktop{
+  .counting {
+    &.right-border {
+      &::after {
+        right: 10%;
+
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  body {
+    .countings-box {
+      display: block;
+    }
+  }
+}
+
+
+
+

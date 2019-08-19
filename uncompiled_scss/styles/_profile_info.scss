@@ -1,0 +1,445 @@
+
+.left-block {
+  position: absolute;
+  left: 0;
+  top: 180px;
+  .menu-list {
+    margin-left: 20px;
+    margin-top: 30px;
+    display: block;
+  }
+  .second {
+    margin-top: 40px;
+    position: relative;
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 130px;
+      height: 2px;
+      bottom: -30px;
+      left: 0;
+      background: $color-red;
+    }
+  }
+  .button-block {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 130px;
+      height: 2px;
+      top: -20px;
+      left: 0;
+      background: $color-red;
+    }
+  }
+  .socials {
+    margin-left: 0;
+  }
+  .link-block {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .title {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+  }
+  .block {
+    margin-left: 20px;
+  }
+  .contacts-block {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    .description {
+      font-size: 12px;
+      line-height: 12px;
+    }
+    .title {
+      margin-bottom: 50px;
+    }
+  }
+  .contacts-block-info {
+    position: relative;
+    margin-bottom: 60px;
+    .title {
+      margin-bottom: 10px;
+    }
+    .description {
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+  .socials {
+    position: relative;
+  }
+}
+
+.button-border {
+  font-family: "Futura PT Demi";
+  background: transparent;
+  color: $color-black;
+  border: 1px solid black;
+  text-align: left;
+  font-size: 9px;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 25px 20px 10px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.right-block {
+  display: none;
+  position: relative;
+  right: 0;
+  top: 180px;
+  .moderation{
+    margin-top: 70px;
+  }
+  .title {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .link-block {
+    margin: 35px 0;
+  }
+}
+
+.link-views {
+  display: inline-flex;
+  .description {
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 20px;
+  }
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0;
+  .list-item {
+    list-style: none;
+    margin-bottom: 20px;
+    font-family: "Futura PT Demi";
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.profile-info {
+  padding-left: 55%;
+  position: relative;
+  .rating{
+    float: right;
+  }
+  &:last-child {
+    margin-bottom: 115px;
+  }
+  .audio-block {
+    margin-bottom: 60px;
+    .img-block {
+      margin-top: 20px;
+    }
+  }
+  .edit-img {
+    position: absolute;
+    right: 10%;
+    margin-top: 30px;
+  }
+  .photo-card {
+    margin-bottom: 50px;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-template-rows: repeat(1, 200px);
+    .photo-1 {
+      grid-column: 1/5;
+      grid-row: 1/2;
+    }
+    .photo-2 {
+      grid-column: 5/9;
+      grid-row: 1/2;
+    }
+    .photo-3 {
+      grid-column: 1/5;
+      grid-row: 3/4;
+    }
+    .photo-4 {
+      grid-column: 5/9;
+      grid-row: 3/4;
+    }
+    .photo-5 {
+      grid-column: 1/5;
+      grid-row: 4/5;
+    }
+    .photo-6 {
+      grid-column: 5/9;
+      grid-row: 4/5;
+    }
+    .photo-7 {
+      grid-column: 1/5;
+      grid-row: 5/6;
+    }
+    .photo-8 {
+      grid-column: 5/9;
+      grid-row: 5/6;
+    }
+  }
+
+  .big-title {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0;
+  }
+  .description-bold {
+    font-family: "Futura PT Demi";
+    font-size: 10px;
+    line-height: 13px;
+    font-weight: normal;
+  }
+  .description {
+    font-family: "Futura PT Medium";
+    font-size: 15px;
+    line-height: 13px;
+
+    color: #000000;
+    &.bold {
+      font-weight: bold;
+    }
+  }
+  .bold {
+    font-weight: bold;
+  }
+}
+
+.about-user {
+  font-family: "Futura PT Book";
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: normal;
+  text-transform: lowercase;
+  letter-spacing: 0.1px;
+
+  color: #000000;
+}
+
+@include tablet {
+  .profile-info {
+    padding-left: 45%;
+    position: relative;
+    .photo-card {
+      margin-bottom: 50px;
+      grid-column-gap: 1em;
+      grid-row-gap: 1em;
+      grid-template-rows: repeat(1, 220px);
+      .photo-1 {
+        grid-column: 1/5;
+        grid-row: 1/2;
+      }
+      .photo-2 {
+        grid-column: 5/9;
+        grid-row: 1/2;
+      }
+      .photo-3 {
+        grid-column: 1/5;
+        grid-row: 3/4;
+      }
+      .photo-4 {
+        grid-column: 5/9;
+        grid-row: 3/4;
+      }
+      .photo-5 {
+        grid-column: 1/5;
+        grid-row: 4/5;
+      }
+      .photo-6 {
+        grid-column: 5/9;
+        grid-row: 4/5;
+      }
+      .photo-7 {
+        grid-column: 1/5;
+        grid-row: 5/6;
+      }
+      .photo-8 {
+        grid-column: 5/9;
+        grid-row: 5/6;
+      }
+    }
+
+  }
+}
+
+@include desktop {
+  .right-block {
+    display: inline-block;
+    position: absolute;
+    .socials {
+      position: relative;
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 90%;
+        height: 2px;
+        bottom: -30px;
+        left: 0;
+        background: $color-black;
+      }
+    }
+    .title {
+      font-size: 18px;
+      line-height: 23px;
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 300px;
+        height: 2px;
+        bottom: -30px;
+        left: -15px;
+        background: $color-red;
+      }
+    }
+    .link-views {
+      display: inline-flex;
+      .description {
+        font-size: 18px;
+        line-height: 23px;
+        margin-left: 20px;
+      }
+    }
+    .menu-list {
+      position: relative;
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -30px;
+        left: 0;
+        background: $color-black;
+      }
+
+      .list-item {
+        cursor: pointer;
+        a {
+          font-size: 18px;
+          line-height: 23px;
+        }
+      }
+    }
+  }
+  .button-block {
+    display: none;
+  }
+  .block {
+    margin-left: 50px;
+
+  }
+  .left-block {
+    .link-views {
+      display: none;
+      .description {
+        margin-left: 20px;
+      }
+    }
+    .second {
+      display: none;
+    }
+    .title {
+      font-size: 18px;
+      line-height: 23px;
+    }
+    .menu-list {
+      display: none;
+    }
+  }
+  .button-border {
+    font-size: 18px;
+    line-height: 23px;
+    cursor: pointer;
+
+  }
+  .edit-img {
+    position: absolute;
+    right: 30%;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .profile-info {
+    padding-left: 30%;
+    .edit-img {
+      position: absolute;
+      right: 30%;
+      margin-top: 30px;
+    }
+    .photo-card {
+      margin-bottom: 50px;
+      grid-column-gap: 1em;
+      grid-row-gap: 1em;
+      grid-template-rows: repeat(1, 300px);
+      .photo-1 {
+        grid-column: 1/5;
+        grid-row: 1/2;
+      }
+      .photo-2 {
+        grid-column: 5/9;
+        grid-row: 1/2;
+      }
+      .photo-3 {
+        grid-column: 1/5;
+        grid-row: 3/4;
+      }
+      .photo-4 {
+        grid-column: 5/9;
+        grid-row: 3/4;
+      }
+      .photo-5 {
+        grid-column: 1/5;
+        grid-row: 4/5;
+      }
+      .photo-6 {
+        grid-column: 5/9;
+        grid-row: 4/5;
+      }
+      .photo-7 {
+        grid-column: 1/5;
+        grid-row: 5/6;
+      }
+      .photo-8 {
+        grid-column: 5/9;
+        grid-row: 5/6;
+      }
+    }
+
+    .big-title {
+      font-size: 21px;
+      line-height: 27px;
+    }
+    .description-bold {
+      font-size: 18px;
+      line-height: 23px;
+    }
+    .description {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+}

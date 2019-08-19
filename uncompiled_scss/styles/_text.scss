@@ -2,7 +2,39 @@
   font-family: 'Futura PT Book', 'sans-serif';
   font-size: 25px;
   color: $color-red;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 0.25em;
+
+  margin-top: 20px;
+  margin-bottom: 50px;
+  position: relative;
+  &.underlined::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 112px;
+    height: 2px;
+    bottom: -30px;
+    left: 0;
+    background: $color-red;
+  }
+}
+
+.title-black{
+  font-size: 18px;
+  line-height: 23px;
   text-transform: uppercase;
+  font-family: "Futura PT Demi";
+  color: #000000;
+}
+
+.big-description {
+  font-family: 'Futura PT Book', 'sans-serif';
+  font-size: 25px;
+  color: $color-red;
   text-decoration: none;
   display: inline-block;
   font-weight: 900;
@@ -10,21 +42,62 @@
 
   margin-top: 0px;
   margin-bottom: 20px;
+  position: relative;
+  &.underlined::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 112px;
+    height: 2px;
+    bottom: -30px;
+    left: 0;
+    background: $color-red;
+  }
+}
+
+.gray-underlined::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 112px;
+  height: 2px;
+  bottom: -30px;
+  left: 0;
+  background: #777777;
 }
 
 .black {
   color: black;
 }
+.white {
+  color: white;
+}
+
+
+.gray-text {
+  color: #777777;
+}
 
 .text {
-  font-size: 18px;
+  font-size: 15px;
+  line-height: 135%;
   margin-top: 0;
   font-weight: 900;
+  color: white;
 
   letter-spacing: 0.5px;
-    line-height: 1;
+  &.gray-text {
+    color: #777777;
+  }
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+@include desktop{
+  .text{
+    font-size: 18px;
+
+  }
 }

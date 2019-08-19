@@ -1,14 +1,25 @@
+.locations-box{
+  margin-top: 70px;
+  margin-bottom: 20%;
+  .big-title{
+    margin-bottom: 100px;
+  }
+}
 .locations {
+  margin-right: -25px;
+  margin-left: -25px;
   margin-top: 50px;
   margin-bottom: 50px;
 
   .loc-left {
-    padding-left: 100px;
+    padding-left: 30px;
     padding-right: 50px;
     padding-top: 50px;
   }
 
   .loc-right {
+    float: right;
+    margin-right: 130px;
     margin-left: 50px;
     padding-left: 20px;
     border-left: 1px solid red;
@@ -35,17 +46,45 @@
     background: url("../images/location-arrow.svg") center no-repeat;
     background-size: contain;
 
-    top: 395px;
+    top: 396px;
     z-index: 10;
     cursor: pointer;
   }
 
   .prev-loc {
-    left: 40px;
+    left: 0;
     transform: rotate(180deg);
   }
 
   .next-loc {
-    right: 40px;
+    right: 0;
+  }
+}
+
+@include desktop{
+  .loc-controls{
+    .prev-loc,
+    .next-loc {
+      top: 346px;
+    }
+    .prev-loc {
+      left: 40px;
+      transform: rotate(180deg);
+    }
+
+    .next-loc {
+      right: 40px;
+    }
+  }
+  .locations {
+    margin: auto;
+    .loc-right{
+      float: none;
+    }
+    .loc-left {
+      padding-left: 100px;
+      padding-right: 50px;
+      padding-top: 50px;
+    }
   }
 }

@@ -2,7 +2,8 @@
   margin-top: 100px;
   position: relative;
   z-index: 10;
-  padding-right: 35%;
+  margin-right: -25px;
+  margin-left: -25px;
 
   .our-platform-head {
     margin-bottom: 40px;
@@ -15,7 +16,7 @@
   }
 
   .video-preview {
-    height: 400px;
+    height: 350px;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,6 +41,16 @@
       cursor: pointer;
       filter: grayscale(0%);
 
+    }
+  }
+}
+
+@include desktop{
+  .our-platform-box{
+    padding-right: 35%;
+    .video-preview{
+      height: 400px;
+      width: 100%;
     }
   }
 }

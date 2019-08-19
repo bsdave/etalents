@@ -1,5 +1,10 @@
 .input-blocks {
   label{
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .label{
+    line-height: 5;
   }
   input {
     width: 100%;
@@ -20,7 +25,7 @@
 
 
 .input-checkbox {
-  margin: 30px 0 50px 26%;
+  margin: 30px 0 50px 0;
   label {
     padding-right: 100px;
   }
@@ -41,7 +46,9 @@ input[type="checkbox"]:not(:checked) + label {
   padding-left: 40px;
   margin: 10px 0 5px 0;
   cursor: pointer;
+  font-size: 12px;
   line-height: 40px;
+
   display: inline-block;
   color: $color-black;
   &.bg-white {
@@ -62,7 +69,6 @@ input[type="checkbox"]:not(:checked) + label:before {
   height: 25px;
   border: 1px solid $color-black;
   background: #fff;
-
 }
 
 input[type="checkbox"]:checked + label:after,
@@ -80,6 +86,8 @@ input[type="checkbox"]:not(:checked) + label:after {
     background: red;
   }
 }
+
+
 
 input[type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
@@ -102,7 +110,7 @@ input[type="radio"]:checked,
 input[type="radio"]:checked + label,
 input[type="radio"]:not(:checked) + label {
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 40px;
   position: relative;
   padding-left: 35px;
@@ -149,4 +157,45 @@ input[type="radio"]:checked + label:after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+@include desktop{
+  input[type="radio"]:checked + label,
+  input[type="radio"]:not(:checked) + label {
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 40px;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    color: $color-black;
+    &.bg-white {
+      color: white;
+    }
+  }
+
+  .input-checkbox {
+    margin: 30px 0 50px 26%;
+    label {
+      padding-right: 100px;
+    }
+  }
+
+  input[type="checkbox"]:checked + label,
+  input[type="checkbox"]:not(:checked) + label {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+
+  .input-blocks{
+    .label{
+      line-height: 0;
+    }
+    label{
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
 }

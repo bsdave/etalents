@@ -15,8 +15,9 @@
 
 <div class="header-box">
   <a href="#" class="link-to-home sm-logo">
+    <h5 class="header-title"><span class="bg-red">premium</span> COMPANY</h5>
     <img class="logo-desc" src="assets/images/logo.svg" alt="">
-    <img class="logo-sm" src="assets/images/logo-sm.svg" alt="">
+    <img class="logo-sm white" src="assets/images/logo-sm.svg" alt="">
   </a>
   <header class="header sm-header">
     <ul class="navigation-menu">
@@ -24,6 +25,9 @@
       <li class="menu-item"><a href="#" class="menu-link">КАСТИНГИ</a></li>
       <li class="menu-item"><a href="#" class="menu-link">НАСТРОЙКИ</a></li>
     </ul>
+    <div class="menu-toggle">
+      <button id="nav-btn" class="btn-nav not-active" type="button"><i></i></button>
+    </div>
     <nav class="header-nav sm-nav">
       <ul class="navigation">
         <li class="menu-item"><span class="profile-ico"></span></li>
@@ -66,6 +70,10 @@
         </div>
         <div class="block">
           <div class="contacts-block">
+            <div class="link-buttons display-none">
+              <a class="button-border" href="">Редактировать ЛОГО</a>
+              <a class="button-border" href="">вакансии</a>
+            </div>
             <h3 class="title red underlined uppercase">представитель компании</h3>
             <p class="description">Лаура Ергалиева</p>
             <p class="description">исполнительный директор</p>
@@ -139,6 +147,11 @@
             <a href="#" class="social-link"><span class="vk-gray"></span></a>
             <a href="#" class="social-link"><span class="telegram-gray"></span></a>
             <a href="#" class="social-link"><span class="link-icon-gray"></span></a>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="moderation">
+            <h3 class="title red uppercase">Анкета ожидает модерации</h3>
           </div>
         </div>
       </div>
@@ -238,7 +251,7 @@
     <div class="health-block">
 
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <h3 class="big-title underlined uppercase">проекты</h3>
           <img class="edit-img" src="assets/images/edit.svg" alt="">
         </div>

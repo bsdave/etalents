@@ -295,7 +295,8 @@
   }
 
   &.small {
-    font-size: 25px;
+    font-size: 18px;
+    line-height: 23px;
     color: black;
     font-weight: bold;
     margin-top: 0;
@@ -443,6 +444,9 @@
     line-height: 32px;
     padding: 0;
     color: $color-red;
+    &.small{
+      font-size: 25px;
+    }
     &.underlined::after {
       content: "";
       display: inline-block;

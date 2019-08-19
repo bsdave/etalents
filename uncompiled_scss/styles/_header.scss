@@ -1,38 +1,122 @@
 .header-box {
   position: relative;
-  .navigation-menu{
-    display: inline-flex;
+
+  .link-to-home {
+    position: relative;
+    .white {
+      filter: invert(1);
+    }
+    .header-title {
+      position: absolute;
+      top: -40px;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      right: -100px;
+      color: black;
+      .bg-red {
+        background: $color-red;
+        color: white;
+        padding: 50px 10px 80px 20px;
+      }
+    }
+  }
+  .menu-toggle {
+    right: 0;
+    top: 0;
+    position: absolute;
+  }
+  .btn-nav {
+    background: transparent;
+    width: 70px;
+    height: 68px;
+    float: right;
+    border: none;
+    position: relative;
+    z-index: 1;
+    &.is-active {
+      z-index: 1;
+      filter: invert(1);
+    }
+
+  }
+  .btn-nav i {
+    position: absolute;
+    height: 2px;
+    width: 18px;
+    background: #000;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -9px;
+  }
+  .btn-nav i::after,
+  .btn-nav i::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 18px;
+    background: #000;
+    left: 0;
+  }
+  .btn-nav i::before {
+    top: -6px;
+  }
+  .btn-nav i::after {
+    top: 6px;
+  }
+  .btn-nav.is-active i {
+    background: transparent;
+  }
+  .btn-nav.is-active i::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .btn-nav.is-active i::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .navigation-menu {
+    min-width: 100%;
+    background: #000000;
+    top: -20px;
+    right: 0;
+    display: none;
     justify-content: flex-end;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0 auto;
     text-align: center;
-    width: 100%;
-    position: relative;
+    position: absolute;
     margin-top: 20px;
-    .menu-item{
+    height: 400px;
+    z-index: 1;
+    .menu-item {
+      text-align: left;
       margin-right: 13%;
       list-style: none;
-      .menu-link{
+      margin-bottom: 40px;
+      margin-top: 40px;
+      .menu-link {
         text-decoration: none;
         font-size: 18px;
         line-height: 23px;
         font-family: "Futura PT Demi";
-        color: #000000;
+        color: #fff;
         text-transform: uppercase;
       }
     }
   }
-  .title-steps{
+  .title-steps {
     display: none;
   }
   .link-to-home {
     position: absolute;
     top: 60px;
     left: 0px;
-    .logo-sm{
+    .logo-sm {
       display: block;
     }
-    .logo-desc{
+    .logo-desc {
       display: none;
     }
     &.sm-logo {
@@ -77,7 +161,7 @@
             height: 50px;
           }
 
-          .profile-ico{
+          .profile-ico {
             background: url("../images/star.svg") center no-repeat, red;
             display: block;
             height: 50px;
@@ -97,7 +181,7 @@
             background: white;
             color: black
           }
-          .bg-black{
+          .bg-black {
             background: black;
             color: white;
           }
@@ -127,7 +211,7 @@
                   background: white;
                   color: black
                 }
-                &.bg-black{
+                &.bg-black {
                   background: black;
                   color: white;
                 }
@@ -155,7 +239,7 @@
               text-decoration: none;
               font-weight: bold;
               margin-top: 1px;
-              &.bottom{
+              &.bottom {
                 position: absolute;
                 bottom: 0;
               }
@@ -183,14 +267,69 @@
   }
 }
 
-@include desktop{
+@include tablet{
+  .header-box{
+    .navigation-menu {
+      min-width: 80%;
+    }
+  }
+}
+
+@include desktop {
   .header-box {
     position: relative;
-    .title-steps{
+    .menu-toggle {
+      display: none;
+    }
+    .navigation-menu {
+      display: inline-flex;
+      background: transparent;
+      justify-content: flex-end;
+      flex-direction: row;
+      width: 100%;
+      position: relative;
+      top: 0;
+      margin-top: 20px;
+      height: auto;
+
+      .menu-item {
+        margin-right: 13%;
+        list-style: none;
+        margin-bottom: 0;
+        margin-top: 0;
+        .menu-link {
+          text-decoration: none;
+          font-size: 18px;
+          line-height: 23px;
+          font-family: "Futura PT Demi";
+          color: #000000;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .link-to-home {
+      position: relative;
+      .header-title {
+        position: absolute;
+        top: -20px;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.45em;
+        text-transform: uppercase;
+        right: -200px;
+        color: black;
+        .bg-red {
+          background: $color-red;
+          color: white;
+          padding: 50px 20px 10px 20px;
+        }
+      }
+    }
+    .title-steps {
       position: absolute;
       display: block;
       padding: 40px 60px 5px 8px;
-      top:0;
+      top: 0;
       right: 300px;
       font-size: 25px;
       line-height: 32px;
@@ -202,10 +341,10 @@
       position: absolute;
       top: 60px;
       left: -75px;
-      .logo-desc{
+      .logo-desc {
         display: block;
       }
-      .logo-sm{
+      .logo-sm {
         display: none;
       }
       &.sm-logo {
@@ -263,7 +402,7 @@
               background: white;
               color: black
             }
-            .bg-black{
+            .bg-black {
               background: black;
               color: white;
             }
@@ -293,7 +432,7 @@
                     background: white;
                     color: black
                   }
-                  &.bg-black{
+                  &.bg-black {
                     background: black;
                     color: white;
                   }
@@ -321,7 +460,6 @@
                 font-weight: bold;
                 margin-top: 1px;
 
-
                 &:first-child {
                   color: black;
                 }
@@ -344,7 +482,6 @@
       }
     }
   }
-
 
 }
 

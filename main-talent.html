@@ -15,8 +15,9 @@
 
 <div class="header-box">
   <a href="#" class="link-to-home sm-logo">
+    <h5 class="header-title"><span class="bg-red">premium</span> talent</h5>
     <img class="logo-desc" src="assets/images/logo.svg" alt="">
-    <img class="logo-sm" src="assets/images/logo-sm.svg" alt="">
+    <img class="logo-sm white" src="assets/images/logo-sm.svg" alt="">
   </a>
   <header class="header sm-header">
     <ul class="navigation-menu">
@@ -24,6 +25,9 @@
       <li class="menu-item"><a href="#" class="menu-link">КАСТИНГИ</a></li>
       <li class="menu-item"><a href="#" class="menu-link">НАСТРОЙКИ</a></li>
     </ul>
+    <div class="menu-toggle">
+      <button id="nav-btn" class="btn-nav not-active" type="button"><i></i></button>
+    </div>
     <nav class="header-nav sm-nav">
       <ul class="navigation">
         <li class="menu-item"><span class="profile-ico"></span></li>
@@ -41,88 +45,94 @@
     </nav>
   </header>
 </div>
-
-<div class="left-block">
-  <div class="container">
-    <div class="row">
-      <div class="col-7 col-md-12">
-        <div class="profile-photo">
-          <img class="img-block" src="assets/images/profile-img.jpg" alt="">
-        </div>
-        <ul class="menu-list">
-          <li class="list-item"><a href="">Общая информация</a></li>
-          <li class="list-item"><a href="">Образование</a></li>
-          <li class="list-item"><a href="">навыки</a></li>
-          <li class="list-item"><a href="">Творческий опыт</a></li>
-          <li class="list-item"><a href="">Медиа-файлы</a></li>
-          <li class="list-item"><a href="">о себе</a></li>
-          <li class="list-item"><a href="">ЗДОРОВЬЕ</a></li>
-        </ul>
-        <div class="link-block">
-          <div class="link-views">
-            <img src="assets/images/open-eye.svg" alt="">
-            <p class="description">500 / 450</p>
+<div class="menus">
+  <div class="left-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-7 col-md-12">
+          <div class="profile-photo">
+            <img class="img-block" src="assets/images/profile-img.jpg" alt="">
           </div>
-        </div>
-        <div class="block">
-          <div class="contacts-block">
-            <h3 class="title red underlined uppercase">Контакты</h3>
-            <p class="description">+7 000 000 00 00</p>
-            <p class="description">ivan.ivanov@gmail.com</p>
-            <p class="description">www.ivanov.com</p>
-          </div>
-
-          <div class="contacts-block-info underlined">
-            <h3 class="title red uppercase">ставка за смену</h3>
-            <p class="description">от 500 до 5 000$</p>
-          </div>
-
-          <div class="socials underlined">
-            <div class="social-links-sm">
-              <a href="#" class="social-link"><span class="facebook-gray"></span></a>
-              <a href="#" class="social-link"><span class="vk-gray"></span></a>
-              <a href="#" class="social-link"><span class="instagram-gray"></span></a>
+          <ul class="menu-list">
+            <li class="list-item"><a href="#">Общая информация</a></li>
+            <li class="list-item"><a href="#">Образование</a></li>
+            <li class="list-item"><a href="#">навыки</a></li>
+            <li class="list-item"><a href="#">Творческий опыт</a></li>
+            <li class="list-item"><a href="#">Медиа-файлы</a></li>
+            <li class="list-item"><a href="#">о себе</a></li>
+            <li class="list-item"><a href="#">ЗДОРОВЬЕ</a></li>
+          </ul>
+          <div class="link-block">
+            <div class="link-views">
+              <img src="assets/images/open-eye.svg" alt="">
+              <p class="description">500 / 450</p>
             </div>
           </div>
-
-
-
-          <div class="button-block">
-            <img src="assets/images/pdf.svg" alt="">
-            <p>скачать</p>
-            <img src="assets/images/message.svg" alt="">
-            <p>отправить</p>
-          </div>
-          <div class="socials second">
-
-            <div class="social-links-sm">
-              <a href="#" class="social-link"><span class="facebook-gray"></span></a>
-              <a href="#" class="social-link"><span class="vk-gray"></span></a>
-              <a href="#" class="social-link"><span class="telegram-gray"></span></a>
-              <a href="#" class="social-link"><span class="link-icon-gray"></span></a>
-              <p class="">Поделиться</p>
+          <div class="block">
+            <div class="contacts-block">
+              <div class="link-buttons display-none">
+                <a class="button-border" href="#">Редактировать фото</a>
+              </div>
+              <h3 class="title red underlined uppercase">Контакты</h3>
+              <p class="description">+7 000 000 00 00</p>
+              <p class="description">ivan.ivanov@gmail.com</p>
+              <p class="description">www.ivanov.com</p>
             </div>
+
+            <div class="contacts-block-info underlined">
+              <h3 class="title red uppercase">ставка за смену</h3>
+              <p class="description">от 500 до 5 000$</p>
+            </div>
+
+            <div class="socials underlined">
+              <div class="social-links-sm">
+                <a href="#" class="social-link"><span class="facebook-gray"></span></a>
+                <a href="#" class="social-link"><span class="vk-gray"></span></a>
+                <a href="#" class="social-link"><span class="instagram-gray"></span></a>
+              </div>
+            </div>
+
+
+
+            <div class="button-block">
+              <img src="assets/images/pdf.svg" alt="">
+              <p>скачать</p>
+              <img src="assets/images/message.svg" alt="">
+              <p>отправить</p>
+            </div>
+            <div class="socials second">
+
+              <div class="social-links-sm">
+                <a href="#" class="social-link"><span class="facebook-gray"></span></a>
+                <a href="#" class="social-link"><span class="vk-gray"></span></a>
+                <a href="#" class="social-link"><span class="telegram-gray"></span></a>
+                <a href="#" class="social-link"><span class="link-icon-gray"></span></a>
+                <p class="">Поделиться</p>
+              </div>
+            </div>
+
           </div>
 
         </div>
-
       </div>
-    </div>
 
+    </div>
   </div>
 </div>
+
+
 <div class="right-block">
   <div class="container">
     <div class="row">
       <div class="col-7 col-md-12">
         <ul class="menu-list">
-          <li class="list-item"><a href="">Общая информация</a></li>
-          <li class="list-item"><a href="">Образование</a></li>
-          <li class="list-item"><a href="">навыки</a></li>
-          <li class="list-item"><a href="">Творческий опыт</a></li>
-          <li class="list-item"><a href="">Медиа-файлы</a></li>
-          <li class="list-item"><a href="">о себе</a></li>
-          <li class="list-item"><a href="">ЗДОРОВЬЕ</a></li>
+          <li class="list-item"><a href="#">Общая информация</a></li>
+          <li class="list-item"><a href="#">Образование</a></li>
+          <li class="list-item"><a href="#">навыки</a></li>
+          <li class="list-item"><a href="#">Творческий опыт</a></li>
+          <li class="list-item"><a href="#">Медиа-файлы</a></li>
+          <li class="list-item"><a href="#">о себе</a></li>
+          <li class="list-item"><a href="#">ЗДОРОВЬЕ</a></li>
         </ul>
         <div class="link-block">
           <div class="link-views">
@@ -131,8 +141,8 @@
           </div>
 
           <div class="link-buttons">
-            <a class="button-border" href="">Скачать В PDF</a>
-            <a class="button-border" href="">Отправить на почту</a>
+            <a class="button-border" href="#">Скачать В PDF</a>
+            <a class="button-border" href="#">Отправить на почту</a>
           </div>
 
         </div>
@@ -166,7 +176,7 @@
       <div class="body-block">
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-6 col-md-4">
             <p class="description-bold bold">Город</p>
           </div>
           <div class="col-3">
@@ -176,7 +186,7 @@
 
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-6 col-md-4">
             <p class="description-bold bold">Страна</p>
           </div>
           <div class="col-3">
@@ -185,7 +195,7 @@
         </div>
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-6 col-md-4">
             <p class="description-bold bold">Гражданство</p>
           </div>
           <div class="col-3">
@@ -194,7 +204,7 @@
         </div>
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-6 col-md-4">
             <p class="description-bold bold">Пол</p>
           </div>
           <div class="col-6">
@@ -203,7 +213,7 @@
         </div>
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-6 col-md-4">
             <p class="description-bold bold">Игровой Возраст</p>
           </div>
           <div class="col-3">
@@ -213,7 +223,7 @@
 
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-6 col-md-4">
             <p class="description-bold bold">Тип внешности</p>
           </div>
           <div class="col-3">
@@ -222,7 +232,7 @@
         </div>
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-6 col-md-4">
             <p class="description-bold bold">Рост</p>
           </div>
           <div class="col-3">
@@ -231,7 +241,7 @@
         </div>
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-6 col-md-4">
             <p class="description-bold bold">Вес</p>
           </div>
           <div class="col-6">
@@ -240,7 +250,7 @@
         </div>
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-6 col-md-4">
             <p class="description-bold bold">Телосложение</p>
           </div>
           <div class="col-3">
@@ -249,7 +259,7 @@
         </div>
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-6 col-md-4">
             <p class="description-bold bold">Цвет волос</p>
           </div>
           <div class="col-4">
@@ -258,7 +268,7 @@
         </div>
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-6 col-md-4">
             <p class="description-bold bold">Длина волос</p>
           </div>
           <div class="col-3">
@@ -267,7 +277,7 @@
         </div>
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-6 col-md-4">
             <p class="description-bold bold">Цвет глаз</p>
           </div>
           <div class="col-3">
@@ -296,7 +306,7 @@
       <div class="body-block">
 
         <div class="row">
-          <div class="col-9 col-lg-6">
+          <div class="col-12 col-lg-6">
             <p class="description">Высшее. Казахская Национальная Академия.</p>
             <p class="description">Актер театра и кино. Мастер – Р. С. Андриасян. 1995</p>
             <p class="description">Магистр. New York Film Academy.</p>
@@ -323,7 +333,7 @@
 
 
         <div class="row">
-          <div class="col-9 col-lg-6">
+          <div class="col-12 col-lg-6">
             <p class="description">Мастер-класс по ораторскому мастерству от студии «Образ». г. Алматы, 2012</p>
             <p class="description">Повышение квалификации «Режиссер пластического театра».</p>
             <p class="description"> СПБГАТИ, г. Санкт-Петербург, 2010</p>
@@ -351,7 +361,7 @@
 
 
         <div class="row">
-          <div class="col-9 col-lg-6">
+          <div class="col-12 col-lg-6">
             <p class="description">Модель. Агентство «Eat Models».</p>
             <p class="description">Дубляж. Профессионал.</p>
             <p class="description">Народное пение, эстрадное пение. Баритон. Любитель.</p>
@@ -362,9 +372,9 @@
             <p class="description">Гимнастика. Любитель.</p>
             <p class="description">Каскадерские навыки. Постановочный бой. Любитель.</p>
             <p class="description">Цирквые навыки. Акробатика, жанглирование. Любитель.</p>
-            <p><span class="bold">Русский язык</span></p>
-            <p><span class="bold">Казахский язык</span></p>
-            <p><span class="bold">Английский язык</span></p>
+            <p><span class="bold">Русский язык</span> <span class="rating"><img src="assets/images/rating.svg" alt=""></span></p>
+            <p><span class="bold">Казахский язык</span> <span class="rating"><img src="assets/images/rating.svg" alt=""></span></p>
+            <p><span class="bold">Английский язык</span> <span class="rating"><img src="assets/images/rating.svg" alt=""></span></p>
             <p class="description">Вождение. Мотоцикл.</p>
             <p class="description">Хобби. Пишу стихи.</p>
           </div>
@@ -391,7 +401,7 @@
       <div class="body-block">
 
         <div class="row">
-          <div class="col-9 col-lg-6">
+          <div class="col-12 col-lg-6">
             <p class="description"><span class="bold">Художественный фильм «Мечта идиота».</span>Мечта – главная роль.
               Режиссер: Иван Васин. 2015</p>
             <p class="description"><span class="bold">Сериал. «Игры пристолов».</span>Массовка. Режиссер: Иван Васин.
@@ -430,7 +440,7 @@
 
 
         <div class="row">
-          <div class="col-9 col-lg-6">
+          <div class="col-12 col-lg-6">
             <p class="description"><span class="bold">Национальный театр музыкальной комедии.</span>«Сон в летнюю ночь».
               2016</p>
             <p class="description"><span class="bold">Национальный театр музыкальной комедии.</span>«В ожидании Годо».
@@ -459,7 +469,7 @@
 
 
         <div class="row">
-          <div class="col-9 col-lg-6">
+          <div class="col-12 col-lg-6">
             <p class="description"><span class="bold">«Молоко мое».</span>Роль второго плана. 2016</p>
             <p class="description"><span class="bold">«Баунти».</span>Массовка. 2015</p>
           </div>
@@ -486,7 +496,7 @@
 
 
         <div class="row">
-          <div class="col-9 col-lg-6">
+          <div class="col-12 col-lg-6">
             <p class="description"><span class="bold">Премия «Золотая маска».</span>Лучшая режиссура. 2019</p>
             <p class="description"><span class="bold">Кинофестиваль «Евразия».</span>Лучший короткометражный фильм. 2019
             </p>
@@ -521,7 +531,7 @@
 
 
         <div class="row">
-          <div class="col-9 col-lg-6">
+          <div class="col-12 col-lg-6">
             <div class="photo-card">
 
               <div class="photo photo-1">
@@ -581,7 +591,7 @@
 
 
         <div class="row">
-          <div class="col-9 col-lg-6">
+          <div class="col-12 col-lg-6">
             <img class="img-block" src="assets/images/audio-big.svg" alt="">
           </div>
         </div>
@@ -607,7 +617,7 @@
 
 
         <div class="row">
-          <div class="col-9 col-lg-6">
+          <div class="col-12 col-lg-6">
             <p class="description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat.
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -637,7 +647,7 @@
 
 
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <p class="description">Аллергия на пыль.</p>
           </div>
         </div>

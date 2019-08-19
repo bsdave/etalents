@@ -17,6 +17,11 @@
     .cart-info {
       position: relative;
     }
+    .amount{
+      position: absolute;
+      right: 0;
+      top: -100px;
+    }
     .cart-image {
       text-align: left;
       height: 180px;
@@ -49,3 +54,16 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    .auditory-carts{
+      .auditory-cart{
+        .amount{
+          display: none;
+        }
+      }
+    }
+  }
+}
+

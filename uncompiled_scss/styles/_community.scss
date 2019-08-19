@@ -1,9 +1,7 @@
 .our-community-box {
   max-width: 100%;
-
   margin-top: 100px;
   padding-bottom: 50px;
-
   .our-community-head {
     margin-bottom: 40px;
   }
@@ -20,21 +18,13 @@
 }
 
 .our-community-body {
-  padding-right: 70%;
-  padding-left: 8%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+
   .text {
     line-height: 1.2;
   }
 }
 
 .animation-box {
-  z-index: 10;
-  margin-left: -25px;
-  margin-right: -25px;
-  margin-top: -370px;
-  margin-bottom: -50px;
 
   .inimation-img {
     display: block;
@@ -49,28 +39,49 @@
   }
 }
 
-@include tablet {
-  .animation-box {
-    margin-right: auto;
-    margin-left: 20%;
-    margin-top: -370px;
-    margin-bottom: -50px;
 
+
+@include desktop {
+  .our-community-box {
+    max-width: 100%;
+
+    margin-top: 100px;
+    padding-bottom: 50px;
+    background: url("../images/will-be-gif.png") 120% 50px no-repeat;
+
+
+    .our-community-head {
+      margin-bottom: 40px;
+    }
+  }
+
+  .our-community-buttons {
+    margin-top: 80px;
+    text-align: center;
+    .button {
+      width: 100%;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .our-community-body {
+    padding-right: 78%;
+    height: 700px;
+    .text {
+      line-height: 1.2;
+    }
+  }
+
+  .animation-box {
+
+    display: none;
     .inimation-img {
       display: block;
       width: 100%;
       height: auto;
-      &.will-be-desc {
-        display: block;
-      }
-      &.will-be-sm {
-        display: none;
-      }
     }
   }
-}
-
-@include desktop {
 
   .our-community-buttons {
     text-align: left;

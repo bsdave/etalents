@@ -1,4 +1,6 @@
 .shadow-layer {
+  display: none;
+
   position: absolute;
   z-index: 0;
   right: -50px;
@@ -6,8 +8,8 @@
   width: 365px;
 
   .shadow-layer-films {
-    display: none;
     flex-direction: column;
+    display: flex;
 
     .shadow-film {
       transition: filter 500ms ease-in-out;
@@ -103,8 +105,8 @@
 
 @include desktop{
   .shadow-layer {
+    display: block;
     .shadow-layer-films {
-      display: flex;
     }
   }
 }
